@@ -1,0 +1,1841 @@
+Started by user Agent J
+Rebuilds build #2629
+Running as SYSTEM
+Notifying endpoint with url 'http://lddev-build-web01.ix3.lmax:14080/notify/jenkins'
+Failed to evaluate macro ''
+Building remotely on lddev-build-jenkins02.ix3.lmax (executor) in workspace /var/lib/jenkins/workspace/misc-staging3-live-release
+Running Prebuild steps
+[misc-staging3-live-release] $ /bin/sh -xe /tmp/jenkins6626905017912811274.sh
++ SVN_ARGS='--username cruise --non-interactive'
++ [[ -d .svn/ ]]
++ echo '== Updating to latest revision'
+== Updating to latest revision
++ svn revert --recursive .
+Reverted 'exchange/tfx/acceptance/driver/src/main/java/com/lmax/exchange/acceptance/framework/driver/fix/AcceptanceFixClientJavaFxUi.java'
+Reverted '.buckconfig'
++ svn --username cruise --non-interactive up
+Updating '.':
+U    exchange/testing/analysis-commit/BUCK
+U    exchange/testing/analysis-commit/src/test/java/com/lmax/exchange/analysis/SailMethodsAnalysisTest.java
+U    exchange/testing/analysis-commit/src/test/java/com/lmax/exchange/analysis/SailTopicsAnalysisTest.java
+U    exchange/testing/analysis-commit/src/test-support/java/com/lmax/exchange/analysis/SailTopicsHelper.java
+U    exchange/testing/compatibility/snapshot-compatibility/src/test/resources/log4j.xml
+D    exchange/testing/integration/dsl/src/test-support/java/com/lmax/exchange/integration/driver/MarshallingVerificationStubProxy.java
+U    exchange/testing/integration/dsl/src/test-support/java/com/lmax/exchange/integration/driver/bmds/BrokerMarketDataServiceDriver.java
+U    exchange/testing/integration/dsl/src/test-support/java/com/lmax/exchange/integration/driver/broker/BrokerFixMarketDataGatewayDriver.java
+U    exchange/testing/integration/dsl/src/test-support/java/com/lmax/exchange/integration/driver/broker/BrokerFixTradingGatewayDriver.java
+U    exchange/testing/integration/dsl/src/test-support/java/com/lmax/exchange/integration/driver/ems/EmsDriver.java
+U    exchange/testing/integration/dsl/src/test-support/java/com/lmax/exchange/integration/driver/ev/EvDriver.java
+U    exchange/testing/integration/dsl/src/test-support/java/com/lmax/exchange/integration/driver/fix/mtf/MtfFixMarketDataGatewayDriver.java
+U    exchange/testing/integration/dsl/src/test-support/java/com/lmax/exchange/integration/driver/fix/mtf/MtfFixTradingGatewayDriver.java
+U    exchange/testing/integration/dsl/src/test-support/java/com/lmax/exchange/integration/driver/fix/mtf/Proxies.java
+U    exchange/testing/integration/dsl/src/test-support/java/com/lmax/exchange/integration/driver/itch/ItchGatewayDriver.java
+U    exchange/testing/integration/dsl/src/test-support/java/com/lmax/exchange/integration/driver/marketdata/MdsDriver.java
+U    exchange/testing/integration/dsl/src/test-support/java/com/lmax/exchange/integration/driver/monitoring/fault/FaultMonitoringServiceDriver.java
+U    exchange/testing/integration/dsl/src/test-support/java/com/lmax/exchange/integration/driver/sail/IntegrationService.java
+U    exchange/testing/integration/dsl/src/test-support/java/com/lmax/exchange/integration/driver/sail/IntegrationServiceFactory.java
+U    exchange/testing/integration/dsl/src/test-support/java/com/lmax/exchange/integration/driver/sail/IntegrationServiceWizard.java
+A    exchange/testing/integration/dsl/src/test-support/java/com/lmax/exchange/integration/driver/sail/proxy
+A    exchange/testing/integration/dsl/src/test-support/java/com/lmax/exchange/integration/driver/sail/proxy/EventMarshallingProxyFactory.java
+A    exchange/testing/integration/dsl/src/test-support/java/com/lmax/exchange/integration/driver/sail/proxy/IntegrationSailProxy.java
+A    exchange/testing/integration/dsl/src/test-support/java/com/lmax/exchange/integration/driver/sail/proxy/IntegrationSailProxyFactory.java
+A    exchange/testing/integration/dsl/src/test-support/java/com/lmax/exchange/integration/driver/sail/proxy/StreamMarshallingVerificationStubProxy.java
+U    exchange/testing/integration/dsl/src/test-support/java/com/lmax/exchange/integration/driver/trs/TrsDriver.java
+U    exchange/testing/integration/dsl/src/test-support/java/com/lmax/exchange/integration/driver/trs/TrsIntegrationPrimingSource.java
+U    exchange/testing/integration/dsl/src/test-support/java/com/lmax/exchange/integration/dsl/language/EvDsl.java
+U    exchange/testing/integration/dsl/src/test-support/java/com/lmax/exchange/integration/dsl/language/MembershipBreachStateChangeEventsChecker.java
+U    exchange/testing/integration/dsl/src/test-support/java/com/lmax/exchange/integration/dsl/support/IntegrationSystemDriver.java
+U    exchange/testing/integration/ems-integration-test/src/test/resources/log4j.xml
+U    exchange/testing/integration/ev-integration-test/src/test/java/com/lmax/exchange/integration/test/ev/ExposureRollIntegrationTest.java
+U    exchange/testing/integration/ev-integration-test/src/test/resources/log4j.xml
+U    exchange/testing/integration/fix-integration-test/src/test/resources/fix-integration-test-log4j.xml
+U    exchange/testing/integration/fix-integration-test/src/test/resources/log4j.xml
+U    exchange/testing/integration/integration-test/src/test/resources/log4j.xml
+U    exchange/tfx/acceptance/hsm/src/test/resources/acceptance-log4j.xml
+U    exchange/tfx/broker/domain/src/main/java/com/lmax/exchange/broker/domain/MarginCallStateTransitionNotifications.java
+U    exchange/tfx/broker/domain/src/main/java/com/lmax/exchange/broker/domain/accounttag/AccountTagService.java
+U    exchange/tfx/broker/liquidityprofile/src/main/java/com/lmax/exchange/broker/liquidityprofile/LiquidityProfileAdminService.java
+A    infrastructure/marshalling/marshalling/src/main/java/com/lmax/marshalling/api/CodebookFree.java
+A    infrastructure/marshalling/marshalling/src/main/java/com/lmax/marshalling/api/CodebookRequired.java
+U    infrastructure/marshalling/marshalling/src/main/java/com/lmax/marshalling/api/EventMarshaller.java
+U    infrastructure/marshalling/marshalling/src/main/java/com/lmax/marshalling/api/MarshalledBy.java
+A    infrastructure/marshalling/marshalling/src/main/java/com/lmax/marshalling/api/Marshallers.java
+U    infrastructure/sail/src/integration-test/java/com/lmax/sail/integration/LbmMessageTransportUtil.java
+U    infrastructure/sail/src/integration-test/java/com/lmax/sail/integration/PublishAndSubscribeIntegrationTest.java
+U    infrastructure/sail/src/main/java/com/lmax/sail/eventspecification/InterfaceEventSpecification.java
+U    infrastructure/sail/src/main/java/com/lmax/sail/publisher/ReplyHandlerReceiver.java
+U    infrastructure/sail/src/main/java/com/lmax/sail/stream/javassist/client/JavassistMethodInvokerGenerator.java
+U    infrastructure/sail/src/main/java/com/lmax/sail/transport/lbm/config/LbmConfigUtil.java
+D    infrastructure/sail-proxy-annotation-processor/src/main/java/com/lmax/sail/proxy/annotation/MarshallerInstance.java
+A    infrastructure/sail-proxy-annotation-processor/src/main/java/com/lmax/sail/proxy/annotation/AnnotationValueHelper.java
+U    infrastructure/sail-proxy-annotation-processor/src/main/java/com/lmax/sail/proxy/annotation/EventProxyAnnotationProcessor.java
+U    infrastructure/sail-proxy-annotation-processor/src/main/java/com/lmax/sail/proxy/annotation/InvokerClassBuilder.java
+U    infrastructure/sail-proxy-annotation-processor/src/main/java/com/lmax/sail/proxy/annotation/MarshalledByHelper.java
+U    infrastructure/sail-proxy-annotation-processor/src/main/java/com/lmax/sail/proxy/annotation/MarshallerFieldWriter.java
+A    infrastructure/sail-proxy-annotation-processor/src/main/java/com/lmax/sail/proxy/annotation/MarshallerIndex.java
+A    infrastructure/sail-proxy-annotation-processor/src/main/java/com/lmax/sail/proxy/annotation/MethodAnalyser.java
+U    infrastructure/sail-proxy-annotation-processor/src/main/java/com/lmax/sail/proxy/annotation/PublisherClassBuilder.java
+A    infrastructure/sail-proxy-annotation-processor/src/main/java/com/lmax/sail/proxy/annotation/model
+A    infrastructure/sail-proxy-annotation-processor/src/main/java/com/lmax/sail/proxy/annotation/model/MarshallerInstance.java
+A    infrastructure/sail-proxy-annotation-processor/src/main/java/com/lmax/sail/proxy/annotation/model/MarshallingType.java
+A    infrastructure/sail-proxy-annotation-processor/src/main/java/com/lmax/sail/proxy/annotation/model/MethodDefinition.java
+A    infrastructure/sail-proxy-annotation-processor/src/main/java/com/lmax/sail/proxy/annotation/model/ParameterDefinition.java
+A    infrastructure/sail-proxy-annotation-processor/src/main/java/com/lmax/sail/proxy/annotation/model/TypeDefinition.java
+U    infrastructure/sail-proxy-annotation-processor/src/test-support/java/com/lmax/sail/proxy/annotation/TestSailProxyInterface.java
+U    test/testing/BUCK
+A    test/testing/src/main/java/com/lmax/testing/proxy/ArgCapturingProxyFactory.java
+D    test/testing/src/main/java/com/lmax/testing/proxy/DelegatingProxy.java
+A    test/testing/src/main/java/com/lmax/testing/proxy/DelegatingProxy.java
+U    test/testing/src/main/java/com/lmax/testing/proxy/StubProxy.java
+Updated to revision 219801.
+Success build forhudson.tasks.Shell@3da0ec6c
+Using sole credentials cruise/****** in realm ?<https://svn.yb.lmax:443> TFX Subversion Repository?
+Using sole credentials cruise/****** in realm ?<https://svn.yb.lmax:443> TFX Subversion Repository?
+New run name is '#2630 - r219775 '
+[misc-staging3-live-release] $ /bin/sh -xe /tmp/jenkins348019660598927839.sh
++ export JAVA_HOME_OVERRIDE=jdk11
++ JAVA_HOME_OVERRIDE=jdk11
++ export JAVA_TARGET_OVERRIDE=11
++ JAVA_TARGET_OVERRIDE=11
++ ./jenkins.sh staging-release
+Did not find either 'docker' or 'podman' command
+[1;32mCreating /var/lib/jenkins/workspace/misc-staging3-live-release/opt[0m
+[1;32mdependency dir is: /var/lib/jenkins/workspace/misc-staging3-live-release/opt[0m
+[1;32mdependency cache is: /var/lib/jenkins/workspace/_beant/cache[0m
+[1;32mProcessing /var/lib/jenkins/workspace/_beant/cache/zvm11/11.0.0_19.08.100.0_2-1[0m
+[1;32mProcessing /var/lib/jenkins/workspace/_beant/cache/zvm/1.8.0_19.08.100.0_2-1[0m
+[1;32mProcessing /var/lib/jenkins/workspace/_beant/cache/jdk11/1.11.0.6_zulu11.37.17_ca-1[0m
+[1;32mProcessing /var/lib/jenkins/workspace/_beant/cache/jdk/1.8.0_172-1[0m
+[1;32mProcessing /var/lib/jenkins/workspace/_beant/cache/groovy/2.5.7-1[0m
+[1;32mProcessing /var/lib/jenkins/workspace/_beant/cache/lbm/6.9.2-1[0m
+[1;32mProcessing /var/lib/jenkins/workspace/_beant/cache/resin/4.0.65.oss-1[0m
+[1;32mProcessing /var/lib/jenkins/workspace/_beant/cache/percona/5.6.41-1[0m
+[1;32mProcessing /var/lib/jenkins/workspace/_beant/cache/percona57/5.7.26-1[0m
+[1;32mProcessing /var/lib/jenkins/workspace/_beant/cache/postgresql-server/9.4.4-7[0m
+[1;32mProcessing /var/lib/jenkins/workspace/_beant/cache/percona-toolkit/2.1.5-1[0m
+[1;32mProcessing /var/lib/jenkins/workspace/_beant/cache/pigz/2.3-2[0m
+[1;32mProcessing /var/lib/jenkins/workspace/_beant/cache/firefox/45.2.0esr-2[0m
+[1;32mProcessing /var/lib/jenkins/workspace/_beant/cache/buck/2019.10.17.01-1[0m
+[1;32mProcessing /var/lib/jenkins/workspace/_beant/cache/yarn/1.22.10-1[0m
+[1;32mProcessing /var/lib/jenkins/workspace/_beant/cache/watchman/v4.7.0-1[0m
+[1;32mProcessing /var/lib/jenkins/workspace/_beant/cache/libpcap/1.4.0_4.20130826git2dbcaa1.el6-2[0m
+[1;32mProcessing /var/lib/jenkins/workspace/_beant/cache/node/10.22.1-1[0m
+[1;32mProcessing /var/lib/jenkins/workspace/_beant/cache/phantomjs/2.1.1-1[0m
+[1;32mProcessing /var/lib/jenkins/workspace/_beant/cache/openonload/201502-u1-3[0m
+[1;32mProcessing /var/lib/jenkins/workspace/_beant/cache/bitcoin-core/0.19.0.1-1[0m
+[1;32mProcessing /var/lib/jenkins/workspace/_beant/cache/bitcoin-abc/0.22.0-1[0m
+[1;32mProcessing /var/lib/jenkins/workspace/_beant/cache/bitcoin-cash-node/22.1.0-1[0m
+[1;32mProcessing /var/lib/jenkins/workspace/_beant/cache/litecoin-core/0.17.1-1[0m
+[1;32mProcessing /var/lib/jenkins/workspace/_beant/cache/rippled/1.0.0-1-1[0m
+[1;32mProcessing /var/lib/jenkins/workspace/_beant/cache/geth/1.9.12-1[0m
+[1;32mProcessing /var/lib/jenkins/workspace/_beant/cache/solc/0.4.24-1[0m
+[1;32mProcessing /var/lib/jenkins/workspace/_beant/cache/gwt/2.3.0-3[0m
+[1;32mProcessing /var/lib/jenkins/workspace/_beant/cache/minio/20200730100000-1[0m
+[1;32mProcessing /var/lib/jenkins/workspace/_beant/cache/async_profiler/1.5-2[0m
+[1;32mProcessing /var/lib/jenkins/workspace/_beant/cache/jre8/1.8.0.212_zulu8.38.0.13_ca-1[0m
+[1;32mProcessing /var/lib/jenkins/workspace/_beant/cache/logstash/7.2.0-4[0m
+[1;32mProcessing /var/lib/jenkins/workspace/_beant/cache/elasticsearch/7.2.0-4[0m
+[1;32mProcessing /var/lib/jenkins/workspace/_beant/cache/kibana/7.2.0-4[0m
+[1;32mProcessing /var/lib/jenkins/workspace/_beant/cache/glibc/2.14-1[0m
+[1;32mProcessing /var/lib/jenkins/workspace/_beant/cache/jdk11buck/2019.10.17.01-4[0m
+All dependencies ready.
+Release started with arguments:
+revision: 219775
+revisionToMigrateFrom: USE_PROD
+skipMigration: false
+skipDataImport: false
+exchangesToRelease: staging3-professional+staging3-interbank+staging3-tokyo2+staging3-ny+staging3-global
+startStep: 1.1.1
+testDrFailover: false
+fixUpSanitisedData: true
+preserveOutOfDateSnapshots: false
+releaseScotty: true
+scottyBranchNumber: -1
+
+
+ ============================================ 
+
+
+Just before I kick things off, here's a quick explanation of what I'm about to do.
+
+1	Release scotty to staging
+1.1		Try Block
+1.1.1			(staging3-professional) UpdateScotty
+1.1.2			(staging3-interbank) UpdateScotty
+1.1.3			(staging3-tokyo2) UpdateScotty
+1.1.4			(staging3-ny) UpdateScotty
+1.1.5			(staging3-global) UpdateScotty
+1.1.6			(staging3-professional,staging3-interbank,staging3-tokyo2,staging3-ny,staging3-global) WaitForEnvironmentToBePresentAndIdleStep
+1.1.7			(staging3-professional,staging3-interbank,staging3-tokyo2,staging3-ny,staging3-global) CollectSystemInfo
+
+2	KillTfx on Scotty
+2.1		Try Block
+2.1.1			(staging3-professional,staging3-interbank,staging3-tokyo2,staging3-ny,staging3-global) Scotty KILLTFX
+
+3	Cleanup Environment
+3.1		Try Block
+3.1.1			(staging3-professional,staging3-interbank,staging3-tokyo2,staging3-ny,staging3-global) Scotty CLEANUP
+
+4	Prepare Environment For Import
+4.1		Try Block
+4.1.1			(staging3-professional,staging3-interbank,staging3-tokyo2,staging3-ny,staging3-global) CheckRevisionConsistency
+4.1.2			(staging3-professional) ClearTopology
+4.1.3			(staging3-interbank) ClearTopology
+4.1.4			(staging3-tokyo2) ClearTopology
+4.1.5			(staging3-ny) ClearTopology
+4.1.6			(staging3-global) ClearTopology
+4.1.7			(staging3-professional) SetTopology
+4.1.8			(staging3-interbank) SetTopology
+4.1.9			(staging3-tokyo2) SetTopology
+4.1.10			(staging3-ny) SetTopology
+4.1.11			(staging3-global) SetTopology
+4.1.12			(staging3-professional,staging3-interbank,staging3-tokyo2,staging3-ny,staging3-global) DeleteRevisions
+4.1.13			(staging3-professional,staging3-interbank,staging3-tokyo2,staging3-ny,staging3-global) PullRevision 219600
+4.1.14			(staging3-professional,staging3-interbank,staging3-tokyo2,staging3-ny,staging3-global) PullRevision 219775
+
+5	Pre revision import
+5.1		Try Block
+5.1.1			(staging3-professional,staging3-interbank,staging3-tokyo2,staging3-ny,staging3-global) Scotty BOOTSTRAP_KEEP_CURRENT_TOPOLOGY,DOWNLOAD,EXTRACT,RESET
+
+6	Skip data import (SKIPPED)
+6.1		Try Block
+6.1.1			(staging3-professional,staging3-interbank,staging3-tokyo2,staging3-ny,staging3-global) Scotty FS_DESTROY_EXCHANGE_SNAPSHOTS
+6.1.2			(staging3-professional,staging3-interbank,staging3-tokyo2,staging3-ny,staging3-global) MoveCleanserToOwnEnvironment
+6.1.3			(staging3-professional,staging3-interbank,staging3-tokyo2,staging3-ny,staging3-global) maybeFixupData
+
+6.3		Finally Block
+6.3.1			(staging3-professional,staging3-interbank,staging3-tokyo2,staging3-ny,staging3-global) DatabaseCatchup
+6.3.2			(staging3-professional,staging3-interbank,staging3-tokyo2,staging3-ny,staging3-global) ReplicationCatchup
+
+7	Import data
+7.1		Try Block
+7.1.1			(staging3-professional,staging3-interbank,staging3-tokyo2,staging3-ny,staging3-global) Scotty FS_DESTROY_EXCHANGE_SNAPSHOTS
+7.1.2			(staging3-professional,staging3-interbank,staging3-tokyo2,staging3-ny,staging3-global) File System Snapshot Aware Data Import
+7.1.3			(staging3-professional,staging3-interbank,staging3-tokyo2,staging3-ny,staging3-global) MaybeDestroyScottySnapshot
+7.1.4			(staging3-professional,staging3-interbank,staging3-tokyo2,staging3-ny,staging3-global) Scotty FS_CREATE_SNAPSHOT
+7.1.5			(staging3-professional,staging3-interbank,staging3-tokyo2,staging3-ny,staging3-global) MoveCleanserToOwnEnvironment
+7.1.6			(staging3-professional,staging3-interbank,staging3-tokyo2,staging3-ny,staging3-global) maybeFixupData
+
+7.3		Finally Block
+7.3.1			(staging3-professional,staging3-interbank,staging3-tokyo2,staging3-ny,staging3-global) DatabaseCatchup
+7.3.2			(staging3-professional,staging3-interbank,staging3-tokyo2,staging3-ny,staging3-global) ReplicationCatchup
+7.3.3			(staging3-professional,staging3-interbank,staging3-tokyo2,staging3-ny,staging3-global) TestingInLive
+
+8	Capture Invariant State before release migration
+8.1		Try Block
+8.1.1			(staging3-professional,staging3-interbank,staging3-tokyo2,staging3-ny,staging3-global) CaptureInvariantState
+
+9	Migrate exchange to new revision
+9.1		Try Block
+9.1.1			(staging3-professional,staging3-interbank,staging3-tokyo2,staging3-ny,staging3-global) Scotty MIGRATE_AND_USE_NEW_TOPOLOGY
+
+10	Validate the state of the exchange
+10.1		Try Block
+10.1.1			(staging3-professional,staging3-interbank,staging3-tokyo2,staging3-ny,staging3-global) DatabaseCatchup
+10.1.2			(staging3-professional,staging3-interbank,staging3-tokyo2,staging3-ny,staging3-global) ReplicationCatchup
+10.1.3			(staging3-professional,staging3-interbank,staging3-tokyo2,staging3-ny,staging3-global) ValidateNoAccountsLiquidatedAfterMigrate
+10.1.4			(staging3-professional,staging3-interbank,staging3-tokyo2,staging3-ny,staging3-global) TestingInLive
+10.1.5			(staging3-professional,staging3-interbank,staging3-tokyo2,staging3-ny,staging3-global) CompareInvariantState
+10.1.6			(staging3-professional,staging3-interbank,staging3-tokyo2,staging3-ny,staging3-global) ReplicationCatchup
+10.1.7			(staging3-professional,staging3-interbank,staging3-tokyo2,staging3-ny,staging3-global) Scotty SHUTDOWN
+10.1.8			(staging3-professional,staging3-interbank,staging3-tokyo2,staging3-ny,staging3-global) Scotty START_UP
+10.1.9			(staging3-professional,staging3-interbank,staging3-tokyo2,staging3-ny,staging3-global) ValidateEnvironmentHealth
+10.1.10			(staging3-global) ValidateEnvironmentHealth
+10.1.11			(staging3-global) ValidateEnvironmentHealth
+10.1.12			(staging3-global) ValidateEnvironmentHealth
+10.1.13			(staging3-global) ValidateEnvironmentHealth
+10.1.14			(staging3-professional,staging3-interbank,staging3-tokyo2,staging3-ny,staging3-global) ValidateNoAccountsLiquidatedAfterMigrate
+10.1.15			(staging3-professional,staging3-interbank,staging3-tokyo2,staging3-ny,staging3-global) TestingInLive
+10.1.16			(staging3-professional,staging3-interbank,staging3-tokyo2,staging3-ny,staging3-global) ValidateEnvironmentHealth
+10.1.17			(staging3-global) ValidateEnvironmentHealth
+10.1.18			(staging3-global) ValidateEnvironmentHealth
+10.1.19			(staging3-global) ValidateEnvironmentHealth
+10.1.20			(staging3-global) ValidateEnvironmentHealth
+10.1.21			(staging3-professional,staging3-interbank,staging3-tokyo2,staging3-ny,staging3-global) Scotty SHUTDOWN
+10.1.22			(staging3-professional,staging3-interbank,staging3-tokyo2,staging3-ny,staging3-global) Scotty INITIALISE_MIGRATION
+10.1.23			(staging3-professional,staging3-interbank,staging3-tokyo2,staging3-ny,staging3-global) Scotty MIGRATE
+10.1.24			(staging3-professional,staging3-interbank,staging3-tokyo2,staging3-ny,staging3-global) Scotty START_UP
+10.1.25			(staging3-professional,staging3-interbank,staging3-tokyo2,staging3-ny,staging3-global) ValidateEnvironmentHealth
+10.1.26			(staging3-global) ValidateEnvironmentHealth
+10.1.27			(staging3-global) ValidateEnvironmentHealth
+10.1.28			(staging3-global) ValidateEnvironmentHealth
+10.1.29			(staging3-global) ValidateEnvironmentHealth
+10.1.30			(staging3-professional,staging3-interbank,staging3-tokyo2,staging3-ny,staging3-global) TestingInLive
+10.1.31			(staging3-professional,staging3-interbank,staging3-tokyo2,staging3-ny,staging3-global) Scotty END_OF_DAY
+10.1.32			(staging3-global) ValidateEnvironmentHealth
+10.1.33			(staging3-global) ValidateEnvironmentHealth
+10.1.34			(staging3-global) ValidateEnvironmentHealth
+10.1.35			(staging3-global) ValidateEnvironmentHealth
+10.1.36			(staging3-professional,staging3-interbank,staging3-tokyo2,staging3-ny,staging3-global) TestingInLive
+10.1.37			(staging3-professional,staging3-interbank,staging3-tokyo2,staging3-ny,staging3-global) ValidateEnvironmentHealth
+10.1.38			(staging3-global) ValidateEnvironmentHealth
+10.1.39			(staging3-global) ValidateEnvironmentHealth
+10.1.40			(staging3-global) ValidateEnvironmentHealth
+10.1.41			(staging3-global) ValidateEnvironmentHealth
+
+11	Release the cleanser
+11.1		Try Block
+11.1.1			(staging3-professional,staging3-interbank,staging3-tokyo2,staging3-ny,staging3-global) ReleaseCleanser
+
+12	Test DR failover (SKIPPED)
+12.1		Try Block
+12.1.1			(staging3-professional,staging3-interbank,staging3-tokyo2,staging3-ny,staging3-global) Scotty STOP_LIVE
+12.1.2			(staging3-professional) SetServerActiveStatus
+12.1.3			(staging3-interbank) SetServerActiveStatus
+12.1.4			(staging3-tokyo2) SetServerActiveStatus
+12.1.5			(staging3-ny) SetServerActiveStatus
+12.1.6			(staging3-global) SetServerActiveStatus
+12.1.7			(staging3-professional) SetServerActiveStatus
+12.1.8			(staging3-interbank) SetServerActiveStatus
+12.1.9			(staging3-tokyo2) SetServerActiveStatus
+12.1.10			(staging3-ny) SetServerActiveStatus
+12.1.11			(staging3-global) SetServerActiveStatus
+12.1.12			(staging3-professional,staging3-interbank,staging3-tokyo2,staging3-ny,staging3-global) Scotty FAILOVER
+12.1.13			(staging3-professional,staging3-interbank,staging3-tokyo2,staging3-ny,staging3-global) ValidateEnvironmentHealth
+12.1.14			(staging3-professional,staging3-interbank,staging3-tokyo2,staging3-ny,staging3-global) TestingInLive
+12.1.15			(staging3-professional) SetServerActiveStatus
+12.1.16			(staging3-interbank) SetServerActiveStatus
+12.1.17			(staging3-tokyo2) SetServerActiveStatus
+12.1.18			(staging3-ny) SetServerActiveStatus
+12.1.19			(staging3-global) SetServerActiveStatus
+12.1.20			(staging3-professional) SetServerActiveStatus
+12.1.21			(staging3-interbank) SetServerActiveStatus
+12.1.22			(staging3-tokyo2) SetServerActiveStatus
+12.1.23			(staging3-ny) SetServerActiveStatus
+12.1.24			(staging3-global) SetServerActiveStatus
+
+
+
+ ============================================ 
+
+
+Running release script.
+
+
+ ============================================ 
+
+
+1	Starting Release scotty to staging
+1.1		Running Try Block
+
+ -------------------------------------------- 
+
+1.1.1			Running (staging3-professional) (ScottyInstance{name='ix3-stg3-prof', uri='https://s3ldprof-live-deploy01.ix3.lmax'}) update scotty to version 219775-2
+1.1.1			(staging3-professional)Running (ScottyInstance{name='ix3-stg3-prof', uri='https://s3ldprof-live-deploy01.ix3.lmax'}) update scotty to version 219775-2
+1.1.1.34				(staging3-professional)[s3ldprof-live-gtmt02.ix3.lmax - scotty-agentd] Attempting to update scotty-agentd to tf-scotty-219775-2.x86_64
+1.1.1.17				(staging3-professional)[s3ldprof-live-bexc01.ix3.lmax - scotty-agentd] Attempting to update scotty-agentd to tf-scotty-219775-2.x86_64
+1.1.1.47				(staging3-professional)[s3ldprof-live-mmmd03.ix3.lmax - scotty-agentd] Attempting to update scotty-agentd to tf-scotty-219775-2.x86_64
+1.1.1.8				(staging3-professional)[s3ldprof-dr-gmts02.ix3.lmax - scotty-agentd] Attempting to update scotty-agentd to tf-scotty-219775-2.x86_64
+1.1.1.30				(staging3-professional)[s3ldprof-live-gmts02.ix3.lmax - scotty-agentd] Attempting to update scotty-agentd to tf-scotty-219775-2.x86_64
+1.1.1.4				(staging3-professional)[s3ldprof-dr-binb06.ix3.lmax - scotty-agentd] Attempting to update scotty-agentd to tf-scotty-219775-2.x86_64
+1.1.1.17				(staging3-professional)[s3ldprof-live-bexc01.ix3.lmax - scotty-agentd] Package tf-scotty-219775-2.x86_64 is already installed, nothing to do
+1.1.1.8				(staging3-professional)[s3ldprof-dr-gmts02.ix3.lmax - scotty-agentd] Package tf-scotty-219775-2.x86_64 is already installed, nothing to do
+1.1.1.17				(staging3-professional)[s3ldprof-live-bexc01.ix3.lmax - scotty-agentd] Starting service scotty-agentd
+1.1.1.8				(staging3-professional)[s3ldprof-dr-gmts02.ix3.lmax - scotty-agentd] Starting service scotty-agentd
+1.1.1.30				(staging3-professional)[s3ldprof-live-gmts02.ix3.lmax - scotty-agentd] Package tf-scotty-219775-2.x86_64 is already installed, nothing to do
+1.1.1.30				(staging3-professional)[s3ldprof-live-gmts02.ix3.lmax - scotty-agentd] Starting service scotty-agentd
+1.1.1.34				(staging3-professional)[s3ldprof-live-gtmt02.ix3.lmax - scotty-agentd] Package tf-scotty-219775-2.x86_64 is already installed, nothing to do
+1.1.1.34				(staging3-professional)[s3ldprof-live-gtmt02.ix3.lmax - scotty-agentd] Starting service scotty-agentd
+1.1.1.4				(staging3-professional)[s3ldprof-dr-binb06.ix3.lmax - scotty-agentd] Package tf-scotty-219775-2.x86_64 is already installed, nothing to do
+1.1.1.4				(staging3-professional)[s3ldprof-dr-binb06.ix3.lmax - scotty-agentd] Starting service scotty-agentd
+1.1.1.47				(staging3-professional)[s3ldprof-live-mmmd03.ix3.lmax - scotty-agentd] Package tf-scotty-219775-2.x86_64 is already installed, nothing to do
+1.1.1.47				(staging3-professional)[s3ldprof-live-mmmd03.ix3.lmax - scotty-agentd] Starting service scotty-agentd
+1.1.1.8				(staging3-professional)[s3ldprof-dr-gmts02.ix3.lmax - scotty-agentd] Service start:
+output = Starting scotty-agentd: [  OK  ]
+error = 
+1.1.1.8				(staging3-professional)[s3ldprof-dr-gmts02.ix3.lmax - scotty-agentd] Started service scotty-agentd
+1.1.1.8				(staging3-professional)[s3ldprof-dr-gmts02.ix3.lmax - scotty-agentd] Updated scotty-agentd to tf-scotty-219775-2.x86_64
+1.1.1.9				(staging3-professional)[s3ldprof-dr-gmts03.ix3.lmax - scotty-agentd] Attempting to update scotty-agentd to tf-scotty-219775-2.x86_64
+1.1.1.34				(staging3-professional)[s3ldprof-live-gtmt02.ix3.lmax - scotty-agentd] Service start:
+output = Starting scotty-agentd: [  OK  ]
+error = 
+1.1.1.34				(staging3-professional)[s3ldprof-live-gtmt02.ix3.lmax - scotty-agentd] Started service scotty-agentd
+1.1.1.34				(staging3-professional)[s3ldprof-live-gtmt02.ix3.lmax - scotty-agentd] Updated scotty-agentd to tf-scotty-219775-2.x86_64
+1.1.1.35				(staging3-professional)[s3ldprof-live-mdbs01.ix3.lmax - scotty-agentd] Attempting to update scotty-agentd to tf-scotty-219775-2.x86_64
+1.1.1.17				(staging3-professional)[s3ldprof-live-bexc01.ix3.lmax - scotty-agentd] Service start:
+output = Starting scotty-agentd: [  OK  ]
+error = 
+1.1.1.17				(staging3-professional)[s3ldprof-live-bexc01.ix3.lmax - scotty-agentd] Started service scotty-agentd
+1.1.1.17				(staging3-professional)[s3ldprof-live-bexc01.ix3.lmax - scotty-agentd] Updated scotty-agentd to tf-scotty-219775-2.x86_64
+1.1.1.18				(staging3-professional)[s3ldprof-live-bexc02.ix3.lmax - scotty-agentd] Attempting to update scotty-agentd to tf-scotty-219775-2.x86_64
+1.1.1.4				(staging3-professional)[s3ldprof-dr-binb06.ix3.lmax - scotty-agentd] Service start:
+output = Starting scotty-agentd: [  OK  ]
+error = 
+1.1.1.4				(staging3-professional)[s3ldprof-dr-binb06.ix3.lmax - scotty-agentd] Started service scotty-agentd
+1.1.1.4				(staging3-professional)[s3ldprof-dr-binb06.ix3.lmax - scotty-agentd] Updated scotty-agentd to tf-scotty-219775-2.x86_64
+1.1.1.5				(staging3-professional)[s3ldprof-dr-binb07.ix3.lmax - scotty-agentd] Attempting to update scotty-agentd to tf-scotty-219775-2.x86_64
+1.1.1.30				(staging3-professional)[s3ldprof-live-gmts02.ix3.lmax - scotty-agentd] Service start:
+output = Starting scotty-agentd: [  OK  ]
+error = 
+1.1.1.30				(staging3-professional)[s3ldprof-live-gmts02.ix3.lmax - scotty-agentd] Started service scotty-agentd
+1.1.1.30				(staging3-professional)[s3ldprof-live-gmts02.ix3.lmax - scotty-agentd] Updated scotty-agentd to tf-scotty-219775-2.x86_64
+1.1.1.31				(staging3-professional)[s3ldprof-live-gmts03.ix3.lmax - scotty-agentd] Attempting to update scotty-agentd to tf-scotty-219775-2.x86_64
+1.1.1.47				(staging3-professional)[s3ldprof-live-mmmd03.ix3.lmax - scotty-agentd] Service start:
+output = Starting scotty-agentd: [  OK  ]
+error = 
+1.1.1.47				(staging3-professional)[s3ldprof-live-mmmd03.ix3.lmax - scotty-agentd] Started service scotty-agentd
+1.1.1.47				(staging3-professional)[s3ldprof-live-mmmd03.ix3.lmax - scotty-agentd] Updated scotty-agentd to tf-scotty-219775-2.x86_64
+1.1.1.48				(staging3-professional)[s3ldprof-live-mmmd04.ix3.lmax - scotty-agentd] Attempting to update scotty-agentd to tf-scotty-219775-2.x86_64
+1.1.1.9				(staging3-professional)[s3ldprof-dr-gmts03.ix3.lmax - scotty-agentd] Package tf-scotty-219775-2.x86_64 is already installed, nothing to do
+1.1.1.9				(staging3-professional)[s3ldprof-dr-gmts03.ix3.lmax - scotty-agentd] Starting service scotty-agentd
+1.1.1.35				(staging3-professional)[s3ldprof-live-mdbs01.ix3.lmax - scotty-agentd] Package tf-scotty-219775-2.x86_64 is already installed, nothing to do
+1.1.1.35				(staging3-professional)[s3ldprof-live-mdbs01.ix3.lmax - scotty-agentd] Starting service scotty-agentd
+1.1.1.18				(staging3-professional)[s3ldprof-live-bexc02.ix3.lmax - scotty-agentd] Package tf-scotty-219775-2.x86_64 is already installed, nothing to do
+1.1.1.18				(staging3-professional)[s3ldprof-live-bexc02.ix3.lmax - scotty-agentd] Starting service scotty-agentd
+1.1.1.5				(staging3-professional)[s3ldprof-dr-binb07.ix3.lmax - scotty-agentd] Package tf-scotty-219775-2.x86_64 is already installed, nothing to do
+1.1.1.5				(staging3-professional)[s3ldprof-dr-binb07.ix3.lmax - scotty-agentd] Starting service scotty-agentd
+1.1.1.48				(staging3-professional)[s3ldprof-live-mmmd04.ix3.lmax - scotty-agentd] Package tf-scotty-219775-2.x86_64 is already installed, nothing to do
+1.1.1.48				(staging3-professional)[s3ldprof-live-mmmd04.ix3.lmax - scotty-agentd] Starting service scotty-agentd
+1.1.1.31				(staging3-professional)[s3ldprof-live-gmts03.ix3.lmax - scotty-agentd] Package tf-scotty-219775-2.x86_64 is already installed, nothing to do
+1.1.1.31				(staging3-professional)[s3ldprof-live-gmts03.ix3.lmax - scotty-agentd] Starting service scotty-agentd
+1.1.1.9				(staging3-professional)[s3ldprof-dr-gmts03.ix3.lmax - scotty-agentd] Service start:
+output = Starting scotty-agentd: [  OK  ]
+error = 
+1.1.1.9				(staging3-professional)[s3ldprof-dr-gmts03.ix3.lmax - scotty-agentd] Started service scotty-agentd
+1.1.1.9				(staging3-professional)[s3ldprof-dr-gmts03.ix3.lmax - scotty-agentd] Updated scotty-agentd to tf-scotty-219775-2.x86_64
+1.1.1.7				(staging3-professional)[s3ldprof-dr-gmts01.ix3.lmax - scotty-agentd] Attempting to update scotty-agentd to tf-scotty-219775-2.x86_64
+1.1.1.18				(staging3-professional)[s3ldprof-live-bexc02.ix3.lmax - scotty-agentd] Service start:
+output = Starting scotty-agentd: [  OK  ]
+error = 
+1.1.1.18				(staging3-professional)[s3ldprof-live-bexc02.ix3.lmax - scotty-agentd] Started service scotty-agentd
+1.1.1.18				(staging3-professional)[s3ldprof-live-bexc02.ix3.lmax - scotty-agentd] Updated scotty-agentd to tf-scotty-219775-2.x86_64
+1.1.1.19				(staging3-professional)[s3ldprof-live-binb01.ix3.lmax - scotty-agentd] Attempting to update scotty-agentd to tf-scotty-219775-2.x86_64
+1.1.1.5				(staging3-professional)[s3ldprof-dr-binb07.ix3.lmax - scotty-agentd] Service start:
+output = Starting scotty-agentd: [  OK  ]
+error = 
+1.1.1.5				(staging3-professional)[s3ldprof-dr-binb07.ix3.lmax - scotty-agentd] Started service scotty-agentd
+1.1.1.5				(staging3-professional)[s3ldprof-dr-binb07.ix3.lmax - scotty-agentd] Updated scotty-agentd to tf-scotty-219775-2.x86_64
+1.1.1.6				(staging3-professional)[s3ldprof-dr-ginb01.ix3.lmax - scotty-agentd] Attempting to update scotty-agentd to tf-scotty-219775-2.x86_64
+1.1.1.48				(staging3-professional)[s3ldprof-live-mmmd04.ix3.lmax - scotty-agentd] Service start:
+output = Starting scotty-agentd: [  OK  ]
+error = 
+1.1.1.48				(staging3-professional)[s3ldprof-live-mmmd04.ix3.lmax - scotty-agentd] Started service scotty-agentd
+1.1.1.48				(staging3-professional)[s3ldprof-live-mmmd04.ix3.lmax - scotty-agentd] Updated scotty-agentd to tf-scotty-219775-2.x86_64
+1.1.1.46				(staging3-professional)[s3ldprof-live-mmmd02.ix3.lmax - scotty-agentd] Attempting to update scotty-agentd to tf-scotty-219775-2.x86_64
+1.1.1.35				(staging3-professional)[s3ldprof-live-mdbs01.ix3.lmax - scotty-agentd] Service start:
+output = Starting scotty-agentd: [  OK  ]
+error = 
+1.1.1.35				(staging3-professional)[s3ldprof-live-mdbs01.ix3.lmax - scotty-agentd] Started service scotty-agentd
+1.1.1.35				(staging3-professional)[s3ldprof-live-mdbs01.ix3.lmax - scotty-agentd] Updated scotty-agentd to tf-scotty-219775-2.x86_64
+1.1.1.33				(staging3-professional)[s3ldprof-live-gtmt01.ix3.lmax - scotty-agentd] Attempting to update scotty-agentd to tf-scotty-219775-2.x86_64
+1.1.1.31				(staging3-professional)[s3ldprof-live-gmts03.ix3.lmax - scotty-agentd] Service start:
+output = Starting scotty-agentd: [  OK  ]
+error = 
+1.1.1.31				(staging3-professional)[s3ldprof-live-gmts03.ix3.lmax - scotty-agentd] Started service scotty-agentd
+1.1.1.31				(staging3-professional)[s3ldprof-live-gmts03.ix3.lmax - scotty-agentd] Updated scotty-agentd to tf-scotty-219775-2.x86_64
+1.1.1.32				(staging3-professional)[s3ldprof-live-gmts04.ix3.lmax - scotty-agentd] Attempting to update scotty-agentd to tf-scotty-219775-2.x86_64
+1.1.1.7				(staging3-professional)[s3ldprof-dr-gmts01.ix3.lmax - scotty-agentd] Package tf-scotty-219775-2.x86_64 is already installed, nothing to do
+1.1.1.7				(staging3-professional)[s3ldprof-dr-gmts01.ix3.lmax - scotty-agentd] Starting service scotty-agentd
+1.1.1.19				(staging3-professional)[s3ldprof-live-binb01.ix3.lmax - scotty-agentd] Package tf-scotty-219775-2.x86_64 is already installed, nothing to do
+1.1.1.19				(staging3-professional)[s3ldprof-live-binb01.ix3.lmax - scotty-agentd] Starting service scotty-agentd
+1.1.1.46				(staging3-professional)[s3ldprof-live-mmmd02.ix3.lmax - scotty-agentd] Package tf-scotty-219775-2.x86_64 is already installed, nothing to do
+1.1.1.46				(staging3-professional)[s3ldprof-live-mmmd02.ix3.lmax - scotty-agentd] Starting service scotty-agentd
+1.1.1.33				(staging3-professional)[s3ldprof-live-gtmt01.ix3.lmax - scotty-agentd] Package tf-scotty-219775-2.x86_64 is already installed, nothing to do
+1.1.1.32				(staging3-professional)[s3ldprof-live-gmts04.ix3.lmax - scotty-agentd] Package tf-scotty-219775-2.x86_64 is already installed, nothing to do
+1.1.1.33				(staging3-professional)[s3ldprof-live-gtmt01.ix3.lmax - scotty-agentd] Starting service scotty-agentd
+1.1.1.32				(staging3-professional)[s3ldprof-live-gmts04.ix3.lmax - scotty-agentd] Starting service scotty-agentd
+1.1.1.6				(staging3-professional)[s3ldprof-dr-ginb01.ix3.lmax - scotty-agentd] Package tf-scotty-219775-2.x86_64 is already installed, nothing to do
+1.1.1.6				(staging3-professional)[s3ldprof-dr-ginb01.ix3.lmax - scotty-agentd] Starting service scotty-agentd
+1.1.1.7				(staging3-professional)[s3ldprof-dr-gmts01.ix3.lmax - scotty-agentd] Service start:
+output = Starting scotty-agentd: [  OK  ]
+error = 
+1.1.1.7				(staging3-professional)[s3ldprof-dr-gmts01.ix3.lmax - scotty-agentd] Started service scotty-agentd
+1.1.1.7				(staging3-professional)[s3ldprof-dr-gmts01.ix3.lmax - scotty-agentd] Updated scotty-agentd to tf-scotty-219775-2.x86_64
+1.1.1.12				(staging3-professional)[s3ldprof-dr-mdbs02.ix3.lmax - scotty-agentd] Attempting to update scotty-agentd to tf-scotty-219775-2.x86_64
+1.1.1.19				(staging3-professional)[s3ldprof-live-binb01.ix3.lmax - scotty-agentd] Service start:
+output = Starting scotty-agentd: [  OK  ]
+error = 
+1.1.1.19				(staging3-professional)[s3ldprof-live-binb01.ix3.lmax - scotty-agentd] Started service scotty-agentd
+1.1.1.19				(staging3-professional)[s3ldprof-live-binb01.ix3.lmax - scotty-agentd] Updated scotty-agentd to tf-scotty-219775-2.x86_64
+1.1.1.15				(staging3-professional)[s3ldprof-dr-mmds02.ix3.lmax - scotty-agentd] Attempting to update scotty-agentd to tf-scotty-219775-2.x86_64
+1.1.1.33				(staging3-professional)[s3ldprof-live-gtmt01.ix3.lmax - scotty-agentd] Service start:
+output = Starting scotty-agentd: [  OK  ]
+error = 
+1.1.1.33				(staging3-professional)[s3ldprof-live-gtmt01.ix3.lmax - scotty-agentd] Started service scotty-agentd
+1.1.1.33				(staging3-professional)[s3ldprof-live-gtmt01.ix3.lmax - scotty-agentd] Updated scotty-agentd to tf-scotty-219775-2.x86_64
+1.1.1.38				(staging3-professional)[s3ldprof-live-mexc02.ix3.lmax - scotty-agentd] Attempting to update scotty-agentd to tf-scotty-219775-2.x86_64
+1.1.1.46				(staging3-professional)[s3ldprof-live-mmmd02.ix3.lmax - scotty-agentd] Service start:
+output = Starting scotty-agentd: [  OK  ]
+error = 
+1.1.1.46				(staging3-professional)[s3ldprof-live-mmmd02.ix3.lmax - scotty-agentd] Started service scotty-agentd
+1.1.1.46				(staging3-professional)[s3ldprof-live-mmmd02.ix3.lmax - scotty-agentd] Updated scotty-agentd to tf-scotty-219775-2.x86_64
+1.1.1.51				(staging3-professional)[s3ldprof-live-mwdb02.ix3.lmax - scotty-agentd] Attempting to update scotty-agentd to tf-scotty-219775-2.x86_64
+1.1.1.32				(staging3-professional)[s3ldprof-live-gmts04.ix3.lmax - scotty-agentd] Service start:
+output = Starting scotty-agentd: [  OK  ]
+error = 
+1.1.1.32				(staging3-professional)[s3ldprof-live-gmts04.ix3.lmax - scotty-agentd] Started service scotty-agentd
+1.1.1.32				(staging3-professional)[s3ldprof-live-gmts04.ix3.lmax - scotty-agentd] Updated scotty-agentd to tf-scotty-219775-2.x86_64
+1.1.1.28				(staging3-professional)[s3ldprof-live-cexc01.ix3.lmax - scotty-agentd] Attempting to update scotty-agentd to tf-scotty-219775-2.x86_64
+1.1.1.12				(staging3-professional)[s3ldprof-dr-mdbs02.ix3.lmax - scotty-agentd] Package tf-scotty-219775-2.x86_64 is already installed, nothing to do
+1.1.1.12				(staging3-professional)[s3ldprof-dr-mdbs02.ix3.lmax - scotty-agentd] Starting service scotty-agentd
+1.1.1.6				(staging3-professional)[s3ldprof-dr-ginb01.ix3.lmax - scotty-agentd] Service start:
+output = Starting scotty-agentd: [  OK  ]
+error = 
+1.1.1.6				(staging3-professional)[s3ldprof-dr-ginb01.ix3.lmax - scotty-agentd] Started service scotty-agentd
+1.1.1.6				(staging3-professional)[s3ldprof-dr-ginb01.ix3.lmax - scotty-agentd] Updated scotty-agentd to tf-scotty-219775-2.x86_64
+1.1.1.2				(staging3-professional)[s3ldprof-dr-bexc01.ix3.lmax - scotty-agentd] Attempting to update scotty-agentd to tf-scotty-219775-2.x86_64
+1.1.1.15				(staging3-professional)[s3ldprof-dr-mmds02.ix3.lmax - scotty-agentd] Package tf-scotty-219775-2.x86_64 is already installed, nothing to do
+1.1.1.15				(staging3-professional)[s3ldprof-dr-mmds02.ix3.lmax - scotty-agentd] Starting service scotty-agentd
+1.1.1.51				(staging3-professional)[s3ldprof-live-mwdb02.ix3.lmax - scotty-agentd] Package tf-scotty-219775-2.x86_64 is already installed, nothing to do
+1.1.1.51				(staging3-professional)[s3ldprof-live-mwdb02.ix3.lmax - scotty-agentd] Starting service scotty-agentd
+1.1.1.28				(staging3-professional)[s3ldprof-live-cexc01.ix3.lmax - scotty-agentd] Package tf-scotty-219775-2.x86_64 is already installed, nothing to do
+1.1.1.28				(staging3-professional)[s3ldprof-live-cexc01.ix3.lmax - scotty-agentd] Starting service scotty-agentd
+1.1.1.38				(staging3-professional)[s3ldprof-live-mexc02.ix3.lmax - scotty-agentd] Package tf-scotty-219775-2.x86_64 is already installed, nothing to do
+1.1.1.38				(staging3-professional)[s3ldprof-live-mexc02.ix3.lmax - scotty-agentd] Starting service scotty-agentd
+1.1.1.2				(staging3-professional)[s3ldprof-dr-bexc01.ix3.lmax - scotty-agentd] Package tf-scotty-219775-2.x86_64 is already installed, nothing to do
+1.1.1.2				(staging3-professional)[s3ldprof-dr-bexc01.ix3.lmax - scotty-agentd] Starting service scotty-agentd
+1.1.1.12				(staging3-professional)[s3ldprof-dr-mdbs02.ix3.lmax - scotty-agentd] Service start:
+output = Starting scotty-agentd: [  OK  ]
+error = 
+1.1.1.12				(staging3-professional)[s3ldprof-dr-mdbs02.ix3.lmax - scotty-agentd] Started service scotty-agentd
+1.1.1.12				(staging3-professional)[s3ldprof-dr-mdbs02.ix3.lmax - scotty-agentd] Updated scotty-agentd to tf-scotty-219775-2.x86_64
+1.1.1.13				(staging3-professional)[s3ldprof-dr-mexc01.ix3.lmax - scotty-agentd] Attempting to update scotty-agentd to tf-scotty-219775-2.x86_64
+1.1.1.15				(staging3-professional)[s3ldprof-dr-mmds02.ix3.lmax - scotty-agentd] Service start:
+output = Starting scotty-agentd: [  OK  ]
+error = 
+1.1.1.15				(staging3-professional)[s3ldprof-dr-mmds02.ix3.lmax - scotty-agentd] Started service scotty-agentd
+1.1.1.15				(staging3-professional)[s3ldprof-dr-mmds02.ix3.lmax - scotty-agentd] Updated scotty-agentd to tf-scotty-219775-2.x86_64
+1.1.1.16				(staging3-professional)[s3ldprof-dr-mwdb02.ix3.lmax - scotty-agentd] Attempting to update scotty-agentd to tf-scotty-219775-2.x86_64
+1.1.1.51				(staging3-professional)[s3ldprof-live-mwdb02.ix3.lmax - scotty-agentd] Service start:
+output = Starting scotty-agentd: [  OK  ]
+error = 
+1.1.1.51				(staging3-professional)[s3ldprof-live-mwdb02.ix3.lmax - scotty-agentd] Started service scotty-agentd
+1.1.1.51				(staging3-professional)[s3ldprof-live-mwdb02.ix3.lmax - scotty-agentd] Updated scotty-agentd to tf-scotty-219775-2.x86_64
+1.1.1.52				(staging3-professional)[s3ldprof-live-stub01.ix3.lmax - scotty-agentd] Attempting to update scotty-agentd to tf-scotty-219775-2.x86_64
+1.1.1.28				(staging3-professional)[s3ldprof-live-cexc01.ix3.lmax - scotty-agentd] Service start:
+output = Starting scotty-agentd: [  OK  ]
+error = 
+1.1.1.28				(staging3-professional)[s3ldprof-live-cexc01.ix3.lmax - scotty-agentd] Started service scotty-agentd
+1.1.1.28				(staging3-professional)[s3ldprof-live-cexc01.ix3.lmax - scotty-agentd] Updated scotty-agentd to tf-scotty-219775-2.x86_64
+1.1.1.29				(staging3-professional)[s3ldprof-live-gmts01.ix3.lmax - scotty-agentd] Attempting to update scotty-agentd to tf-scotty-219775-2.x86_64
+1.1.1.13				(staging3-professional)[s3ldprof-dr-mexc01.ix3.lmax - scotty-agentd] Package tf-scotty-219775-2.x86_64 is already installed, nothing to do
+1.1.1.13				(staging3-professional)[s3ldprof-dr-mexc01.ix3.lmax - scotty-agentd] Starting service scotty-agentd
+1.1.1.38				(staging3-professional)[s3ldprof-live-mexc02.ix3.lmax - scotty-agentd] Service start:
+output = Starting scotty-agentd: [  OK  ]
+error = 
+1.1.1.38				(staging3-professional)[s3ldprof-live-mexc02.ix3.lmax - scotty-agentd] Started service scotty-agentd
+1.1.1.38				(staging3-professional)[s3ldprof-live-mexc02.ix3.lmax - scotty-agentd] Updated scotty-agentd to tf-scotty-219775-2.x86_64
+1.1.1.39				(staging3-professional)[s3ldprof-live-mfix01.ix3.lmax - scotty-agentd] Attempting to update scotty-agentd to tf-scotty-219775-2.x86_64
+1.1.1.2				(staging3-professional)[s3ldprof-dr-bexc01.ix3.lmax - scotty-agentd] Service start:
+output = Starting scotty-agentd: [  OK  ]
+error = 
+1.1.1.2				(staging3-professional)[s3ldprof-dr-bexc01.ix3.lmax - scotty-agentd] Started service scotty-agentd
+1.1.1.2				(staging3-professional)[s3ldprof-dr-bexc01.ix3.lmax - scotty-agentd] Updated scotty-agentd to tf-scotty-219775-2.x86_64
+1.1.1.3				(staging3-professional)[s3ldprof-dr-binb05.ix3.lmax - scotty-agentd] Attempting to update scotty-agentd to tf-scotty-219775-2.x86_64
+1.1.1.52				(staging3-professional)[s3ldprof-live-stub01.ix3.lmax - scotty-agentd] Package tf-scotty-219775-2.x86_64 is already installed, nothing to do
+1.1.1.52				(staging3-professional)[s3ldprof-live-stub01.ix3.lmax - scotty-agentd] Starting service scotty-agentd
+1.1.1.29				(staging3-professional)[s3ldprof-live-gmts01.ix3.lmax - scotty-agentd] Package tf-scotty-219775-2.x86_64 is already installed, nothing to do
+1.1.1.29				(staging3-professional)[s3ldprof-live-gmts01.ix3.lmax - scotty-agentd] Starting service scotty-agentd
+1.1.1.16				(staging3-professional)[s3ldprof-dr-mwdb02.ix3.lmax - scotty-agentd] Package tf-scotty-219775-2.x86_64 is already installed, nothing to do
+1.1.1.16				(staging3-professional)[s3ldprof-dr-mwdb02.ix3.lmax - scotty-agentd] Starting service scotty-agentd
+1.1.1.39				(staging3-professional)[s3ldprof-live-mfix01.ix3.lmax - scotty-agentd] Package tf-scotty-219775-2.x86_64 is already installed, nothing to do
+1.1.1.39				(staging3-professional)[s3ldprof-live-mfix01.ix3.lmax - scotty-agentd] Starting service scotty-agentd
+1.1.1.3				(staging3-professional)[s3ldprof-dr-binb05.ix3.lmax - scotty-agentd] Package tf-scotty-219775-2.x86_64 is already installed, nothing to do
+1.1.1.3				(staging3-professional)[s3ldprof-dr-binb05.ix3.lmax - scotty-agentd] Starting service scotty-agentd
+1.1.1.13				(staging3-professional)[s3ldprof-dr-mexc01.ix3.lmax - scotty-agentd] Service start:
+output = Starting scotty-agentd: [  OK  ]
+error = 
+1.1.1.13				(staging3-professional)[s3ldprof-dr-mexc01.ix3.lmax - scotty-agentd] Started service scotty-agentd
+1.1.1.13				(staging3-professional)[s3ldprof-dr-mexc01.ix3.lmax - scotty-agentd] Updated scotty-agentd to tf-scotty-219775-2.x86_64
+1.1.1.10				(staging3-professional)[s3ldprof-dr-gmts04.ix3.lmax - scotty-agentd] Attempting to update scotty-agentd to tf-scotty-219775-2.x86_64
+1.1.1.52				(staging3-professional)[s3ldprof-live-stub01.ix3.lmax - scotty-agentd] Service start:
+output = Starting scotty-agentd: [  OK  ]
+error = 
+1.1.1.52				(staging3-professional)[s3ldprof-live-stub01.ix3.lmax - scotty-agentd] Started service scotty-agentd
+1.1.1.52				(staging3-professional)[s3ldprof-live-stub01.ix3.lmax - scotty-agentd] Updated scotty-agentd to tf-scotty-219775-2.x86_64
+1.1.1.49				(staging3-professional)[s3ldprof-live-mogw01.ix3.lmax - scotty-agentd] Attempting to update scotty-agentd to tf-scotty-219775-2.x86_64
+1.1.1.16				(staging3-professional)[s3ldprof-dr-mwdb02.ix3.lmax - scotty-agentd] Service start:
+output = Starting scotty-agentd: [  OK  ]
+error = 
+1.1.1.16				(staging3-professional)[s3ldprof-dr-mwdb02.ix3.lmax - scotty-agentd] Started service scotty-agentd
+1.1.1.16				(staging3-professional)[s3ldprof-dr-mwdb02.ix3.lmax - scotty-agentd] Updated scotty-agentd to tf-scotty-219775-2.x86_64
+1.1.1.14				(staging3-professional)[s3ldprof-dr-mfix07.ix3.lmax - scotty-agentd] Attempting to update scotty-agentd to tf-scotty-219775-2.x86_64
+1.1.1.29				(staging3-professional)[s3ldprof-live-gmts01.ix3.lmax - scotty-agentd] Service start:
+output = Starting scotty-agentd: [  OK  ]
+error = 
+1.1.1.29				(staging3-professional)[s3ldprof-live-gmts01.ix3.lmax - scotty-agentd] Started service scotty-agentd
+1.1.1.29				(staging3-professional)[s3ldprof-live-gmts01.ix3.lmax - scotty-agentd] Updated scotty-agentd to tf-scotty-219775-2.x86_64
+1.1.1.27				(staging3-professional)[s3ldprof-live-bogw01.ix3.lmax - scotty-agentd] Attempting to update scotty-agentd to tf-scotty-219775-2.x86_64
+1.1.1.39				(staging3-professional)[s3ldprof-live-mfix01.ix3.lmax - scotty-agentd] Service start:
+output = Starting scotty-agentd: [  OK  ]
+error = 
+1.1.1.39				(staging3-professional)[s3ldprof-live-mfix01.ix3.lmax - scotty-agentd] Started service scotty-agentd
+1.1.1.39				(staging3-professional)[s3ldprof-live-mfix01.ix3.lmax - scotty-agentd] Updated scotty-agentd to tf-scotty-219775-2.x86_64
+1.1.1.36				(staging3-professional)[s3ldprof-live-mdbs02.ix3.lmax - scotty-agentd] Attempting to update scotty-agentd to tf-scotty-219775-2.x86_64
+1.1.1.10				(staging3-professional)[s3ldprof-dr-gmts04.ix3.lmax - scotty-agentd] Package tf-scotty-219775-2.x86_64 is already installed, nothing to do
+1.1.1.10				(staging3-professional)[s3ldprof-dr-gmts04.ix3.lmax - scotty-agentd] Starting service scotty-agentd
+1.1.1.49				(staging3-professional)[s3ldprof-live-mogw01.ix3.lmax - scotty-agentd] Package tf-scotty-219775-2.x86_64 is already installed, nothing to do
+1.1.1.49				(staging3-professional)[s3ldprof-live-mogw01.ix3.lmax - scotty-agentd] Starting service scotty-agentd
+1.1.1.3				(staging3-professional)[s3ldprof-dr-binb05.ix3.lmax - scotty-agentd] Service start:
+output = Starting scotty-agentd: [  OK  ]
+error = 
+1.1.1.3				(staging3-professional)[s3ldprof-dr-binb05.ix3.lmax - scotty-agentd] Started service scotty-agentd
+1.1.1.3				(staging3-professional)[s3ldprof-dr-binb05.ix3.lmax - scotty-agentd] Updated scotty-agentd to tf-scotty-219775-2.x86_64
+1.1.1.1				(staging3-professional)[s3ldprof-dr-adb01.ix3.lmax - scotty-agentd] Attempting to update scotty-agentd to tf-scotty-219775-2.x86_64
+1.1.1.27				(staging3-professional)[s3ldprof-live-bogw01.ix3.lmax - scotty-agentd] Package tf-scotty-219775-2.x86_64 is already installed, nothing to do
+1.1.1.27				(staging3-professional)[s3ldprof-live-bogw01.ix3.lmax - scotty-agentd] Starting service scotty-agentd
+1.1.1.14				(staging3-professional)[s3ldprof-dr-mfix07.ix3.lmax - scotty-agentd] Package tf-scotty-219775-2.x86_64 is already installed, nothing to do
+1.1.1.14				(staging3-professional)[s3ldprof-dr-mfix07.ix3.lmax - scotty-agentd] Starting service scotty-agentd
+1.1.1.36				(staging3-professional)[s3ldprof-live-mdbs02.ix3.lmax - scotty-agentd] Package tf-scotty-219775-2.x86_64 is already installed, nothing to do
+1.1.1.36				(staging3-professional)[s3ldprof-live-mdbs02.ix3.lmax - scotty-agentd] Starting service scotty-agentd
+1.1.1.10				(staging3-professional)[s3ldprof-dr-gmts04.ix3.lmax - scotty-agentd] Service start:
+output = Starting scotty-agentd: [  OK  ]
+error = 
+1.1.1.10				(staging3-professional)[s3ldprof-dr-gmts04.ix3.lmax - scotty-agentd] Started service scotty-agentd
+1.1.1.10				(staging3-professional)[s3ldprof-dr-gmts04.ix3.lmax - scotty-agentd] Updated scotty-agentd to tf-scotty-219775-2.x86_64
+1.1.1.11				(staging3-professional)[s3ldprof-dr-gout01.ix3.lmax - scotty-agentd] Attempting to update scotty-agentd to tf-scotty-219775-2.x86_64
+1.1.1.1				(staging3-professional)[s3ldprof-dr-adb01.ix3.lmax - scotty-agentd] Package tf-scotty-219775-2.x86_64 is already installed, nothing to do
+1.1.1.1				(staging3-professional)[s3ldprof-dr-adb01.ix3.lmax - scotty-agentd] Starting service scotty-agentd
+1.1.1.49				(staging3-professional)[s3ldprof-live-mogw01.ix3.lmax - scotty-agentd] Service start:
+output = Starting scotty-agentd: [  OK  ]
+error = 
+1.1.1.49				(staging3-professional)[s3ldprof-live-mogw01.ix3.lmax - scotty-agentd] Started service scotty-agentd
+1.1.1.49				(staging3-professional)[s3ldprof-live-mogw01.ix3.lmax - scotty-agentd] Updated scotty-agentd to tf-scotty-219775-2.x86_64
+1.1.1.50				(staging3-professional)[s3ldprof-live-mwdb01.ix3.lmax - scotty-agentd] Attempting to update scotty-agentd to tf-scotty-219775-2.x86_64
+1.1.1.27				(staging3-professional)[s3ldprof-live-bogw01.ix3.lmax - scotty-agentd] Service start:
+output = Starting scotty-agentd: [  OK  ]
+error = 
+1.1.1.27				(staging3-professional)[s3ldprof-live-bogw01.ix3.lmax - scotty-agentd] Started service scotty-agentd
+1.1.1.27				(staging3-professional)[s3ldprof-live-bogw01.ix3.lmax - scotty-agentd] Updated scotty-agentd to tf-scotty-219775-2.x86_64
+1.1.1.43				(staging3-professional)[s3ldprof-live-mmds01.ix3.lmax - scotty-agentd] Attempting to update scotty-agentd to tf-scotty-219775-2.x86_64
+1.1.1.14				(staging3-professional)[s3ldprof-dr-mfix07.ix3.lmax - scotty-agentd] Service start:
+output = Starting scotty-agentd: [  OK  ]
+error = 
+1.1.1.14				(staging3-professional)[s3ldprof-dr-mfix07.ix3.lmax - scotty-agentd] Started service scotty-agentd
+1.1.1.14				(staging3-professional)[s3ldprof-dr-mfix07.ix3.lmax - scotty-agentd] Updated scotty-agentd to tf-scotty-219775-2.x86_64
+1.1.1.11				(staging3-professional)[s3ldprof-dr-gout01.ix3.lmax - scotty-agentd] Package tf-scotty-219775-2.x86_64 is already installed, nothing to do
+1.1.1.11				(staging3-professional)[s3ldprof-dr-gout01.ix3.lmax - scotty-agentd] Starting service scotty-agentd
+1.1.1.23				(staging3-professional)[s3ldprof-live-binb05.ix3.lmax - scotty-agentd] Attempting to update scotty-agentd to tf-scotty-219775-2.x86_64
+1.1.1.36				(staging3-professional)[s3ldprof-live-mdbs02.ix3.lmax - scotty-agentd] Service start:
+output = Starting scotty-agentd: [  OK  ]
+error = 
+1.1.1.36				(staging3-professional)[s3ldprof-live-mdbs02.ix3.lmax - scotty-agentd] Started service scotty-agentd
+1.1.1.36				(staging3-professional)[s3ldprof-live-mdbs02.ix3.lmax - scotty-agentd] Updated scotty-agentd to tf-scotty-219775-2.x86_64
+1.1.1.37				(staging3-professional)[s3ldprof-live-mexc01.ix3.lmax - scotty-agentd] Attempting to update scotty-agentd to tf-scotty-219775-2.x86_64
+1.1.1.50				(staging3-professional)[s3ldprof-live-mwdb01.ix3.lmax - scotty-agentd] Package tf-scotty-219775-2.x86_64 is already installed, nothing to do
+1.1.1.50				(staging3-professional)[s3ldprof-live-mwdb01.ix3.lmax - scotty-agentd] Starting service scotty-agentd
+1.1.1.43				(staging3-professional)[s3ldprof-live-mmds01.ix3.lmax - scotty-agentd] Package tf-scotty-219775-2.x86_64 is already installed, nothing to do
+1.1.1.43				(staging3-professional)[s3ldprof-live-mmds01.ix3.lmax - scotty-agentd] Starting service scotty-agentd
+1.1.1.1				(staging3-professional)[s3ldprof-dr-adb01.ix3.lmax - scotty-agentd] Service start:
+output = Starting scotty-agentd: [  OK  ]
+error = 
+1.1.1.1				(staging3-professional)[s3ldprof-dr-adb01.ix3.lmax - scotty-agentd] Started service scotty-agentd
+1.1.1.1				(staging3-professional)[s3ldprof-dr-adb01.ix3.lmax - scotty-agentd] Updated scotty-agentd to tf-scotty-219775-2.x86_64
+1.1.1.41				(staging3-professional)[s3ldprof-live-mftr01.ix3.lmax - scotty-agentd] Attempting to update scotty-agentd to tf-scotty-219775-2.x86_64
+1.1.1.23				(staging3-professional)[s3ldprof-live-binb05.ix3.lmax - scotty-agentd] Package tf-scotty-219775-2.x86_64 is already installed, nothing to do
+1.1.1.23				(staging3-professional)[s3ldprof-live-binb05.ix3.lmax - scotty-agentd] Starting service scotty-agentd
+1.1.1.37				(staging3-professional)[s3ldprof-live-mexc01.ix3.lmax - scotty-agentd] Package tf-scotty-219775-2.x86_64 is already installed, nothing to do
+1.1.1.37				(staging3-professional)[s3ldprof-live-mexc01.ix3.lmax - scotty-agentd] Starting service scotty-agentd
+1.1.1.11				(staging3-professional)[s3ldprof-dr-gout01.ix3.lmax - scotty-agentd] Service start:
+output = Starting scotty-agentd: [  OK  ]
+error = 
+1.1.1.11				(staging3-professional)[s3ldprof-dr-gout01.ix3.lmax - scotty-agentd] Started service scotty-agentd
+1.1.1.11				(staging3-professional)[s3ldprof-dr-gout01.ix3.lmax - scotty-agentd] Updated scotty-agentd to tf-scotty-219775-2.x86_64
+1.1.1.21				(staging3-professional)[s3ldprof-live-binb03.ix3.lmax - scotty-agentd] Attempting to update scotty-agentd to tf-scotty-219775-2.x86_64
+1.1.1.41				(staging3-professional)[s3ldprof-live-mftr01.ix3.lmax - scotty-agentd] Package tf-scotty-219775-2.x86_64 is already installed, nothing to do
+1.1.1.41				(staging3-professional)[s3ldprof-live-mftr01.ix3.lmax - scotty-agentd] Starting service scotty-agentd
+1.1.1.50				(staging3-professional)[s3ldprof-live-mwdb01.ix3.lmax - scotty-agentd] Service start:
+output = Starting scotty-agentd: [  OK  ]
+error = 
+1.1.1.50				(staging3-professional)[s3ldprof-live-mwdb01.ix3.lmax - scotty-agentd] Started service scotty-agentd
+1.1.1.50				(staging3-professional)[s3ldprof-live-mwdb01.ix3.lmax - scotty-agentd] Updated scotty-agentd to tf-scotty-219775-2.x86_64
+1.1.1.25				(staging3-professional)[s3ldprof-live-binb07.ix3.lmax - scotty-agentd] Attempting to update scotty-agentd to tf-scotty-219775-2.x86_64
+1.1.1.43				(staging3-professional)[s3ldprof-live-mmds01.ix3.lmax - scotty-agentd] Service start:
+output = Starting scotty-agentd: [  OK  ]
+error = 
+1.1.1.43				(staging3-professional)[s3ldprof-live-mmds01.ix3.lmax - scotty-agentd] Started service scotty-agentd
+1.1.1.43				(staging3-professional)[s3ldprof-live-mmds01.ix3.lmax - scotty-agentd] Updated scotty-agentd to tf-scotty-219775-2.x86_64
+1.1.1.44				(staging3-professional)[s3ldprof-live-mmds02.ix3.lmax - scotty-agentd] Attempting to update scotty-agentd to tf-scotty-219775-2.x86_64
+1.1.1.23				(staging3-professional)[s3ldprof-live-binb05.ix3.lmax - scotty-agentd] Service start:
+output = Starting scotty-agentd: [  OK  ]
+error = 
+1.1.1.23				(staging3-professional)[s3ldprof-live-binb05.ix3.lmax - scotty-agentd] Started service scotty-agentd
+1.1.1.23				(staging3-professional)[s3ldprof-live-binb05.ix3.lmax - scotty-agentd] Updated scotty-agentd to tf-scotty-219775-2.x86_64
+1.1.1.24				(staging3-professional)[s3ldprof-live-binb06.ix3.lmax - scotty-agentd] Attempting to update scotty-agentd to tf-scotty-219775-2.x86_64
+1.1.1.21				(staging3-professional)[s3ldprof-live-binb03.ix3.lmax - scotty-agentd] Package tf-scotty-219775-2.x86_64 is already installed, nothing to do
+1.1.1.21				(staging3-professional)[s3ldprof-live-binb03.ix3.lmax - scotty-agentd] Starting service scotty-agentd
+1.1.1.25				(staging3-professional)[s3ldprof-live-binb07.ix3.lmax - scotty-agentd] Package tf-scotty-219775-2.x86_64 is already installed, nothing to do
+1.1.1.25				(staging3-professional)[s3ldprof-live-binb07.ix3.lmax - scotty-agentd] Starting service scotty-agentd
+1.1.1.37				(staging3-professional)[s3ldprof-live-mexc01.ix3.lmax - scotty-agentd] Service start:
+output = Starting scotty-agentd: [  OK  ]
+error = 
+1.1.1.37				(staging3-professional)[s3ldprof-live-mexc01.ix3.lmax - scotty-agentd] Started service scotty-agentd
+1.1.1.37				(staging3-professional)[s3ldprof-live-mexc01.ix3.lmax - scotty-agentd] Updated scotty-agentd to tf-scotty-219775-2.x86_64
+1.1.1.41				(staging3-professional)[s3ldprof-live-mftr01.ix3.lmax - scotty-agentd] Service start:
+output = Starting scotty-agentd: [  OK  ]
+error = 
+1.1.1.41				(staging3-professional)[s3ldprof-live-mftr01.ix3.lmax - scotty-agentd] Started service scotty-agentd
+1.1.1.41				(staging3-professional)[s3ldprof-live-mftr01.ix3.lmax - scotty-agentd] Updated scotty-agentd to tf-scotty-219775-2.x86_64
+1.1.1.42				(staging3-professional)[s3ldprof-live-mftr02.ix3.lmax - scotty-agentd] Attempting to update scotty-agentd to tf-scotty-219775-2.x86_64
+1.1.1.44				(staging3-professional)[s3ldprof-live-mmds02.ix3.lmax - scotty-agentd] Package tf-scotty-219775-2.x86_64 is already installed, nothing to do
+1.1.1.44				(staging3-professional)[s3ldprof-live-mmds02.ix3.lmax - scotty-agentd] Starting service scotty-agentd
+1.1.1.21				(staging3-professional)[s3ldprof-live-binb03.ix3.lmax - scotty-agentd] Service start:
+output = Starting scotty-agentd: [  OK  ]
+error = 
+1.1.1.21				(staging3-professional)[s3ldprof-live-binb03.ix3.lmax - scotty-agentd] Started service scotty-agentd
+1.1.1.21				(staging3-professional)[s3ldprof-live-binb03.ix3.lmax - scotty-agentd] Updated scotty-agentd to tf-scotty-219775-2.x86_64
+1.1.1.22				(staging3-professional)[s3ldprof-live-binb04.ix3.lmax - scotty-agentd] Attempting to update scotty-agentd to tf-scotty-219775-2.x86_64
+1.1.1.24				(staging3-professional)[s3ldprof-live-binb06.ix3.lmax - scotty-agentd] Package tf-scotty-219775-2.x86_64 is already installed, nothing to do
+1.1.1.24				(staging3-professional)[s3ldprof-live-binb06.ix3.lmax - scotty-agentd] Starting service scotty-agentd
+1.1.1.42				(staging3-professional)[s3ldprof-live-mftr02.ix3.lmax - scotty-agentd] Package tf-scotty-219775-2.x86_64 is already installed, nothing to do
+1.1.1.42				(staging3-professional)[s3ldprof-live-mftr02.ix3.lmax - scotty-agentd] Starting service scotty-agentd
+1.1.1.25				(staging3-professional)[s3ldprof-live-binb07.ix3.lmax - scotty-agentd] Service start:
+output = Starting scotty-agentd: [  OK  ]
+error = 
+1.1.1.25				(staging3-professional)[s3ldprof-live-binb07.ix3.lmax - scotty-agentd] Started service scotty-agentd
+1.1.1.25				(staging3-professional)[s3ldprof-live-binb07.ix3.lmax - scotty-agentd] Updated scotty-agentd to tf-scotty-219775-2.x86_64
+1.1.1.26				(staging3-professional)[s3ldprof-live-binb08.ix3.lmax - scotty-agentd] Attempting to update scotty-agentd to tf-scotty-219775-2.x86_64
+1.1.1.22				(staging3-professional)[s3ldprof-live-binb04.ix3.lmax - scotty-agentd] Package tf-scotty-219775-2.x86_64 is already installed, nothing to do
+1.1.1.22				(staging3-professional)[s3ldprof-live-binb04.ix3.lmax - scotty-agentd] Starting service scotty-agentd
+1.1.1.26				(staging3-professional)[s3ldprof-live-binb08.ix3.lmax - scotty-agentd] Package tf-scotty-219775-2.x86_64 is already installed, nothing to do
+1.1.1.26				(staging3-professional)[s3ldprof-live-binb08.ix3.lmax - scotty-agentd] Starting service scotty-agentd
+1.1.1.44				(staging3-professional)[s3ldprof-live-mmds02.ix3.lmax - scotty-agentd] Service start:
+output = Starting scotty-agentd: [  OK  ]
+error = 
+1.1.1.44				(staging3-professional)[s3ldprof-live-mmds02.ix3.lmax - scotty-agentd] Started service scotty-agentd
+1.1.1.44				(staging3-professional)[s3ldprof-live-mmds02.ix3.lmax - scotty-agentd] Updated scotty-agentd to tf-scotty-219775-2.x86_64
+1.1.1.45				(staging3-professional)[s3ldprof-live-mmmd01.ix3.lmax - scotty-agentd] Attempting to update scotty-agentd to tf-scotty-219775-2.x86_64
+1.1.1.24				(staging3-professional)[s3ldprof-live-binb06.ix3.lmax - scotty-agentd] Service start:
+output = Starting scotty-agentd: [  OK  ]
+error = 
+1.1.1.24				(staging3-professional)[s3ldprof-live-binb06.ix3.lmax - scotty-agentd] Started service scotty-agentd
+1.1.1.24				(staging3-professional)[s3ldprof-live-binb06.ix3.lmax - scotty-agentd] Updated scotty-agentd to tf-scotty-219775-2.x86_64
+1.1.1.40				(staging3-professional)[s3ldprof-live-mfix02.ix3.lmax - scotty-agentd] Attempting to update scotty-agentd to tf-scotty-219775-2.x86_64
+1.1.1.42				(staging3-professional)[s3ldprof-live-mftr02.ix3.lmax - scotty-agentd] Service start:
+output = Starting scotty-agentd: [  OK  ]
+error = 
+1.1.1.42				(staging3-professional)[s3ldprof-live-mftr02.ix3.lmax - scotty-agentd] Started service scotty-agentd
+1.1.1.42				(staging3-professional)[s3ldprof-live-mftr02.ix3.lmax - scotty-agentd] Updated scotty-agentd to tf-scotty-219775-2.x86_64
+1.1.1.20				(staging3-professional)[s3ldprof-live-binb02.ix3.lmax - scotty-agentd] Attempting to update scotty-agentd to tf-scotty-219775-2.x86_64
+1.1.1.45				(staging3-professional)[s3ldprof-live-mmmd01.ix3.lmax - scotty-agentd] Package tf-scotty-219775-2.x86_64 is already installed, nothing to do
+1.1.1.45				(staging3-professional)[s3ldprof-live-mmmd01.ix3.lmax - scotty-agentd] Starting service scotty-agentd
+1.1.1.40				(staging3-professional)[s3ldprof-live-mfix02.ix3.lmax - scotty-agentd] Package tf-scotty-219775-2.x86_64 is already installed, nothing to do
+1.1.1.40				(staging3-professional)[s3ldprof-live-mfix02.ix3.lmax - scotty-agentd] Starting service scotty-agentd
+1.1.1.22				(staging3-professional)[s3ldprof-live-binb04.ix3.lmax - scotty-agentd] Service start:
+output = Starting scotty-agentd: [  OK  ]
+error = 
+1.1.1.22				(staging3-professional)[s3ldprof-live-binb04.ix3.lmax - scotty-agentd] Started service scotty-agentd
+1.1.1.22				(staging3-professional)[s3ldprof-live-binb04.ix3.lmax - scotty-agentd] Updated scotty-agentd to tf-scotty-219775-2.x86_64
+1.1.1.26				(staging3-professional)[s3ldprof-live-binb08.ix3.lmax - scotty-agentd] Service start:
+output = Starting scotty-agentd: [  OK  ]
+error = 
+1.1.1.26				(staging3-professional)[s3ldprof-live-binb08.ix3.lmax - scotty-agentd] Started service scotty-agentd
+1.1.1.26				(staging3-professional)[s3ldprof-live-binb08.ix3.lmax - scotty-agentd] Updated scotty-agentd to tf-scotty-219775-2.x86_64
+1.1.1.20				(staging3-professional)[s3ldprof-live-binb02.ix3.lmax - scotty-agentd] Package tf-scotty-219775-2.x86_64 is already installed, nothing to do
+1.1.1.20				(staging3-professional)[s3ldprof-live-binb02.ix3.lmax - scotty-agentd] Starting service scotty-agentd
+1.1.1.45				(staging3-professional)[s3ldprof-live-mmmd01.ix3.lmax - scotty-agentd] Service start:
+output = Starting scotty-agentd: [  OK  ]
+error = 
+1.1.1.45				(staging3-professional)[s3ldprof-live-mmmd01.ix3.lmax - scotty-agentd] Started service scotty-agentd
+1.1.1.45				(staging3-professional)[s3ldprof-live-mmmd01.ix3.lmax - scotty-agentd] Updated scotty-agentd to tf-scotty-219775-2.x86_64
+1.1.1.40				(staging3-professional)[s3ldprof-live-mfix02.ix3.lmax - scotty-agentd] Service start:
+output = Starting scotty-agentd: [  OK  ]
+error = 
+1.1.1.40				(staging3-professional)[s3ldprof-live-mfix02.ix3.lmax - scotty-agentd] Started service scotty-agentd
+1.1.1.40				(staging3-professional)[s3ldprof-live-mfix02.ix3.lmax - scotty-agentd] Updated scotty-agentd to tf-scotty-219775-2.x86_64
+1.1.1.20				(staging3-professional)[s3ldprof-live-binb02.ix3.lmax - scotty-agentd] Service start:
+output = Starting scotty-agentd: [  OK  ]
+error = 
+1.1.1.20				(staging3-professional)[s3ldprof-live-binb02.ix3.lmax - scotty-agentd] Started service scotty-agentd
+1.1.1.20				(staging3-professional)[s3ldprof-live-binb02.ix3.lmax - scotty-agentd] Updated scotty-agentd to tf-scotty-219775-2.x86_64
+1.1.1.53				(staging3-professional)[s3ldprof-live-deploy01.ix3.lmax - scotty-server] Attempting to update scotty-server to tf-scotty-server-219775-2.x86_64
+1.1.1.53				(staging3-professional)[s3ldprof-live-deploy01.ix3.lmax - scotty-server] Package tf-scotty-server-219775-2.x86_64 is already installed, nothing to do
+1.1.1.53				(staging3-professional)[s3ldprof-live-deploy01.ix3.lmax - scotty-server] Starting service scotty-server
+1.1.1.53				(staging3-professional)[s3ldprof-live-deploy01.ix3.lmax - scotty-server] Service start:
+output = Starting scotty-server: [  OK  ]
+error = 
+1.1.1.53				(staging3-professional)[s3ldprof-live-deploy01.ix3.lmax - scotty-server] Started service scotty-server
+1.1.1.53				(staging3-professional)[s3ldprof-live-deploy01.ix3.lmax - scotty-server] Updated scotty-server to tf-scotty-server-219775-2.x86_64
+1.1.1			(staging3-professional)Finished (ScottyInstance{name='ix3-stg3-prof', uri='https://s3ldprof-live-deploy01.ix3.lmax'}) update scotty to version 219775-2 in 0 min 05.6 sec
+1.1.1			Finished (staging3-professional) (ScottyInstance{name='ix3-stg3-prof', uri='https://s3ldprof-live-deploy01.ix3.lmax'}) update scotty to version 219775-2 in 0 min 05.6 sec
+
+ -------------------------------------------- 
+
+
+ -------------------------------------------- 
+
+1.1.2			Running (staging3-interbank) (ScottyInstance{name='ix3-stg3-inst', uri='https://s3ldinst-live-deploy01.ix3.lmax'}) update scotty to version 219775-2
+1.1.2			(staging3-interbank)Running (ScottyInstance{name='ix3-stg3-inst', uri='https://s3ldinst-live-deploy01.ix3.lmax'}) update scotty to version 219775-2
+1.1.2.9				(staging3-interbank)[s3ldinst-live-mdbs02.ix3.lmax - scotty-agentd] Attempting to update scotty-agentd to tf-scotty-219775-2.x86_64
+1.1.2.13				(staging3-interbank)[s3ldinst-live-mfix02.ix3.lmax - scotty-agentd] Attempting to update scotty-agentd to tf-scotty-219775-2.x86_64
+1.1.2.5				(staging3-interbank)[s3ldinst-live-binb02.ix3.lmax - scotty-agentd] Attempting to update scotty-agentd to tf-scotty-219775-2.x86_64
+1.1.2.7				(staging3-interbank)[s3ldinst-live-cexc01.ix3.lmax - scotty-agentd] Attempting to update scotty-agentd to tf-scotty-219775-2.x86_64
+1.1.2.2				(staging3-interbank)[s3ldinst-live-bexc01.ix3.lmax - scotty-agentd] Attempting to update scotty-agentd to tf-scotty-219775-2.x86_64
+1.1.2.19				(staging3-interbank)[s3ldinst-live-mmds02.ix3.lmax - scotty-agentd] Attempting to update scotty-agentd to tf-scotty-219775-2.x86_64
+1.1.2.9				(staging3-interbank)[s3ldinst-live-mdbs02.ix3.lmax - scotty-agentd] Package tf-scotty-219775-2.x86_64 is already installed, nothing to do
+1.1.2.9				(staging3-interbank)[s3ldinst-live-mdbs02.ix3.lmax - scotty-agentd] Starting service scotty-agentd
+1.1.2.13				(staging3-interbank)[s3ldinst-live-mfix02.ix3.lmax - scotty-agentd] Package tf-scotty-219775-2.x86_64 is already installed, nothing to do
+1.1.2.13				(staging3-interbank)[s3ldinst-live-mfix02.ix3.lmax - scotty-agentd] Starting service scotty-agentd
+1.1.2.7				(staging3-interbank)[s3ldinst-live-cexc01.ix3.lmax - scotty-agentd] Package tf-scotty-219775-2.x86_64 is already installed, nothing to do
+1.1.2.7				(staging3-interbank)[s3ldinst-live-cexc01.ix3.lmax - scotty-agentd] Starting service scotty-agentd
+1.1.2.2				(staging3-interbank)[s3ldinst-live-bexc01.ix3.lmax - scotty-agentd] Package tf-scotty-219775-2.x86_64 is already installed, nothing to do
+1.1.2.2				(staging3-interbank)[s3ldinst-live-bexc01.ix3.lmax - scotty-agentd] Starting service scotty-agentd
+1.1.2.19				(staging3-interbank)[s3ldinst-live-mmds02.ix3.lmax - scotty-agentd] Package tf-scotty-219775-2.x86_64 is already installed, nothing to do
+1.1.2.19				(staging3-interbank)[s3ldinst-live-mmds02.ix3.lmax - scotty-agentd] Starting service scotty-agentd
+1.1.2.5				(staging3-interbank)[s3ldinst-live-binb02.ix3.lmax - scotty-agentd] Package tf-scotty-219775-2.x86_64 is already installed, nothing to do
+1.1.2.5				(staging3-interbank)[s3ldinst-live-binb02.ix3.lmax - scotty-agentd] Starting service scotty-agentd
+1.1.2.13				(staging3-interbank)[s3ldinst-live-mfix02.ix3.lmax - scotty-agentd] Service start:
+output = Starting scotty-agentd: [  OK  ]
+error = 
+1.1.2.13				(staging3-interbank)[s3ldinst-live-mfix02.ix3.lmax - scotty-agentd] Started service scotty-agentd
+1.1.2.13				(staging3-interbank)[s3ldinst-live-mfix02.ix3.lmax - scotty-agentd] Updated scotty-agentd to tf-scotty-219775-2.x86_64
+1.1.2.14				(staging3-interbank)[s3ldinst-live-mfix03.ix3.lmax - scotty-agentd] Attempting to update scotty-agentd to tf-scotty-219775-2.x86_64
+1.1.2.7				(staging3-interbank)[s3ldinst-live-cexc01.ix3.lmax - scotty-agentd] Service start:
+output = Starting scotty-agentd: [  OK  ]
+error = 
+1.1.2.7				(staging3-interbank)[s3ldinst-live-cexc01.ix3.lmax - scotty-agentd] Started service scotty-agentd
+1.1.2.7				(staging3-interbank)[s3ldinst-live-cexc01.ix3.lmax - scotty-agentd] Updated scotty-agentd to tf-scotty-219775-2.x86_64
+1.1.2.6				(staging3-interbank)[s3ldinst-live-bmts01.ix3.lmax - scotty-agentd] Attempting to update scotty-agentd to tf-scotty-219775-2.x86_64
+1.1.2.19				(staging3-interbank)[s3ldinst-live-mmds02.ix3.lmax - scotty-agentd] Service start:
+output = Starting scotty-agentd: [  OK  ]
+error = 
+1.1.2.19				(staging3-interbank)[s3ldinst-live-mmds02.ix3.lmax - scotty-agentd] Started service scotty-agentd
+1.1.2.19				(staging3-interbank)[s3ldinst-live-mmds02.ix3.lmax - scotty-agentd] Updated scotty-agentd to tf-scotty-219775-2.x86_64
+1.1.2.18				(staging3-interbank)[s3ldinst-live-mmds01.ix3.lmax - scotty-agentd] Attempting to update scotty-agentd to tf-scotty-219775-2.x86_64
+1.1.2.9				(staging3-interbank)[s3ldinst-live-mdbs02.ix3.lmax - scotty-agentd] Service start:
+output = Starting scotty-agentd: [  OK  ]
+error = 
+1.1.2.9				(staging3-interbank)[s3ldinst-live-mdbs02.ix3.lmax - scotty-agentd] Started service scotty-agentd
+1.1.2.9				(staging3-interbank)[s3ldinst-live-mdbs02.ix3.lmax - scotty-agentd] Updated scotty-agentd to tf-scotty-219775-2.x86_64
+1.1.2.10				(staging3-interbank)[s3ldinst-live-mexc01.ix3.lmax - scotty-agentd] Attempting to update scotty-agentd to tf-scotty-219775-2.x86_64
+1.1.2.5				(staging3-interbank)[s3ldinst-live-binb02.ix3.lmax - scotty-agentd] Service start:
+output = Starting scotty-agentd: [  OK  ]
+error = 
+1.1.2.5				(staging3-interbank)[s3ldinst-live-binb02.ix3.lmax - scotty-agentd] Started service scotty-agentd
+1.1.2.5				(staging3-interbank)[s3ldinst-live-binb02.ix3.lmax - scotty-agentd] Updated scotty-agentd to tf-scotty-219775-2.x86_64
+1.1.2.4				(staging3-interbank)[s3ldinst-live-binb01.ix3.lmax - scotty-agentd] Attempting to update scotty-agentd to tf-scotty-219775-2.x86_64
+1.1.2.2				(staging3-interbank)[s3ldinst-live-bexc01.ix3.lmax - scotty-agentd] Service start:
+output = Starting scotty-agentd: [  OK  ]
+error = 
+1.1.2.2				(staging3-interbank)[s3ldinst-live-bexc01.ix3.lmax - scotty-agentd] Started service scotty-agentd
+1.1.2.2				(staging3-interbank)[s3ldinst-live-bexc01.ix3.lmax - scotty-agentd] Updated scotty-agentd to tf-scotty-219775-2.x86_64
+1.1.2.3				(staging3-interbank)[s3ldinst-live-bexc02.ix3.lmax - scotty-agentd] Attempting to update scotty-agentd to tf-scotty-219775-2.x86_64
+1.1.2.6				(staging3-interbank)[s3ldinst-live-bmts01.ix3.lmax - scotty-agentd] Package tf-scotty-219775-2.x86_64 is already installed, nothing to do
+1.1.2.6				(staging3-interbank)[s3ldinst-live-bmts01.ix3.lmax - scotty-agentd] Starting service scotty-agentd
+1.1.2.4				(staging3-interbank)[s3ldinst-live-binb01.ix3.lmax - scotty-agentd] Package tf-scotty-219775-2.x86_64 is already installed, nothing to do
+1.1.2.4				(staging3-interbank)[s3ldinst-live-binb01.ix3.lmax - scotty-agentd] Starting service scotty-agentd
+1.1.2.14				(staging3-interbank)[s3ldinst-live-mfix03.ix3.lmax - scotty-agentd] Package tf-scotty-219775-2.x86_64 is already installed, nothing to do
+1.1.2.14				(staging3-interbank)[s3ldinst-live-mfix03.ix3.lmax - scotty-agentd] Starting service scotty-agentd
+1.1.2.18				(staging3-interbank)[s3ldinst-live-mmds01.ix3.lmax - scotty-agentd] Package tf-scotty-219775-2.x86_64 is already installed, nothing to do
+1.1.2.18				(staging3-interbank)[s3ldinst-live-mmds01.ix3.lmax - scotty-agentd] Starting service scotty-agentd
+1.1.2.10				(staging3-interbank)[s3ldinst-live-mexc01.ix3.lmax - scotty-agentd] Package tf-scotty-219775-2.x86_64 is already installed, nothing to do
+1.1.2.10				(staging3-interbank)[s3ldinst-live-mexc01.ix3.lmax - scotty-agentd] Starting service scotty-agentd
+1.1.2.3				(staging3-interbank)[s3ldinst-live-bexc02.ix3.lmax - scotty-agentd] Package tf-scotty-219775-2.x86_64 is already installed, nothing to do
+1.1.2.3				(staging3-interbank)[s3ldinst-live-bexc02.ix3.lmax - scotty-agentd] Starting service scotty-agentd
+1.1.2.4				(staging3-interbank)[s3ldinst-live-binb01.ix3.lmax - scotty-agentd] Service start:
+output = Starting scotty-agentd: [  OK  ]
+error = 
+1.1.2.4				(staging3-interbank)[s3ldinst-live-binb01.ix3.lmax - scotty-agentd] Started service scotty-agentd
+1.1.2.4				(staging3-interbank)[s3ldinst-live-binb01.ix3.lmax - scotty-agentd] Updated scotty-agentd to tf-scotty-219775-2.x86_64
+1.1.2.8				(staging3-interbank)[s3ldinst-live-mdbs01.ix3.lmax - scotty-agentd] Attempting to update scotty-agentd to tf-scotty-219775-2.x86_64
+1.1.2.6				(staging3-interbank)[s3ldinst-live-bmts01.ix3.lmax - scotty-agentd] Service start:
+output = Starting scotty-agentd: [  OK  ]
+error = 
+1.1.2.6				(staging3-interbank)[s3ldinst-live-bmts01.ix3.lmax - scotty-agentd] Started service scotty-agentd
+1.1.2.6				(staging3-interbank)[s3ldinst-live-bmts01.ix3.lmax - scotty-agentd] Updated scotty-agentd to tf-scotty-219775-2.x86_64
+1.1.2.1				(staging3-interbank)[s3ldinst-dr-cexc01.ix3.lmax - scotty-agentd] Attempting to update scotty-agentd to tf-scotty-219775-2.x86_64
+1.1.2.14				(staging3-interbank)[s3ldinst-live-mfix03.ix3.lmax - scotty-agentd] Service start:
+output = Starting scotty-agentd: [  OK  ]
+error = 
+1.1.2.14				(staging3-interbank)[s3ldinst-live-mfix03.ix3.lmax - scotty-agentd] Started service scotty-agentd
+1.1.2.14				(staging3-interbank)[s3ldinst-live-mfix03.ix3.lmax - scotty-agentd] Updated scotty-agentd to tf-scotty-219775-2.x86_64
+1.1.2.12				(staging3-interbank)[s3ldinst-live-mfix01.ix3.lmax - scotty-agentd] Attempting to update scotty-agentd to tf-scotty-219775-2.x86_64
+1.1.2.18				(staging3-interbank)[s3ldinst-live-mmds01.ix3.lmax - scotty-agentd] Service start:
+output = Starting scotty-agentd: [  OK  ]
+error = 
+1.1.2.18				(staging3-interbank)[s3ldinst-live-mmds01.ix3.lmax - scotty-agentd] Started service scotty-agentd
+1.1.2.18				(staging3-interbank)[s3ldinst-live-mmds01.ix3.lmax - scotty-agentd] Updated scotty-agentd to tf-scotty-219775-2.x86_64
+1.1.2.21				(staging3-interbank)[s3ldinst-live-mmmd02.ix3.lmax - scotty-agentd] Attempting to update scotty-agentd to tf-scotty-219775-2.x86_64
+1.1.2.10				(staging3-interbank)[s3ldinst-live-mexc01.ix3.lmax - scotty-agentd] Service start:
+output = Starting scotty-agentd: [  OK  ]
+error = 
+1.1.2.10				(staging3-interbank)[s3ldinst-live-mexc01.ix3.lmax - scotty-agentd] Started service scotty-agentd
+1.1.2.10				(staging3-interbank)[s3ldinst-live-mexc01.ix3.lmax - scotty-agentd] Updated scotty-agentd to tf-scotty-219775-2.x86_64
+1.1.2.26				(staging3-interbank)[s3ldinst-live-mwdb01.ix3.lmax - scotty-agentd] Attempting to update scotty-agentd to tf-scotty-219775-2.x86_64
+1.1.2.1				(staging3-interbank)[s3ldinst-dr-cexc01.ix3.lmax - scotty-agentd] Package tf-scotty-219775-2.x86_64 is already installed, nothing to do
+1.1.2.1				(staging3-interbank)[s3ldinst-dr-cexc01.ix3.lmax - scotty-agentd] Starting service scotty-agentd
+1.1.2.3				(staging3-interbank)[s3ldinst-live-bexc02.ix3.lmax - scotty-agentd] Service start:
+output = Starting scotty-agentd: [  OK  ]
+error = 
+1.1.2.3				(staging3-interbank)[s3ldinst-live-bexc02.ix3.lmax - scotty-agentd] Started service scotty-agentd
+1.1.2.3				(staging3-interbank)[s3ldinst-live-bexc02.ix3.lmax - scotty-agentd] Updated scotty-agentd to tf-scotty-219775-2.x86_64
+1.1.2.23				(staging3-interbank)[s3ldinst-live-mmts01.ix3.lmax - scotty-agentd] Attempting to update scotty-agentd to tf-scotty-219775-2.x86_64
+1.1.2.8				(staging3-interbank)[s3ldinst-live-mdbs01.ix3.lmax - scotty-agentd] Package tf-scotty-219775-2.x86_64 is already installed, nothing to do
+1.1.2.8				(staging3-interbank)[s3ldinst-live-mdbs01.ix3.lmax - scotty-agentd] Starting service scotty-agentd
+1.1.2.12				(staging3-interbank)[s3ldinst-live-mfix01.ix3.lmax - scotty-agentd] Package tf-scotty-219775-2.x86_64 is already installed, nothing to do
+1.1.2.12				(staging3-interbank)[s3ldinst-live-mfix01.ix3.lmax - scotty-agentd] Starting service scotty-agentd
+1.1.2.21				(staging3-interbank)[s3ldinst-live-mmmd02.ix3.lmax - scotty-agentd] Package tf-scotty-219775-2.x86_64 is already installed, nothing to do
+1.1.2.21				(staging3-interbank)[s3ldinst-live-mmmd02.ix3.lmax - scotty-agentd] Starting service scotty-agentd
+1.1.2.26				(staging3-interbank)[s3ldinst-live-mwdb01.ix3.lmax - scotty-agentd] Package tf-scotty-219775-2.x86_64 is already installed, nothing to do
+1.1.2.26				(staging3-interbank)[s3ldinst-live-mwdb01.ix3.lmax - scotty-agentd] Starting service scotty-agentd
+1.1.2.23				(staging3-interbank)[s3ldinst-live-mmts01.ix3.lmax - scotty-agentd] Package tf-scotty-219775-2.x86_64 is already installed, nothing to do
+1.1.2.23				(staging3-interbank)[s3ldinst-live-mmts01.ix3.lmax - scotty-agentd] Starting service scotty-agentd
+1.1.2.1				(staging3-interbank)[s3ldinst-dr-cexc01.ix3.lmax - scotty-agentd] Service start:
+output = Starting scotty-agentd: [  OK  ]
+error = 
+1.1.2.1				(staging3-interbank)[s3ldinst-dr-cexc01.ix3.lmax - scotty-agentd] Started service scotty-agentd
+1.1.2.1				(staging3-interbank)[s3ldinst-dr-cexc01.ix3.lmax - scotty-agentd] Updated scotty-agentd to tf-scotty-219775-2.x86_64
+1.1.2.22				(staging3-interbank)[s3ldinst-live-mmon01.ix3.lmax - scotty-agentd] Attempting to update scotty-agentd to tf-scotty-219775-2.x86_64
+1.1.2.12				(staging3-interbank)[s3ldinst-live-mfix01.ix3.lmax - scotty-agentd] Service start:
+output = Starting scotty-agentd: [  OK  ]
+error = 
+1.1.2.12				(staging3-interbank)[s3ldinst-live-mfix01.ix3.lmax - scotty-agentd] Started service scotty-agentd
+1.1.2.12				(staging3-interbank)[s3ldinst-live-mfix01.ix3.lmax - scotty-agentd] Updated scotty-agentd to tf-scotty-219775-2.x86_64
+1.1.2.11				(staging3-interbank)[s3ldinst-live-mexc02.ix3.lmax - scotty-agentd] Attempting to update scotty-agentd to tf-scotty-219775-2.x86_64
+1.1.2.8				(staging3-interbank)[s3ldinst-live-mdbs01.ix3.lmax - scotty-agentd] Service start:
+output = Starting scotty-agentd: [  OK  ]
+error = 
+1.1.2.8				(staging3-interbank)[s3ldinst-live-mdbs01.ix3.lmax - scotty-agentd] Started service scotty-agentd
+1.1.2.8				(staging3-interbank)[s3ldinst-live-mdbs01.ix3.lmax - scotty-agentd] Updated scotty-agentd to tf-scotty-219775-2.x86_64
+1.1.2.28				(staging3-interbank)[s3ldinst-live-stub01.ix3.lmax - scotty-agentd] Attempting to update scotty-agentd to tf-scotty-219775-2.x86_64
+1.1.2.21				(staging3-interbank)[s3ldinst-live-mmmd02.ix3.lmax - scotty-agentd] Service start:
+output = Starting scotty-agentd: [  OK  ]
+error = 
+1.1.2.21				(staging3-interbank)[s3ldinst-live-mmmd02.ix3.lmax - scotty-agentd] Started service scotty-agentd
+1.1.2.21				(staging3-interbank)[s3ldinst-live-mmmd02.ix3.lmax - scotty-agentd] Updated scotty-agentd to tf-scotty-219775-2.x86_64
+1.1.2.20				(staging3-interbank)[s3ldinst-live-mmmd01.ix3.lmax - scotty-agentd] Attempting to update scotty-agentd to tf-scotty-219775-2.x86_64
+1.1.2.22				(staging3-interbank)[s3ldinst-live-mmon01.ix3.lmax - scotty-agentd] Package tf-scotty-219775-2.x86_64 is already installed, nothing to do
+1.1.2.22				(staging3-interbank)[s3ldinst-live-mmon01.ix3.lmax - scotty-agentd] Starting service scotty-agentd
+1.1.2.26				(staging3-interbank)[s3ldinst-live-mwdb01.ix3.lmax - scotty-agentd] Service start:
+output = Starting scotty-agentd: [  OK  ]
+error = 
+1.1.2.26				(staging3-interbank)[s3ldinst-live-mwdb01.ix3.lmax - scotty-agentd] Started service scotty-agentd
+1.1.2.26				(staging3-interbank)[s3ldinst-live-mwdb01.ix3.lmax - scotty-agentd] Updated scotty-agentd to tf-scotty-219775-2.x86_64
+1.1.2.25				(staging3-interbank)[s3ldinst-live-mogw02.ix3.lmax - scotty-agentd] Attempting to update scotty-agentd to tf-scotty-219775-2.x86_64
+1.1.2.23				(staging3-interbank)[s3ldinst-live-mmts01.ix3.lmax - scotty-agentd] Service start:
+output = Starting scotty-agentd: [  OK  ]
+error = 
+1.1.2.23				(staging3-interbank)[s3ldinst-live-mmts01.ix3.lmax - scotty-agentd] Started service scotty-agentd
+1.1.2.23				(staging3-interbank)[s3ldinst-live-mmts01.ix3.lmax - scotty-agentd] Updated scotty-agentd to tf-scotty-219775-2.x86_64
+1.1.2.24				(staging3-interbank)[s3ldinst-live-mogw01.ix3.lmax - scotty-agentd] Attempting to update scotty-agentd to tf-scotty-219775-2.x86_64
+1.1.2.28				(staging3-interbank)[s3ldinst-live-stub01.ix3.lmax - scotty-agentd] Package tf-scotty-219775-2.x86_64 is already installed, nothing to do
+1.1.2.28				(staging3-interbank)[s3ldinst-live-stub01.ix3.lmax - scotty-agentd] Starting service scotty-agentd
+1.1.2.11				(staging3-interbank)[s3ldinst-live-mexc02.ix3.lmax - scotty-agentd] Package tf-scotty-219775-2.x86_64 is already installed, nothing to do
+1.1.2.11				(staging3-interbank)[s3ldinst-live-mexc02.ix3.lmax - scotty-agentd] Starting service scotty-agentd
+1.1.2.20				(staging3-interbank)[s3ldinst-live-mmmd01.ix3.lmax - scotty-agentd] Package tf-scotty-219775-2.x86_64 is already installed, nothing to do
+1.1.2.20				(staging3-interbank)[s3ldinst-live-mmmd01.ix3.lmax - scotty-agentd] Starting service scotty-agentd
+1.1.2.25				(staging3-interbank)[s3ldinst-live-mogw02.ix3.lmax - scotty-agentd] Package tf-scotty-219775-2.x86_64 is already installed, nothing to do
+1.1.2.25				(staging3-interbank)[s3ldinst-live-mogw02.ix3.lmax - scotty-agentd] Starting service scotty-agentd
+1.1.2.24				(staging3-interbank)[s3ldinst-live-mogw01.ix3.lmax - scotty-agentd] Package tf-scotty-219775-2.x86_64 is already installed, nothing to do
+1.1.2.24				(staging3-interbank)[s3ldinst-live-mogw01.ix3.lmax - scotty-agentd] Starting service scotty-agentd
+1.1.2.22				(staging3-interbank)[s3ldinst-live-mmon01.ix3.lmax - scotty-agentd] Service start:
+output = Starting scotty-agentd: [  OK  ]
+error = 
+1.1.2.22				(staging3-interbank)[s3ldinst-live-mmon01.ix3.lmax - scotty-agentd] Started service scotty-agentd
+1.1.2.22				(staging3-interbank)[s3ldinst-live-mmon01.ix3.lmax - scotty-agentd] Updated scotty-agentd to tf-scotty-219775-2.x86_64
+1.1.2.27				(staging3-interbank)[s3ldinst-live-mwdb02.ix3.lmax - scotty-agentd] Attempting to update scotty-agentd to tf-scotty-219775-2.x86_64
+1.1.2.28				(staging3-interbank)[s3ldinst-live-stub01.ix3.lmax - scotty-agentd] Service start:
+output = Starting scotty-agentd: [  OK  ]
+error = 
+1.1.2.28				(staging3-interbank)[s3ldinst-live-stub01.ix3.lmax - scotty-agentd] Started service scotty-agentd
+1.1.2.28				(staging3-interbank)[s3ldinst-live-stub01.ix3.lmax - scotty-agentd] Updated scotty-agentd to tf-scotty-219775-2.x86_64
+1.1.2.16				(staging3-interbank)[s3ldinst-live-mftr01.ix3.lmax - scotty-agentd] Attempting to update scotty-agentd to tf-scotty-219775-2.x86_64
+1.1.2.20				(staging3-interbank)[s3ldinst-live-mmmd01.ix3.lmax - scotty-agentd] Service start:
+output = Starting scotty-agentd: [  OK  ]
+error = 
+1.1.2.20				(staging3-interbank)[s3ldinst-live-mmmd01.ix3.lmax - scotty-agentd] Started service scotty-agentd
+1.1.2.20				(staging3-interbank)[s3ldinst-live-mmmd01.ix3.lmax - scotty-agentd] Updated scotty-agentd to tf-scotty-219775-2.x86_64
+1.1.2.11				(staging3-interbank)[s3ldinst-live-mexc02.ix3.lmax - scotty-agentd] Service start:
+output = Starting scotty-agentd: [  OK  ]
+error = 
+1.1.2.11				(staging3-interbank)[s3ldinst-live-mexc02.ix3.lmax - scotty-agentd] Started service scotty-agentd
+1.1.2.11				(staging3-interbank)[s3ldinst-live-mexc02.ix3.lmax - scotty-agentd] Updated scotty-agentd to tf-scotty-219775-2.x86_64
+1.1.2.15				(staging3-interbank)[s3ldinst-live-mfix04.ix3.lmax - scotty-agentd] Attempting to update scotty-agentd to tf-scotty-219775-2.x86_64
+1.1.2.16				(staging3-interbank)[s3ldinst-live-mftr01.ix3.lmax - scotty-agentd] Package tf-scotty-219775-2.x86_64 is already installed, nothing to do
+1.1.2.16				(staging3-interbank)[s3ldinst-live-mftr01.ix3.lmax - scotty-agentd] Starting service scotty-agentd
+1.1.2.25				(staging3-interbank)[s3ldinst-live-mogw02.ix3.lmax - scotty-agentd] Service start:
+output = 
+error = 
+1.1.2.25				(staging3-interbank)[s3ldinst-live-mogw02.ix3.lmax - scotty-agentd] Started service scotty-agentd
+1.1.2.25				(staging3-interbank)[s3ldinst-live-mogw02.ix3.lmax - scotty-agentd] Updated scotty-agentd to tf-scotty-219775-2.x86_64
+1.1.2.17				(staging3-interbank)[s3ldinst-live-mftr02.ix3.lmax - scotty-agentd] Attempting to update scotty-agentd to tf-scotty-219775-2.x86_64
+1.1.2.24				(staging3-interbank)[s3ldinst-live-mogw01.ix3.lmax - scotty-agentd] Service start:
+output = Starting scotty-agentd: [  OK  ]
+error = 
+1.1.2.24				(staging3-interbank)[s3ldinst-live-mogw01.ix3.lmax - scotty-agentd] Started service scotty-agentd
+1.1.2.24				(staging3-interbank)[s3ldinst-live-mogw01.ix3.lmax - scotty-agentd] Updated scotty-agentd to tf-scotty-219775-2.x86_64
+1.1.2.27				(staging3-interbank)[s3ldinst-live-mwdb02.ix3.lmax - scotty-agentd] Package tf-scotty-219775-2.x86_64 is already installed, nothing to do
+1.1.2.27				(staging3-interbank)[s3ldinst-live-mwdb02.ix3.lmax - scotty-agentd] Starting service scotty-agentd
+1.1.2.15				(staging3-interbank)[s3ldinst-live-mfix04.ix3.lmax - scotty-agentd] Package tf-scotty-219775-2.x86_64 is already installed, nothing to do
+1.1.2.15				(staging3-interbank)[s3ldinst-live-mfix04.ix3.lmax - scotty-agentd] Starting service scotty-agentd
+1.1.2.17				(staging3-interbank)[s3ldinst-live-mftr02.ix3.lmax - scotty-agentd] Package tf-scotty-219775-2.x86_64 is already installed, nothing to do
+1.1.2.17				(staging3-interbank)[s3ldinst-live-mftr02.ix3.lmax - scotty-agentd] Starting service scotty-agentd
+1.1.2.16				(staging3-interbank)[s3ldinst-live-mftr01.ix3.lmax - scotty-agentd] Service start:
+output = Starting scotty-agentd: [  OK  ]
+error = 
+1.1.2.16				(staging3-interbank)[s3ldinst-live-mftr01.ix3.lmax - scotty-agentd] Started service scotty-agentd
+1.1.2.16				(staging3-interbank)[s3ldinst-live-mftr01.ix3.lmax - scotty-agentd] Updated scotty-agentd to tf-scotty-219775-2.x86_64
+1.1.2.27				(staging3-interbank)[s3ldinst-live-mwdb02.ix3.lmax - scotty-agentd] Service start:
+output = Starting scotty-agentd: [  OK  ]
+error = 
+1.1.2.27				(staging3-interbank)[s3ldinst-live-mwdb02.ix3.lmax - scotty-agentd] Started service scotty-agentd
+1.1.2.27				(staging3-interbank)[s3ldinst-live-mwdb02.ix3.lmax - scotty-agentd] Updated scotty-agentd to tf-scotty-219775-2.x86_64
+1.1.2.15				(staging3-interbank)[s3ldinst-live-mfix04.ix3.lmax - scotty-agentd] Service start:
+output = Starting scotty-agentd: [  OK  ]
+error = 
+1.1.2.15				(staging3-interbank)[s3ldinst-live-mfix04.ix3.lmax - scotty-agentd] Started service scotty-agentd
+1.1.2.15				(staging3-interbank)[s3ldinst-live-mfix04.ix3.lmax - scotty-agentd] Updated scotty-agentd to tf-scotty-219775-2.x86_64
+1.1.2.17				(staging3-interbank)[s3ldinst-live-mftr02.ix3.lmax - scotty-agentd] Service start:
+output = Starting scotty-agentd: [  OK  ]
+error = 
+1.1.2.17				(staging3-interbank)[s3ldinst-live-mftr02.ix3.lmax - scotty-agentd] Started service scotty-agentd
+1.1.2.17				(staging3-interbank)[s3ldinst-live-mftr02.ix3.lmax - scotty-agentd] Updated scotty-agentd to tf-scotty-219775-2.x86_64
+1.1.2.29				(staging3-interbank)[s3ldinst-live-deploy01.ix3.lmax - scotty-server] Attempting to update scotty-server to tf-scotty-server-219775-2.x86_64
+1.1.2.29				(staging3-interbank)[s3ldinst-live-deploy01.ix3.lmax - scotty-server] Package tf-scotty-server-219775-2.x86_64 is already installed, nothing to do
+1.1.2.29				(staging3-interbank)[s3ldinst-live-deploy01.ix3.lmax - scotty-server] Starting service scotty-server
+1.1.2.29				(staging3-interbank)[s3ldinst-live-deploy01.ix3.lmax - scotty-server] Service start:
+output = Starting scotty-server: [  OK  ]
+error = 
+1.1.2.29				(staging3-interbank)[s3ldinst-live-deploy01.ix3.lmax - scotty-server] Started service scotty-server
+1.1.2.29				(staging3-interbank)[s3ldinst-live-deploy01.ix3.lmax - scotty-server] Updated scotty-server to tf-scotty-server-219775-2.x86_64
+1.1.2			(staging3-interbank)Finished (ScottyInstance{name='ix3-stg3-inst', uri='https://s3ldinst-live-deploy01.ix3.lmax'}) update scotty to version 219775-2 in 0 min 03.2 sec
+1.1.2			Finished (staging3-interbank) (ScottyInstance{name='ix3-stg3-inst', uri='https://s3ldinst-live-deploy01.ix3.lmax'}) update scotty to version 219775-2 in 0 min 03.2 sec
+
+ -------------------------------------------- 
+
+
+ -------------------------------------------- 
+
+1.1.3			Running (staging3-tokyo2) (ScottyInstance{name='ix3-stg3-typrof2', uri='https://s3typrof-live-deploy21.ix3.lmax'}) update scotty to version 219775-2
+1.1.3			(staging3-tokyo2)Running (ScottyInstance{name='ix3-stg3-typrof2', uri='https://s3typrof-live-deploy21.ix3.lmax'}) update scotty to version 219775-2
+1.1.3.22				(staging3-tokyo2)[s3typrof-live-mdbs22.ix3.lmax - scotty-agentd] Attempting to update scotty-agentd to tf-scotty-219775-2.x86_64
+1.1.3.11				(staging3-tokyo2)[s3typrof-live-cexc24.ix3.lmax - scotty-agentd] Attempting to update scotty-agentd to tf-scotty-219775-2.x86_64
+1.1.3.19				(staging3-tokyo2)[s3typrof-live-gtmt21.ix3.lmax - scotty-agentd] Attempting to update scotty-agentd to tf-scotty-219775-2.x86_64
+1.1.3.27				(staging3-tokyo2)[s3typrof-live-mmds21.ix3.lmax - scotty-agentd] Attempting to update scotty-agentd to tf-scotty-219775-2.x86_64
+1.1.3.30				(staging3-tokyo2)[s3typrof-live-mmmd22.ix3.lmax - scotty-agentd] Attempting to update scotty-agentd to tf-scotty-219775-2.x86_64
+1.1.3.26				(staging3-tokyo2)[s3typrof-live-mfix24.ix3.lmax - scotty-agentd] Attempting to update scotty-agentd to tf-scotty-219775-2.x86_64
+1.1.3.26				(staging3-tokyo2)[s3typrof-live-mfix24.ix3.lmax - scotty-agentd] Package tf-scotty-219775-2.x86_64 is already installed, nothing to do
+1.1.3.26				(staging3-tokyo2)[s3typrof-live-mfix24.ix3.lmax - scotty-agentd] Starting service scotty-agentd
+1.1.3.19				(staging3-tokyo2)[s3typrof-live-gtmt21.ix3.lmax - scotty-agentd] Package tf-scotty-219775-2.x86_64 is already installed, nothing to do
+1.1.3.19				(staging3-tokyo2)[s3typrof-live-gtmt21.ix3.lmax - scotty-agentd] Starting service scotty-agentd
+1.1.3.11				(staging3-tokyo2)[s3typrof-live-cexc24.ix3.lmax - scotty-agentd] Package tf-scotty-219775-2.x86_64 is already installed, nothing to do
+1.1.3.11				(staging3-tokyo2)[s3typrof-live-cexc24.ix3.lmax - scotty-agentd] Starting service scotty-agentd
+1.1.3.22				(staging3-tokyo2)[s3typrof-live-mdbs22.ix3.lmax - scotty-agentd] Package tf-scotty-219775-2.x86_64 is already installed, nothing to do
+1.1.3.22				(staging3-tokyo2)[s3typrof-live-mdbs22.ix3.lmax - scotty-agentd] Starting service scotty-agentd
+1.1.3.27				(staging3-tokyo2)[s3typrof-live-mmds21.ix3.lmax - scotty-agentd] Package tf-scotty-219775-2.x86_64 is already installed, nothing to do
+1.1.3.27				(staging3-tokyo2)[s3typrof-live-mmds21.ix3.lmax - scotty-agentd] Starting service scotty-agentd
+1.1.3.30				(staging3-tokyo2)[s3typrof-live-mmmd22.ix3.lmax - scotty-agentd] Package tf-scotty-219775-2.x86_64 is already installed, nothing to do
+1.1.3.30				(staging3-tokyo2)[s3typrof-live-mmmd22.ix3.lmax - scotty-agentd] Starting service scotty-agentd
+1.1.3.26				(staging3-tokyo2)[s3typrof-live-mfix24.ix3.lmax - scotty-agentd] Service start:
+output = Starting scotty-agentd: [  OK  ]
+error = 
+1.1.3.26				(staging3-tokyo2)[s3typrof-live-mfix24.ix3.lmax - scotty-agentd] Started service scotty-agentd
+1.1.3.26				(staging3-tokyo2)[s3typrof-live-mfix24.ix3.lmax - scotty-agentd] Updated scotty-agentd to tf-scotty-219775-2.x86_64
+1.1.3.25				(staging3-tokyo2)[s3typrof-live-mfix23.ix3.lmax - scotty-agentd] Attempting to update scotty-agentd to tf-scotty-219775-2.x86_64
+1.1.3.19				(staging3-tokyo2)[s3typrof-live-gtmt21.ix3.lmax - scotty-agentd] Service start:
+output = Starting scotty-agentd: [  OK  ]
+error = 
+1.1.3.19				(staging3-tokyo2)[s3typrof-live-gtmt21.ix3.lmax - scotty-agentd] Started service scotty-agentd
+1.1.3.19				(staging3-tokyo2)[s3typrof-live-gtmt21.ix3.lmax - scotty-agentd] Updated scotty-agentd to tf-scotty-219775-2.x86_64
+1.1.3.20				(staging3-tokyo2)[s3typrof-live-gtmt22.ix3.lmax - scotty-agentd] Attempting to update scotty-agentd to tf-scotty-219775-2.x86_64
+1.1.3.11				(staging3-tokyo2)[s3typrof-live-cexc24.ix3.lmax - scotty-agentd] Service start:
+output = Starting scotty-agentd: [  OK  ]
+error = 
+1.1.3.11				(staging3-tokyo2)[s3typrof-live-cexc24.ix3.lmax - scotty-agentd] Started service scotty-agentd
+1.1.3.11				(staging3-tokyo2)[s3typrof-live-cexc24.ix3.lmax - scotty-agentd] Updated scotty-agentd to tf-scotty-219775-2.x86_64
+1.1.3.12				(staging3-tokyo2)[s3typrof-live-cexc25.ix3.lmax - scotty-agentd] Attempting to update scotty-agentd to tf-scotty-219775-2.x86_64
+1.1.3.22				(staging3-tokyo2)[s3typrof-live-mdbs22.ix3.lmax - scotty-agentd] Service start:
+output = Starting scotty-agentd: [  OK  ]
+error = 
+1.1.3.22				(staging3-tokyo2)[s3typrof-live-mdbs22.ix3.lmax - scotty-agentd] Started service scotty-agentd
+1.1.3.22				(staging3-tokyo2)[s3typrof-live-mdbs22.ix3.lmax - scotty-agentd] Updated scotty-agentd to tf-scotty-219775-2.x86_64
+1.1.3.21				(staging3-tokyo2)[s3typrof-live-mdbs21.ix3.lmax - scotty-agentd] Attempting to update scotty-agentd to tf-scotty-219775-2.x86_64
+1.1.3.27				(staging3-tokyo2)[s3typrof-live-mmds21.ix3.lmax - scotty-agentd] Service start:
+output = Starting scotty-agentd: [  OK  ]
+error = 
+1.1.3.27				(staging3-tokyo2)[s3typrof-live-mmds21.ix3.lmax - scotty-agentd] Started service scotty-agentd
+1.1.3.27				(staging3-tokyo2)[s3typrof-live-mmds21.ix3.lmax - scotty-agentd] Updated scotty-agentd to tf-scotty-219775-2.x86_64
+1.1.3.28				(staging3-tokyo2)[s3typrof-live-mmds22.ix3.lmax - scotty-agentd] Attempting to update scotty-agentd to tf-scotty-219775-2.x86_64
+1.1.3.30				(staging3-tokyo2)[s3typrof-live-mmmd22.ix3.lmax - scotty-agentd] Service start:
+output = Starting scotty-agentd: [  OK  ]
+error = 
+1.1.3.30				(staging3-tokyo2)[s3typrof-live-mmmd22.ix3.lmax - scotty-agentd] Started service scotty-agentd
+1.1.3.30				(staging3-tokyo2)[s3typrof-live-mmmd22.ix3.lmax - scotty-agentd] Updated scotty-agentd to tf-scotty-219775-2.x86_64
+1.1.3.29				(staging3-tokyo2)[s3typrof-live-mmmd21.ix3.lmax - scotty-agentd] Attempting to update scotty-agentd to tf-scotty-219775-2.x86_64
+1.1.3.25				(staging3-tokyo2)[s3typrof-live-mfix23.ix3.lmax - scotty-agentd] Package tf-scotty-219775-2.x86_64 is already installed, nothing to do
+1.1.3.25				(staging3-tokyo2)[s3typrof-live-mfix23.ix3.lmax - scotty-agentd] Starting service scotty-agentd
+1.1.3.20				(staging3-tokyo2)[s3typrof-live-gtmt22.ix3.lmax - scotty-agentd] Package tf-scotty-219775-2.x86_64 is already installed, nothing to do
+1.1.3.20				(staging3-tokyo2)[s3typrof-live-gtmt22.ix3.lmax - scotty-agentd] Starting service scotty-agentd
+1.1.3.12				(staging3-tokyo2)[s3typrof-live-cexc25.ix3.lmax - scotty-agentd] Package tf-scotty-219775-2.x86_64 is already installed, nothing to do
+1.1.3.12				(staging3-tokyo2)[s3typrof-live-cexc25.ix3.lmax - scotty-agentd] Starting service scotty-agentd
+1.1.3.28				(staging3-tokyo2)[s3typrof-live-mmds22.ix3.lmax - scotty-agentd] Package tf-scotty-219775-2.x86_64 is already installed, nothing to do
+1.1.3.28				(staging3-tokyo2)[s3typrof-live-mmds22.ix3.lmax - scotty-agentd] Starting service scotty-agentd
+1.1.3.21				(staging3-tokyo2)[s3typrof-live-mdbs21.ix3.lmax - scotty-agentd] Package tf-scotty-219775-2.x86_64 is already installed, nothing to do
+1.1.3.21				(staging3-tokyo2)[s3typrof-live-mdbs21.ix3.lmax - scotty-agentd] Starting service scotty-agentd
+1.1.3.29				(staging3-tokyo2)[s3typrof-live-mmmd21.ix3.lmax - scotty-agentd] Package tf-scotty-219775-2.x86_64 is already installed, nothing to do
+1.1.3.29				(staging3-tokyo2)[s3typrof-live-mmmd21.ix3.lmax - scotty-agentd] Starting service scotty-agentd
+1.1.3.25				(staging3-tokyo2)[s3typrof-live-mfix23.ix3.lmax - scotty-agentd] Service start:
+output = Starting scotty-agentd: [  OK  ]
+error = 
+1.1.3.25				(staging3-tokyo2)[s3typrof-live-mfix23.ix3.lmax - scotty-agentd] Started service scotty-agentd
+1.1.3.25				(staging3-tokyo2)[s3typrof-live-mfix23.ix3.lmax - scotty-agentd] Updated scotty-agentd to tf-scotty-219775-2.x86_64
+1.1.3.32				(staging3-tokyo2)[s3typrof-live-mwdb22.ix3.lmax - scotty-agentd] Attempting to update scotty-agentd to tf-scotty-219775-2.x86_64
+1.1.3.12				(staging3-tokyo2)[s3typrof-live-cexc25.ix3.lmax - scotty-agentd] Service start:
+output = Starting scotty-agentd: [  OK  ]
+error = 
+1.1.3.12				(staging3-tokyo2)[s3typrof-live-cexc25.ix3.lmax - scotty-agentd] Started service scotty-agentd
+1.1.3.12				(staging3-tokyo2)[s3typrof-live-cexc25.ix3.lmax - scotty-agentd] Updated scotty-agentd to tf-scotty-219775-2.x86_64
+1.1.3.10				(staging3-tokyo2)[s3typrof-live-cexc23.ix3.lmax - scotty-agentd] Attempting to update scotty-agentd to tf-scotty-219775-2.x86_64
+1.1.3.20				(staging3-tokyo2)[s3typrof-live-gtmt22.ix3.lmax - scotty-agentd] Service start:
+output = Starting scotty-agentd: [  OK  ]
+error = 
+1.1.3.20				(staging3-tokyo2)[s3typrof-live-gtmt22.ix3.lmax - scotty-agentd] Started service scotty-agentd
+1.1.3.20				(staging3-tokyo2)[s3typrof-live-gtmt22.ix3.lmax - scotty-agentd] Updated scotty-agentd to tf-scotty-219775-2.x86_64
+1.1.3.18				(staging3-tokyo2)[s3typrof-live-gout22.ix3.lmax - scotty-agentd] Attempting to update scotty-agentd to tf-scotty-219775-2.x86_64
+1.1.3.28				(staging3-tokyo2)[s3typrof-live-mmds22.ix3.lmax - scotty-agentd] Service start:
+output = Starting scotty-agentd: [  OK  ]
+error = 
+1.1.3.28				(staging3-tokyo2)[s3typrof-live-mmds22.ix3.lmax - scotty-agentd] Started service scotty-agentd
+1.1.3.28				(staging3-tokyo2)[s3typrof-live-mmds22.ix3.lmax - scotty-agentd] Updated scotty-agentd to tf-scotty-219775-2.x86_64
+1.1.3.24				(staging3-tokyo2)[s3typrof-live-mfix22.ix3.lmax - scotty-agentd] Attempting to update scotty-agentd to tf-scotty-219775-2.x86_64
+1.1.3.29				(staging3-tokyo2)[s3typrof-live-mmmd21.ix3.lmax - scotty-agentd] Service start:
+output = Starting scotty-agentd: [  OK  ]
+error = 
+1.1.3.29				(staging3-tokyo2)[s3typrof-live-mmmd21.ix3.lmax - scotty-agentd] Started service scotty-agentd
+1.1.3.29				(staging3-tokyo2)[s3typrof-live-mmmd21.ix3.lmax - scotty-agentd] Updated scotty-agentd to tf-scotty-219775-2.x86_64
+1.1.3.31				(staging3-tokyo2)[s3typrof-live-mwdb21.ix3.lmax - scotty-agentd] Attempting to update scotty-agentd to tf-scotty-219775-2.x86_64
+1.1.3.21				(staging3-tokyo2)[s3typrof-live-mdbs21.ix3.lmax - scotty-agentd] Service start:
+output = Starting scotty-agentd: [  OK  ]
+error = 
+1.1.3.21				(staging3-tokyo2)[s3typrof-live-mdbs21.ix3.lmax - scotty-agentd] Started service scotty-agentd
+1.1.3.21				(staging3-tokyo2)[s3typrof-live-mdbs21.ix3.lmax - scotty-agentd] Updated scotty-agentd to tf-scotty-219775-2.x86_64
+1.1.3.32				(staging3-tokyo2)[s3typrof-live-mwdb22.ix3.lmax - scotty-agentd] Package tf-scotty-219775-2.x86_64 is already installed, nothing to do
+1.1.3.32				(staging3-tokyo2)[s3typrof-live-mwdb22.ix3.lmax - scotty-agentd] Starting service scotty-agentd
+1.1.3.18				(staging3-tokyo2)[s3typrof-live-gout22.ix3.lmax - scotty-agentd] Package tf-scotty-219775-2.x86_64 is already installed, nothing to do
+1.1.3.18				(staging3-tokyo2)[s3typrof-live-gout22.ix3.lmax - scotty-agentd] Starting service scotty-agentd
+1.1.3.31				(staging3-tokyo2)[s3typrof-live-mwdb21.ix3.lmax - scotty-agentd] Package tf-scotty-219775-2.x86_64 is already installed, nothing to do
+1.1.3.31				(staging3-tokyo2)[s3typrof-live-mwdb21.ix3.lmax - scotty-agentd] Starting service scotty-agentd
+1.1.3.24				(staging3-tokyo2)[s3typrof-live-mfix22.ix3.lmax - scotty-agentd] Package tf-scotty-219775-2.x86_64 is already installed, nothing to do
+1.1.3.24				(staging3-tokyo2)[s3typrof-live-mfix22.ix3.lmax - scotty-agentd] Starting service scotty-agentd
+1.1.3.10				(staging3-tokyo2)[s3typrof-live-cexc23.ix3.lmax - scotty-agentd] Package tf-scotty-219775-2.x86_64 is already installed, nothing to do
+1.1.3.10				(staging3-tokyo2)[s3typrof-live-cexc23.ix3.lmax - scotty-agentd] Starting service scotty-agentd
+1.1.3.32				(staging3-tokyo2)[s3typrof-live-mwdb22.ix3.lmax - scotty-agentd] Service start:
+output = Starting scotty-agentd: [  OK  ]
+error = 
+1.1.3.32				(staging3-tokyo2)[s3typrof-live-mwdb22.ix3.lmax - scotty-agentd] Started service scotty-agentd
+1.1.3.32				(staging3-tokyo2)[s3typrof-live-mwdb22.ix3.lmax - scotty-agentd] Updated scotty-agentd to tf-scotty-219775-2.x86_64
+1.1.3.33				(staging3-tokyo2)[s3typrof-live-stub01.ix3.lmax - scotty-agentd] Attempting to update scotty-agentd to tf-scotty-219775-2.x86_64
+1.1.3.18				(staging3-tokyo2)[s3typrof-live-gout22.ix3.lmax - scotty-agentd] Service start:
+output = Starting scotty-agentd: [  OK  ]
+error = 
+1.1.3.18				(staging3-tokyo2)[s3typrof-live-gout22.ix3.lmax - scotty-agentd] Started service scotty-agentd
+1.1.3.18				(staging3-tokyo2)[s3typrof-live-gout22.ix3.lmax - scotty-agentd] Updated scotty-agentd to tf-scotty-219775-2.x86_64
+1.1.3.17				(staging3-tokyo2)[s3typrof-live-gout21.ix3.lmax - scotty-agentd] Attempting to update scotty-agentd to tf-scotty-219775-2.x86_64
+1.1.3.24				(staging3-tokyo2)[s3typrof-live-mfix22.ix3.lmax - scotty-agentd] Service start:
+output = Starting scotty-agentd: [  OK  ]
+error = 
+1.1.3.24				(staging3-tokyo2)[s3typrof-live-mfix22.ix3.lmax - scotty-agentd] Started service scotty-agentd
+1.1.3.24				(staging3-tokyo2)[s3typrof-live-mfix22.ix3.lmax - scotty-agentd] Updated scotty-agentd to tf-scotty-219775-2.x86_64
+1.1.3.23				(staging3-tokyo2)[s3typrof-live-mfix21.ix3.lmax - scotty-agentd] Attempting to update scotty-agentd to tf-scotty-219775-2.x86_64
+1.1.3.31				(staging3-tokyo2)[s3typrof-live-mwdb21.ix3.lmax - scotty-agentd] Service start:
+output = Starting scotty-agentd: [  OK  ]
+error = 
+1.1.3.31				(staging3-tokyo2)[s3typrof-live-mwdb21.ix3.lmax - scotty-agentd] Started service scotty-agentd
+1.1.3.31				(staging3-tokyo2)[s3typrof-live-mwdb21.ix3.lmax - scotty-agentd] Updated scotty-agentd to tf-scotty-219775-2.x86_64
+1.1.3.6				(staging3-tokyo2)[s3typrof-live-binb25.ix3.lmax - scotty-agentd] Attempting to update scotty-agentd to tf-scotty-219775-2.x86_64
+1.1.3.10				(staging3-tokyo2)[s3typrof-live-cexc23.ix3.lmax - scotty-agentd] Service start:
+output = Starting scotty-agentd: [  OK  ]
+error = 
+1.1.3.10				(staging3-tokyo2)[s3typrof-live-cexc23.ix3.lmax - scotty-agentd] Started service scotty-agentd
+1.1.3.10				(staging3-tokyo2)[s3typrof-live-cexc23.ix3.lmax - scotty-agentd] Updated scotty-agentd to tf-scotty-219775-2.x86_64
+1.1.3.9				(staging3-tokyo2)[s3typrof-live-cexc22.ix3.lmax - scotty-agentd] Attempting to update scotty-agentd to tf-scotty-219775-2.x86_64
+1.1.3.17				(staging3-tokyo2)[s3typrof-live-gout21.ix3.lmax - scotty-agentd] Package tf-scotty-219775-2.x86_64 is already installed, nothing to do
+1.1.3.17				(staging3-tokyo2)[s3typrof-live-gout21.ix3.lmax - scotty-agentd] Starting service scotty-agentd
+1.1.3.33				(staging3-tokyo2)[s3typrof-live-stub01.ix3.lmax - scotty-agentd] Package tf-scotty-219775-2.x86_64 is already installed, nothing to do
+1.1.3.33				(staging3-tokyo2)[s3typrof-live-stub01.ix3.lmax - scotty-agentd] Starting service scotty-agentd
+1.1.3.23				(staging3-tokyo2)[s3typrof-live-mfix21.ix3.lmax - scotty-agentd] Package tf-scotty-219775-2.x86_64 is already installed, nothing to do
+1.1.3.23				(staging3-tokyo2)[s3typrof-live-mfix21.ix3.lmax - scotty-agentd] Starting service scotty-agentd
+1.1.3.9				(staging3-tokyo2)[s3typrof-live-cexc22.ix3.lmax - scotty-agentd] Package tf-scotty-219775-2.x86_64 is already installed, nothing to do
+1.1.3.9				(staging3-tokyo2)[s3typrof-live-cexc22.ix3.lmax - scotty-agentd] Starting service scotty-agentd
+1.1.3.6				(staging3-tokyo2)[s3typrof-live-binb25.ix3.lmax - scotty-agentd] Package tf-scotty-219775-2.x86_64 is already installed, nothing to do
+1.1.3.6				(staging3-tokyo2)[s3typrof-live-binb25.ix3.lmax - scotty-agentd] Starting service scotty-agentd
+1.1.3.33				(staging3-tokyo2)[s3typrof-live-stub01.ix3.lmax - scotty-agentd] Service start:
+output = Starting scotty-agentd: [  OK  ]
+error = 
+1.1.3.33				(staging3-tokyo2)[s3typrof-live-stub01.ix3.lmax - scotty-agentd] Started service scotty-agentd
+1.1.3.33				(staging3-tokyo2)[s3typrof-live-stub01.ix3.lmax - scotty-agentd] Updated scotty-agentd to tf-scotty-219775-2.x86_64
+1.1.3.3				(staging3-tokyo2)[s3typrof-live-binb22.ix3.lmax - scotty-agentd] Attempting to update scotty-agentd to tf-scotty-219775-2.x86_64
+1.1.3.17				(staging3-tokyo2)[s3typrof-live-gout21.ix3.lmax - scotty-agentd] Service start:
+output = Starting scotty-agentd: [  OK  ]
+error = 
+1.1.3.17				(staging3-tokyo2)[s3typrof-live-gout21.ix3.lmax - scotty-agentd] Started service scotty-agentd
+1.1.3.17				(staging3-tokyo2)[s3typrof-live-gout21.ix3.lmax - scotty-agentd] Updated scotty-agentd to tf-scotty-219775-2.x86_64
+1.1.3.2				(staging3-tokyo2)[s3typrof-live-binb21.ix3.lmax - scotty-agentd] Attempting to update scotty-agentd to tf-scotty-219775-2.x86_64
+1.1.3.23				(staging3-tokyo2)[s3typrof-live-mfix21.ix3.lmax - scotty-agentd] Service start:
+output = Starting scotty-agentd: [  OK  ]
+error = 
+1.1.3.23				(staging3-tokyo2)[s3typrof-live-mfix21.ix3.lmax - scotty-agentd] Started service scotty-agentd
+1.1.3.23				(staging3-tokyo2)[s3typrof-live-mfix21.ix3.lmax - scotty-agentd] Updated scotty-agentd to tf-scotty-219775-2.x86_64
+1.1.3.4				(staging3-tokyo2)[s3typrof-live-binb23.ix3.lmax - scotty-agentd] Attempting to update scotty-agentd to tf-scotty-219775-2.x86_64
+1.1.3.9				(staging3-tokyo2)[s3typrof-live-cexc22.ix3.lmax - scotty-agentd] Service start:
+output = Starting scotty-agentd: [  OK  ]
+error = 
+1.1.3.9				(staging3-tokyo2)[s3typrof-live-cexc22.ix3.lmax - scotty-agentd] Started service scotty-agentd
+1.1.3.9				(staging3-tokyo2)[s3typrof-live-cexc22.ix3.lmax - scotty-agentd] Updated scotty-agentd to tf-scotty-219775-2.x86_64
+1.1.3.15				(staging3-tokyo2)[s3typrof-live-gmts21.ix3.lmax - scotty-agentd] Attempting to update scotty-agentd to tf-scotty-219775-2.x86_64
+1.1.3.3				(staging3-tokyo2)[s3typrof-live-binb22.ix3.lmax - scotty-agentd] Package tf-scotty-219775-2.x86_64 is already installed, nothing to do
+1.1.3.3				(staging3-tokyo2)[s3typrof-live-binb22.ix3.lmax - scotty-agentd] Starting service scotty-agentd
+1.1.3.6				(staging3-tokyo2)[s3typrof-live-binb25.ix3.lmax - scotty-agentd] Service start:
+output = Starting scotty-agentd: [  OK  ]
+error = 
+1.1.3.6				(staging3-tokyo2)[s3typrof-live-binb25.ix3.lmax - scotty-agentd] Started service scotty-agentd
+1.1.3.6				(staging3-tokyo2)[s3typrof-live-binb25.ix3.lmax - scotty-agentd] Updated scotty-agentd to tf-scotty-219775-2.x86_64
+1.1.3.5				(staging3-tokyo2)[s3typrof-live-binb24.ix3.lmax - scotty-agentd] Attempting to update scotty-agentd to tf-scotty-219775-2.x86_64
+1.1.3.2				(staging3-tokyo2)[s3typrof-live-binb21.ix3.lmax - scotty-agentd] Package tf-scotty-219775-2.x86_64 is already installed, nothing to do
+1.1.3.2				(staging3-tokyo2)[s3typrof-live-binb21.ix3.lmax - scotty-agentd] Starting service scotty-agentd
+1.1.3.4				(staging3-tokyo2)[s3typrof-live-binb23.ix3.lmax - scotty-agentd] Package tf-scotty-219775-2.x86_64 is already installed, nothing to do
+1.1.3.4				(staging3-tokyo2)[s3typrof-live-binb23.ix3.lmax - scotty-agentd] Starting service scotty-agentd
+1.1.3.15				(staging3-tokyo2)[s3typrof-live-gmts21.ix3.lmax - scotty-agentd] Package tf-scotty-219775-2.x86_64 is already installed, nothing to do
+1.1.3.15				(staging3-tokyo2)[s3typrof-live-gmts21.ix3.lmax - scotty-agentd] Starting service scotty-agentd
+1.1.3.5				(staging3-tokyo2)[s3typrof-live-binb24.ix3.lmax - scotty-agentd] Package tf-scotty-219775-2.x86_64 is already installed, nothing to do
+1.1.3.5				(staging3-tokyo2)[s3typrof-live-binb24.ix3.lmax - scotty-agentd] Starting service scotty-agentd
+1.1.3.3				(staging3-tokyo2)[s3typrof-live-binb22.ix3.lmax - scotty-agentd] Service start:
+output = Starting scotty-agentd: [  OK  ]
+error = 
+1.1.3.3				(staging3-tokyo2)[s3typrof-live-binb22.ix3.lmax - scotty-agentd] Started service scotty-agentd
+1.1.3.3				(staging3-tokyo2)[s3typrof-live-binb22.ix3.lmax - scotty-agentd] Updated scotty-agentd to tf-scotty-219775-2.x86_64
+1.1.3.8				(staging3-tokyo2)[s3typrof-live-cexc21.ix3.lmax - scotty-agentd] Attempting to update scotty-agentd to tf-scotty-219775-2.x86_64
+1.1.3.4				(staging3-tokyo2)[s3typrof-live-binb23.ix3.lmax - scotty-agentd] Service start:
+output = Starting scotty-agentd: [  OK  ]
+error = 
+1.1.3.4				(staging3-tokyo2)[s3typrof-live-binb23.ix3.lmax - scotty-agentd] Started service scotty-agentd
+1.1.3.4				(staging3-tokyo2)[s3typrof-live-binb23.ix3.lmax - scotty-agentd] Updated scotty-agentd to tf-scotty-219775-2.x86_64
+1.1.3.2				(staging3-tokyo2)[s3typrof-live-binb21.ix3.lmax - scotty-agentd] Service start:
+output = Starting scotty-agentd: [  OK  ]
+error = 
+1.1.3.2				(staging3-tokyo2)[s3typrof-live-binb21.ix3.lmax - scotty-agentd] Started service scotty-agentd
+1.1.3.7				(staging3-tokyo2)[s3typrof-live-binb26.ix3.lmax - scotty-agentd] Attempting to update scotty-agentd to tf-scotty-219775-2.x86_64
+1.1.3.2				(staging3-tokyo2)[s3typrof-live-binb21.ix3.lmax - scotty-agentd] Updated scotty-agentd to tf-scotty-219775-2.x86_64
+1.1.3.1				(staging3-tokyo2)[s3typrof-dr-cexc02.ix3.lmax - scotty-agentd] Attempting to update scotty-agentd to tf-scotty-219775-2.x86_64
+1.1.3.15				(staging3-tokyo2)[s3typrof-live-gmts21.ix3.lmax - scotty-agentd] Service start:
+output = Starting scotty-agentd: [  OK  ]
+error = 
+1.1.3.15				(staging3-tokyo2)[s3typrof-live-gmts21.ix3.lmax - scotty-agentd] Started service scotty-agentd
+1.1.3.15				(staging3-tokyo2)[s3typrof-live-gmts21.ix3.lmax - scotty-agentd] Updated scotty-agentd to tf-scotty-219775-2.x86_64
+1.1.3.16				(staging3-tokyo2)[s3typrof-live-gmts22.ix3.lmax - scotty-agentd] Attempting to update scotty-agentd to tf-scotty-219775-2.x86_64
+1.1.3.8				(staging3-tokyo2)[s3typrof-live-cexc21.ix3.lmax - scotty-agentd] Package tf-scotty-219775-2.x86_64 is already installed, nothing to do
+1.1.3.8				(staging3-tokyo2)[s3typrof-live-cexc21.ix3.lmax - scotty-agentd] Starting service scotty-agentd
+1.1.3.5				(staging3-tokyo2)[s3typrof-live-binb24.ix3.lmax - scotty-agentd] Service start:
+output = Starting scotty-agentd: [  OK  ]
+error = 
+1.1.3.5				(staging3-tokyo2)[s3typrof-live-binb24.ix3.lmax - scotty-agentd] Started service scotty-agentd
+1.1.3.5				(staging3-tokyo2)[s3typrof-live-binb24.ix3.lmax - scotty-agentd] Updated scotty-agentd to tf-scotty-219775-2.x86_64
+1.1.3.14				(staging3-tokyo2)[s3typrof-live-ginb22.ix3.lmax - scotty-agentd] Attempting to update scotty-agentd to tf-scotty-219775-2.x86_64
+1.1.3.7				(staging3-tokyo2)[s3typrof-live-binb26.ix3.lmax - scotty-agentd] Package tf-scotty-219775-2.x86_64 is already installed, nothing to do
+1.1.3.7				(staging3-tokyo2)[s3typrof-live-binb26.ix3.lmax - scotty-agentd] Starting service scotty-agentd
+1.1.3.16				(staging3-tokyo2)[s3typrof-live-gmts22.ix3.lmax - scotty-agentd] Package tf-scotty-219775-2.x86_64 is already installed, nothing to do
+1.1.3.16				(staging3-tokyo2)[s3typrof-live-gmts22.ix3.lmax - scotty-agentd] Starting service scotty-agentd
+1.1.3.1				(staging3-tokyo2)[s3typrof-dr-cexc02.ix3.lmax - scotty-agentd] Package tf-scotty-219775-2.x86_64 is already installed, nothing to do
+1.1.3.1				(staging3-tokyo2)[s3typrof-dr-cexc02.ix3.lmax - scotty-agentd] Starting service scotty-agentd
+1.1.3.14				(staging3-tokyo2)[s3typrof-live-ginb22.ix3.lmax - scotty-agentd] Package tf-scotty-219775-2.x86_64 is already installed, nothing to do
+1.1.3.14				(staging3-tokyo2)[s3typrof-live-ginb22.ix3.lmax - scotty-agentd] Starting service scotty-agentd
+1.1.3.8				(staging3-tokyo2)[s3typrof-live-cexc21.ix3.lmax - scotty-agentd] Service start:
+output = Starting scotty-agentd: [  OK  ]
+error = 
+1.1.3.8				(staging3-tokyo2)[s3typrof-live-cexc21.ix3.lmax - scotty-agentd] Started service scotty-agentd
+1.1.3.8				(staging3-tokyo2)[s3typrof-live-cexc21.ix3.lmax - scotty-agentd] Updated scotty-agentd to tf-scotty-219775-2.x86_64
+1.1.3.13				(staging3-tokyo2)[s3typrof-live-ginb21.ix3.lmax - scotty-agentd] Attempting to update scotty-agentd to tf-scotty-219775-2.x86_64
+1.1.3.7				(staging3-tokyo2)[s3typrof-live-binb26.ix3.lmax - scotty-agentd] Service start:
+output = Starting scotty-agentd: [  OK  ]
+error = 
+1.1.3.7				(staging3-tokyo2)[s3typrof-live-binb26.ix3.lmax - scotty-agentd] Started service scotty-agentd
+1.1.3.7				(staging3-tokyo2)[s3typrof-live-binb26.ix3.lmax - scotty-agentd] Updated scotty-agentd to tf-scotty-219775-2.x86_64
+1.1.3.16				(staging3-tokyo2)[s3typrof-live-gmts22.ix3.lmax - scotty-agentd] Service start:
+output = Starting scotty-agentd: [  OK  ]
+error = 
+1.1.3.16				(staging3-tokyo2)[s3typrof-live-gmts22.ix3.lmax - scotty-agentd] Started service scotty-agentd
+1.1.3.16				(staging3-tokyo2)[s3typrof-live-gmts22.ix3.lmax - scotty-agentd] Updated scotty-agentd to tf-scotty-219775-2.x86_64
+1.1.3.13				(staging3-tokyo2)[s3typrof-live-ginb21.ix3.lmax - scotty-agentd] Package tf-scotty-219775-2.x86_64 is already installed, nothing to do
+1.1.3.13				(staging3-tokyo2)[s3typrof-live-ginb21.ix3.lmax - scotty-agentd] Starting service scotty-agentd
+1.1.3.1				(staging3-tokyo2)[s3typrof-dr-cexc02.ix3.lmax - scotty-agentd] Service start:
+output = Starting scotty-agentd: [  OK  ]
+error = 
+1.1.3.1				(staging3-tokyo2)[s3typrof-dr-cexc02.ix3.lmax - scotty-agentd] Started service scotty-agentd
+1.1.3.1				(staging3-tokyo2)[s3typrof-dr-cexc02.ix3.lmax - scotty-agentd] Updated scotty-agentd to tf-scotty-219775-2.x86_64
+1.1.3.14				(staging3-tokyo2)[s3typrof-live-ginb22.ix3.lmax - scotty-agentd] Service start:
+output = Starting scotty-agentd: [  OK  ]
+error = 
+1.1.3.14				(staging3-tokyo2)[s3typrof-live-ginb22.ix3.lmax - scotty-agentd] Started service scotty-agentd
+1.1.3.14				(staging3-tokyo2)[s3typrof-live-ginb22.ix3.lmax - scotty-agentd] Updated scotty-agentd to tf-scotty-219775-2.x86_64
+1.1.3.13				(staging3-tokyo2)[s3typrof-live-ginb21.ix3.lmax - scotty-agentd] Service start:
+output = Starting scotty-agentd: [  OK  ]
+error = 
+1.1.3.13				(staging3-tokyo2)[s3typrof-live-ginb21.ix3.lmax - scotty-agentd] Started service scotty-agentd
+1.1.3.13				(staging3-tokyo2)[s3typrof-live-ginb21.ix3.lmax - scotty-agentd] Updated scotty-agentd to tf-scotty-219775-2.x86_64
+1.1.3.34				(staging3-tokyo2)[s3typrof-live-deploy21.ix3.lmax - scotty-server] Attempting to update scotty-server to tf-scotty-server-219775-2.x86_64
+1.1.3.34				(staging3-tokyo2)[s3typrof-live-deploy21.ix3.lmax - scotty-server] Package tf-scotty-server-219775-2.x86_64 is already installed, nothing to do
+1.1.3.34				(staging3-tokyo2)[s3typrof-live-deploy21.ix3.lmax - scotty-server] Starting service scotty-server
+1.1.3.34				(staging3-tokyo2)[s3typrof-live-deploy21.ix3.lmax - scotty-server] Service start:
+output = Starting scotty-server: [  OK  ]
+error = 
+1.1.3.34				(staging3-tokyo2)[s3typrof-live-deploy21.ix3.lmax - scotty-server] Started service scotty-server
+1.1.3.34				(staging3-tokyo2)[s3typrof-live-deploy21.ix3.lmax - scotty-server] Updated scotty-server to tf-scotty-server-219775-2.x86_64
+1.1.3			(staging3-tokyo2)Finished (ScottyInstance{name='ix3-stg3-typrof2', uri='https://s3typrof-live-deploy21.ix3.lmax'}) update scotty to version 219775-2 in 0 min 04.2 sec
+1.1.3			Finished (staging3-tokyo2) (ScottyInstance{name='ix3-stg3-typrof2', uri='https://s3typrof-live-deploy21.ix3.lmax'}) update scotty to version 219775-2 in 0 min 04.2 sec
+
+ -------------------------------------------- 
+
+
+ -------------------------------------------- 
+
+1.1.4			Running (staging3-ny) (ScottyInstance{name='ix3-stg3-ny', uri='https://s3nyprof-beta-deploy01.ix3.lmax'}) update scotty to version 219775-2
+1.1.4			(staging3-ny)Running (ScottyInstance{name='ix3-stg3-ny', uri='https://s3nyprof-beta-deploy01.ix3.lmax'}) update scotty to version 219775-2
+1.1.4.15				(staging3-ny)[s3nyprof-beta-mfix01.ix3.lmax - scotty-agentd] Attempting to update scotty-agentd to tf-scotty-219775-2.x86_64
+1.1.4.21				(staging3-ny)[s3nyprof-beta-mogw01.ix3.lmax - scotty-agentd] Attempting to update scotty-agentd to tf-scotty-219775-2.x86_64
+1.1.4.19				(staging3-ny)[s3nyprof-beta-mmmd01.ix3.lmax - scotty-agentd] Attempting to update scotty-agentd to tf-scotty-219775-2.x86_64
+1.1.4.23				(staging3-ny)[s3nyprof-dr-cexc02.ix3.lmax - scotty-agentd] Attempting to update scotty-agentd to tf-scotty-219775-2.x86_64
+1.1.4.7				(staging3-ny)[s3nyprof-beta-ginb01.ix3.lmax - scotty-agentd] Attempting to update scotty-agentd to tf-scotty-219775-2.x86_64
+1.1.4.3				(staging3-ny)[s3nyprof-beta-bogw01.ix3.lmax - scotty-agentd] Attempting to update scotty-agentd to tf-scotty-219775-2.x86_64
+1.1.4.3				(staging3-ny)[s3nyprof-beta-bogw01.ix3.lmax - scotty-agentd] Package tf-scotty-219775-2.x86_64 is already installed, nothing to do
+1.1.4.3				(staging3-ny)[s3nyprof-beta-bogw01.ix3.lmax - scotty-agentd] Starting service scotty-agentd
+1.1.4.15				(staging3-ny)[s3nyprof-beta-mfix01.ix3.lmax - scotty-agentd] Package tf-scotty-219775-2.x86_64 is already installed, nothing to do
+1.1.4.15				(staging3-ny)[s3nyprof-beta-mfix01.ix3.lmax - scotty-agentd] Starting service scotty-agentd
+1.1.4.7				(staging3-ny)[s3nyprof-beta-ginb01.ix3.lmax - scotty-agentd] Package tf-scotty-219775-2.x86_64 is already installed, nothing to do
+1.1.4.7				(staging3-ny)[s3nyprof-beta-ginb01.ix3.lmax - scotty-agentd] Starting service scotty-agentd
+1.1.4.21				(staging3-ny)[s3nyprof-beta-mogw01.ix3.lmax - scotty-agentd] Package tf-scotty-219775-2.x86_64 is already installed, nothing to do
+1.1.4.21				(staging3-ny)[s3nyprof-beta-mogw01.ix3.lmax - scotty-agentd] Starting service scotty-agentd
+1.1.4.19				(staging3-ny)[s3nyprof-beta-mmmd01.ix3.lmax - scotty-agentd] Package tf-scotty-219775-2.x86_64 is already installed, nothing to do
+1.1.4.19				(staging3-ny)[s3nyprof-beta-mmmd01.ix3.lmax - scotty-agentd] Starting service scotty-agentd
+1.1.4.23				(staging3-ny)[s3nyprof-dr-cexc02.ix3.lmax - scotty-agentd] Package tf-scotty-219775-2.x86_64 is already installed, nothing to do
+1.1.4.23				(staging3-ny)[s3nyprof-dr-cexc02.ix3.lmax - scotty-agentd] Starting service scotty-agentd
+1.1.4.3				(staging3-ny)[s3nyprof-beta-bogw01.ix3.lmax - scotty-agentd] Service start:
+output = Starting scotty-agentd: [  OK  ]
+error = 
+1.1.4.3				(staging3-ny)[s3nyprof-beta-bogw01.ix3.lmax - scotty-agentd] Started service scotty-agentd
+1.1.4.3				(staging3-ny)[s3nyprof-beta-bogw01.ix3.lmax - scotty-agentd] Updated scotty-agentd to tf-scotty-219775-2.x86_64
+1.1.4.5				(staging3-ny)[s3nyprof-beta-cexc02.ix3.lmax - scotty-agentd] Attempting to update scotty-agentd to tf-scotty-219775-2.x86_64
+1.1.4.15				(staging3-ny)[s3nyprof-beta-mfix01.ix3.lmax - scotty-agentd] Service start:
+output = Starting scotty-agentd: [  OK  ]
+error = 
+1.1.4.15				(staging3-ny)[s3nyprof-beta-mfix01.ix3.lmax - scotty-agentd] Started service scotty-agentd
+1.1.4.15				(staging3-ny)[s3nyprof-beta-mfix01.ix3.lmax - scotty-agentd] Updated scotty-agentd to tf-scotty-219775-2.x86_64
+1.1.4.17				(staging3-ny)[s3nyprof-beta-mmds01.ix3.lmax - scotty-agentd] Attempting to update scotty-agentd to tf-scotty-219775-2.x86_64
+1.1.4.7				(staging3-ny)[s3nyprof-beta-ginb01.ix3.lmax - scotty-agentd] Service start:
+output = Starting scotty-agentd: [  OK  ]
+error = 
+1.1.4.7				(staging3-ny)[s3nyprof-beta-ginb01.ix3.lmax - scotty-agentd] Started service scotty-agentd
+1.1.4.7				(staging3-ny)[s3nyprof-beta-ginb01.ix3.lmax - scotty-agentd] Updated scotty-agentd to tf-scotty-219775-2.x86_64
+1.1.4.8				(staging3-ny)[s3nyprof-beta-gmts01.ix3.lmax - scotty-agentd] Attempting to update scotty-agentd to tf-scotty-219775-2.x86_64
+1.1.4.21				(staging3-ny)[s3nyprof-beta-mogw01.ix3.lmax - scotty-agentd] Service start:
+output = Starting scotty-agentd: [  OK  ]
+error = 
+1.1.4.21				(staging3-ny)[s3nyprof-beta-mogw01.ix3.lmax - scotty-agentd] Started service scotty-agentd
+1.1.4.21				(staging3-ny)[s3nyprof-beta-mogw01.ix3.lmax - scotty-agentd] Updated scotty-agentd to tf-scotty-219775-2.x86_64
+1.1.4.13				(staging3-ny)[s3nyprof-beta-mdbs02.ix3.lmax - scotty-agentd] Attempting to update scotty-agentd to tf-scotty-219775-2.x86_64
+1.1.4.19				(staging3-ny)[s3nyprof-beta-mmmd01.ix3.lmax - scotty-agentd] Service start:
+output = Starting scotty-agentd: [  OK  ]
+error = 
+1.1.4.19				(staging3-ny)[s3nyprof-beta-mmmd01.ix3.lmax - scotty-agentd] Started service scotty-agentd
+1.1.4.19				(staging3-ny)[s3nyprof-beta-mmmd01.ix3.lmax - scotty-agentd] Updated scotty-agentd to tf-scotty-219775-2.x86_64
+1.1.4.20				(staging3-ny)[s3nyprof-beta-mmmd02.ix3.lmax - scotty-agentd] Attempting to update scotty-agentd to tf-scotty-219775-2.x86_64
+1.1.4.23				(staging3-ny)[s3nyprof-dr-cexc02.ix3.lmax - scotty-agentd] Service start:
+output = Starting scotty-agentd: [  OK  ]
+error = 
+1.1.4.23				(staging3-ny)[s3nyprof-dr-cexc02.ix3.lmax - scotty-agentd] Started service scotty-agentd
+1.1.4.23				(staging3-ny)[s3nyprof-dr-cexc02.ix3.lmax - scotty-agentd] Updated scotty-agentd to tf-scotty-219775-2.x86_64
+1.1.4.22				(staging3-ny)[s3nyprof-beta-stub01.ix3.lmax - scotty-agentd] Attempting to update scotty-agentd to tf-scotty-219775-2.x86_64
+1.1.4.5				(staging3-ny)[s3nyprof-beta-cexc02.ix3.lmax - scotty-agentd] Package tf-scotty-219775-2.x86_64 is already installed, nothing to do
+1.1.4.5				(staging3-ny)[s3nyprof-beta-cexc02.ix3.lmax - scotty-agentd] Starting service scotty-agentd
+1.1.4.17				(staging3-ny)[s3nyprof-beta-mmds01.ix3.lmax - scotty-agentd] Package tf-scotty-219775-2.x86_64 is already installed, nothing to do
+1.1.4.17				(staging3-ny)[s3nyprof-beta-mmds01.ix3.lmax - scotty-agentd] Starting service scotty-agentd
+1.1.4.22				(staging3-ny)[s3nyprof-beta-stub01.ix3.lmax - scotty-agentd] Package tf-scotty-219775-2.x86_64 is already installed, nothing to do
+1.1.4.22				(staging3-ny)[s3nyprof-beta-stub01.ix3.lmax - scotty-agentd] Starting service scotty-agentd
+1.1.4.8				(staging3-ny)[s3nyprof-beta-gmts01.ix3.lmax - scotty-agentd] Package tf-scotty-219775-2.x86_64 is already installed, nothing to do
+1.1.4.8				(staging3-ny)[s3nyprof-beta-gmts01.ix3.lmax - scotty-agentd] Starting service scotty-agentd
+1.1.4.20				(staging3-ny)[s3nyprof-beta-mmmd02.ix3.lmax - scotty-agentd] Package tf-scotty-219775-2.x86_64 is already installed, nothing to do
+1.1.4.20				(staging3-ny)[s3nyprof-beta-mmmd02.ix3.lmax - scotty-agentd] Starting service scotty-agentd
+1.1.4.13				(staging3-ny)[s3nyprof-beta-mdbs02.ix3.lmax - scotty-agentd] Package tf-scotty-219775-2.x86_64 is already installed, nothing to do
+1.1.4.13				(staging3-ny)[s3nyprof-beta-mdbs02.ix3.lmax - scotty-agentd] Starting service scotty-agentd
+1.1.4.5				(staging3-ny)[s3nyprof-beta-cexc02.ix3.lmax - scotty-agentd] Service start:
+output = Starting scotty-agentd: [  OK  ]
+error = 
+1.1.4.5				(staging3-ny)[s3nyprof-beta-cexc02.ix3.lmax - scotty-agentd] Started service scotty-agentd
+1.1.4.5				(staging3-ny)[s3nyprof-beta-cexc02.ix3.lmax - scotty-agentd] Updated scotty-agentd to tf-scotty-219775-2.x86_64
+1.1.4.4				(staging3-ny)[s3nyprof-beta-cexc01.ix3.lmax - scotty-agentd] Attempting to update scotty-agentd to tf-scotty-219775-2.x86_64
+1.1.4.17				(staging3-ny)[s3nyprof-beta-mmds01.ix3.lmax - scotty-agentd] Service start:
+output = Starting scotty-agentd: [  OK  ]
+error = 
+1.1.4.17				(staging3-ny)[s3nyprof-beta-mmds01.ix3.lmax - scotty-agentd] Started service scotty-agentd
+1.1.4.17				(staging3-ny)[s3nyprof-beta-mmds01.ix3.lmax - scotty-agentd] Updated scotty-agentd to tf-scotty-219775-2.x86_64
+1.1.4.16				(staging3-ny)[s3nyprof-beta-mfix02.ix3.lmax - scotty-agentd] Attempting to update scotty-agentd to tf-scotty-219775-2.x86_64
+1.1.4.20				(staging3-ny)[s3nyprof-beta-mmmd02.ix3.lmax - scotty-agentd] Service start:
+output = Starting scotty-agentd: [  OK  ]
+error = 
+1.1.4.20				(staging3-ny)[s3nyprof-beta-mmmd02.ix3.lmax - scotty-agentd] Started service scotty-agentd
+1.1.4.20				(staging3-ny)[s3nyprof-beta-mmmd02.ix3.lmax - scotty-agentd] Updated scotty-agentd to tf-scotty-219775-2.x86_64
+1.1.4.18				(staging3-ny)[s3nyprof-beta-mmds02.ix3.lmax - scotty-agentd] Attempting to update scotty-agentd to tf-scotty-219775-2.x86_64
+1.1.4.8				(staging3-ny)[s3nyprof-beta-gmts01.ix3.lmax - scotty-agentd] Service start:
+output = Starting scotty-agentd: [  OK  ]
+error = 
+1.1.4.8				(staging3-ny)[s3nyprof-beta-gmts01.ix3.lmax - scotty-agentd] Started service scotty-agentd
+1.1.4.8				(staging3-ny)[s3nyprof-beta-gmts01.ix3.lmax - scotty-agentd] Updated scotty-agentd to tf-scotty-219775-2.x86_64
+1.1.4.6				(staging3-ny)[s3nyprof-beta-cexc03.ix3.lmax - scotty-agentd] Attempting to update scotty-agentd to tf-scotty-219775-2.x86_64
+1.1.4.22				(staging3-ny)[s3nyprof-beta-stub01.ix3.lmax - scotty-agentd] Service start:
+output = Starting scotty-agentd: [  OK  ]
+error = 
+1.1.4.22				(staging3-ny)[s3nyprof-beta-stub01.ix3.lmax - scotty-agentd] Started service scotty-agentd
+1.1.4.22				(staging3-ny)[s3nyprof-beta-stub01.ix3.lmax - scotty-agentd] Updated scotty-agentd to tf-scotty-219775-2.x86_64
+1.1.4.12				(staging3-ny)[s3nyprof-beta-mdbs01.ix3.lmax - scotty-agentd] Attempting to update scotty-agentd to tf-scotty-219775-2.x86_64
+1.1.4.13				(staging3-ny)[s3nyprof-beta-mdbs02.ix3.lmax - scotty-agentd] Service start:
+output = Starting scotty-agentd: [  OK  ]
+error = 
+1.1.4.13				(staging3-ny)[s3nyprof-beta-mdbs02.ix3.lmax - scotty-agentd] Started service scotty-agentd
+1.1.4.13				(staging3-ny)[s3nyprof-beta-mdbs02.ix3.lmax - scotty-agentd] Updated scotty-agentd to tf-scotty-219775-2.x86_64
+1.1.4.14				(staging3-ny)[s3nyprof-beta-mdbs03.ix3.lmax - scotty-agentd] Attempting to update scotty-agentd to tf-scotty-219775-2.x86_64
+1.1.4.4				(staging3-ny)[s3nyprof-beta-cexc01.ix3.lmax - scotty-agentd] Package tf-scotty-219775-2.x86_64 is already installed, nothing to do
+1.1.4.4				(staging3-ny)[s3nyprof-beta-cexc01.ix3.lmax - scotty-agentd] Starting service scotty-agentd
+1.1.4.16				(staging3-ny)[s3nyprof-beta-mfix02.ix3.lmax - scotty-agentd] Package tf-scotty-219775-2.x86_64 is already installed, nothing to do
+1.1.4.16				(staging3-ny)[s3nyprof-beta-mfix02.ix3.lmax - scotty-agentd] Starting service scotty-agentd
+1.1.4.18				(staging3-ny)[s3nyprof-beta-mmds02.ix3.lmax - scotty-agentd] Package tf-scotty-219775-2.x86_64 is already installed, nothing to do
+1.1.4.18				(staging3-ny)[s3nyprof-beta-mmds02.ix3.lmax - scotty-agentd] Starting service scotty-agentd
+1.1.4.6				(staging3-ny)[s3nyprof-beta-cexc03.ix3.lmax - scotty-agentd] Package tf-scotty-219775-2.x86_64 is already installed, nothing to do
+1.1.4.6				(staging3-ny)[s3nyprof-beta-cexc03.ix3.lmax - scotty-agentd] Starting service scotty-agentd
+1.1.4.12				(staging3-ny)[s3nyprof-beta-mdbs01.ix3.lmax - scotty-agentd] Package tf-scotty-219775-2.x86_64 is already installed, nothing to do
+1.1.4.12				(staging3-ny)[s3nyprof-beta-mdbs01.ix3.lmax - scotty-agentd] Starting service scotty-agentd
+1.1.4.14				(staging3-ny)[s3nyprof-beta-mdbs03.ix3.lmax - scotty-agentd] Package tf-scotty-219775-2.x86_64 is already installed, nothing to do
+1.1.4.14				(staging3-ny)[s3nyprof-beta-mdbs03.ix3.lmax - scotty-agentd] Starting service scotty-agentd
+1.1.4.4				(staging3-ny)[s3nyprof-beta-cexc01.ix3.lmax - scotty-agentd] Service start:
+output = Starting scotty-agentd: [  OK  ]
+error = 
+1.1.4.4				(staging3-ny)[s3nyprof-beta-cexc01.ix3.lmax - scotty-agentd] Started service scotty-agentd
+1.1.4.4				(staging3-ny)[s3nyprof-beta-cexc01.ix3.lmax - scotty-agentd] Updated scotty-agentd to tf-scotty-219775-2.x86_64
+1.1.4.2				(staging3-ny)[s3nyprof-beta-binb02.ix3.lmax - scotty-agentd] Attempting to update scotty-agentd to tf-scotty-219775-2.x86_64
+1.1.4.16				(staging3-ny)[s3nyprof-beta-mfix02.ix3.lmax - scotty-agentd] Service start:
+output = Starting scotty-agentd: [  OK  ]
+error = 
+1.1.4.16				(staging3-ny)[s3nyprof-beta-mfix02.ix3.lmax - scotty-agentd] Started service scotty-agentd
+1.1.4.16				(staging3-ny)[s3nyprof-beta-mfix02.ix3.lmax - scotty-agentd] Updated scotty-agentd to tf-scotty-219775-2.x86_64
+1.1.4.18				(staging3-ny)[s3nyprof-beta-mmds02.ix3.lmax - scotty-agentd] Service start:
+output = Starting scotty-agentd: [  OK  ]
+error = 
+1.1.4.18				(staging3-ny)[s3nyprof-beta-mmds02.ix3.lmax - scotty-agentd] Started service scotty-agentd
+1.1.4.18				(staging3-ny)[s3nyprof-beta-mmds02.ix3.lmax - scotty-agentd] Updated scotty-agentd to tf-scotty-219775-2.x86_64
+1.1.4.10				(staging3-ny)[s3nyprof-beta-gtmt01.ix3.lmax - scotty-agentd] Attempting to update scotty-agentd to tf-scotty-219775-2.x86_64
+1.1.4.6				(staging3-ny)[s3nyprof-beta-cexc03.ix3.lmax - scotty-agentd] Service start:
+output = Starting scotty-agentd: [  OK  ]
+error = 
+1.1.4.6				(staging3-ny)[s3nyprof-beta-cexc03.ix3.lmax - scotty-agentd] Started service scotty-agentd
+1.1.4.6				(staging3-ny)[s3nyprof-beta-cexc03.ix3.lmax - scotty-agentd] Updated scotty-agentd to tf-scotty-219775-2.x86_64
+1.1.4.9				(staging3-ny)[s3nyprof-beta-gmts02.ix3.lmax - scotty-agentd] Attempting to update scotty-agentd to tf-scotty-219775-2.x86_64
+1.1.4.12				(staging3-ny)[s3nyprof-beta-mdbs01.ix3.lmax - scotty-agentd] Service start:
+output = Starting scotty-agentd: [  OK  ]
+error = 
+1.1.4.12				(staging3-ny)[s3nyprof-beta-mdbs01.ix3.lmax - scotty-agentd] Started service scotty-agentd
+1.1.4.12				(staging3-ny)[s3nyprof-beta-mdbs01.ix3.lmax - scotty-agentd] Updated scotty-agentd to tf-scotty-219775-2.x86_64
+1.1.4.11				(staging3-ny)[s3nyprof-beta-gtmt02.ix3.lmax - scotty-agentd] Attempting to update scotty-agentd to tf-scotty-219775-2.x86_64
+1.1.4.2				(staging3-ny)[s3nyprof-beta-binb02.ix3.lmax - scotty-agentd] Package tf-scotty-219775-2.x86_64 is already installed, nothing to do
+1.1.4.2				(staging3-ny)[s3nyprof-beta-binb02.ix3.lmax - scotty-agentd] Starting service scotty-agentd
+1.1.4.14				(staging3-ny)[s3nyprof-beta-mdbs03.ix3.lmax - scotty-agentd] Service start:
+output = Starting scotty-agentd: [  OK  ]
+error = 
+1.1.4.14				(staging3-ny)[s3nyprof-beta-mdbs03.ix3.lmax - scotty-agentd] Started service scotty-agentd
+1.1.4.14				(staging3-ny)[s3nyprof-beta-mdbs03.ix3.lmax - scotty-agentd] Updated scotty-agentd to tf-scotty-219775-2.x86_64
+1.1.4.1				(staging3-ny)[s3nyprof-beta-binb01.ix3.lmax - scotty-agentd] Attempting to update scotty-agentd to tf-scotty-219775-2.x86_64
+1.1.4.9				(staging3-ny)[s3nyprof-beta-gmts02.ix3.lmax - scotty-agentd] Package tf-scotty-219775-2.x86_64 is already installed, nothing to do
+1.1.4.9				(staging3-ny)[s3nyprof-beta-gmts02.ix3.lmax - scotty-agentd] Starting service scotty-agentd
+1.1.4.10				(staging3-ny)[s3nyprof-beta-gtmt01.ix3.lmax - scotty-agentd] Package tf-scotty-219775-2.x86_64 is already installed, nothing to do
+1.1.4.10				(staging3-ny)[s3nyprof-beta-gtmt01.ix3.lmax - scotty-agentd] Starting service scotty-agentd
+1.1.4.11				(staging3-ny)[s3nyprof-beta-gtmt02.ix3.lmax - scotty-agentd] Package tf-scotty-219775-2.x86_64 is already installed, nothing to do
+1.1.4.11				(staging3-ny)[s3nyprof-beta-gtmt02.ix3.lmax - scotty-agentd] Starting service scotty-agentd
+1.1.4.1				(staging3-ny)[s3nyprof-beta-binb01.ix3.lmax - scotty-agentd] Package tf-scotty-219775-2.x86_64 is already installed, nothing to do
+1.1.4.1				(staging3-ny)[s3nyprof-beta-binb01.ix3.lmax - scotty-agentd] Starting service scotty-agentd
+1.1.4.2				(staging3-ny)[s3nyprof-beta-binb02.ix3.lmax - scotty-agentd] Service start:
+output = Starting scotty-agentd: [  OK  ]
+error = 
+1.1.4.2				(staging3-ny)[s3nyprof-beta-binb02.ix3.lmax - scotty-agentd] Started service scotty-agentd
+1.1.4.2				(staging3-ny)[s3nyprof-beta-binb02.ix3.lmax - scotty-agentd] Updated scotty-agentd to tf-scotty-219775-2.x86_64
+1.1.4.9				(staging3-ny)[s3nyprof-beta-gmts02.ix3.lmax - scotty-agentd] Service start:
+output = Starting scotty-agentd: [  OK  ]
+error = 
+1.1.4.9				(staging3-ny)[s3nyprof-beta-gmts02.ix3.lmax - scotty-agentd] Started service scotty-agentd
+1.1.4.9				(staging3-ny)[s3nyprof-beta-gmts02.ix3.lmax - scotty-agentd] Updated scotty-agentd to tf-scotty-219775-2.x86_64
+1.1.4.10				(staging3-ny)[s3nyprof-beta-gtmt01.ix3.lmax - scotty-agentd] Service start:
+output = Starting scotty-agentd: [  OK  ]
+error = 
+1.1.4.10				(staging3-ny)[s3nyprof-beta-gtmt01.ix3.lmax - scotty-agentd] Started service scotty-agentd
+1.1.4.10				(staging3-ny)[s3nyprof-beta-gtmt01.ix3.lmax - scotty-agentd] Updated scotty-agentd to tf-scotty-219775-2.x86_64
+1.1.4.11				(staging3-ny)[s3nyprof-beta-gtmt02.ix3.lmax - scotty-agentd] Service start:
+output = Starting scotty-agentd: [  OK  ]
+error = 
+1.1.4.11				(staging3-ny)[s3nyprof-beta-gtmt02.ix3.lmax - scotty-agentd] Started service scotty-agentd
+1.1.4.11				(staging3-ny)[s3nyprof-beta-gtmt02.ix3.lmax - scotty-agentd] Updated scotty-agentd to tf-scotty-219775-2.x86_64
+1.1.4.1				(staging3-ny)[s3nyprof-beta-binb01.ix3.lmax - scotty-agentd] Service start:
+output = Starting scotty-agentd: [  OK  ]
+error = 
+1.1.4.1				(staging3-ny)[s3nyprof-beta-binb01.ix3.lmax - scotty-agentd] Started service scotty-agentd
+1.1.4.1				(staging3-ny)[s3nyprof-beta-binb01.ix3.lmax - scotty-agentd] Updated scotty-agentd to tf-scotty-219775-2.x86_64
+1.1.4.24				(staging3-ny)[s3nyprof-beta-deploy01.ix3.lmax - scotty-server] Attempting to update scotty-server to tf-scotty-server-219775-2.x86_64
+1.1.4.24				(staging3-ny)[s3nyprof-beta-deploy01.ix3.lmax - scotty-server] Package tf-scotty-server-219775-2.x86_64 is already installed, nothing to do
+1.1.4.24				(staging3-ny)[s3nyprof-beta-deploy01.ix3.lmax - scotty-server] Starting service scotty-server
+1.1.4.24				(staging3-ny)[s3nyprof-beta-deploy01.ix3.lmax - scotty-server] Service start:
+output = Starting scotty-server: [  OK  ]
+error = 
+1.1.4.24				(staging3-ny)[s3nyprof-beta-deploy01.ix3.lmax - scotty-server] Started service scotty-server
+1.1.4.24				(staging3-ny)[s3nyprof-beta-deploy01.ix3.lmax - scotty-server] Updated scotty-server to tf-scotty-server-219775-2.x86_64
+1.1.4			(staging3-ny)Finished (ScottyInstance{name='ix3-stg3-ny', uri='https://s3nyprof-beta-deploy01.ix3.lmax'}) update scotty to version 219775-2 in 0 min 02.5 sec
+1.1.4			Finished (staging3-ny) (ScottyInstance{name='ix3-stg3-ny', uri='https://s3nyprof-beta-deploy01.ix3.lmax'}) update scotty to version 219775-2 in 0 min 02.5 sec
+
+ -------------------------------------------- 
+
+
+ -------------------------------------------- 
+
+1.1.5			Running (staging3-global) (ScottyInstance{name='ix3-stg3-glob', uri='https://s3ldglob-live-deploy01.ix3.lmax'}) update scotty to version 219775-2
+1.1.5			(staging3-global)Running (ScottyInstance{name='ix3-stg3-glob', uri='https://s3ldglob-live-deploy01.ix3.lmax'}) update scotty to version 219775-2
+1.1.5.5				(staging3-global)[s3ldglob-live-sys02.ix3.lmax - scotty-agentd] Attempting to update scotty-agentd to tf-scotty-219775-2.x86_64
+1.1.5.2				(staging3-global)[s3ldglob-live-gmts01.ix3.lmax - scotty-agentd] Attempting to update scotty-agentd to tf-scotty-219775-2.x86_64
+1.1.5.1				(staging3-global)[s3ldglob-dr-sys01.ix3.lmax - scotty-agentd] Attempting to update scotty-agentd to tf-scotty-219775-2.x86_64
+1.1.5.3				(staging3-global)[s3ldglob-live-gmts02.ix3.lmax - scotty-agentd] Attempting to update scotty-agentd to tf-scotty-219775-2.x86_64
+1.1.5.7				(staging3-global)[s3ldglob-live-web02.ix3.lmax - scotty-agentd] Attempting to update scotty-agentd to tf-scotty-219775-2.x86_64
+1.1.5.6				(staging3-global)[s3ldglob-live-web01.ix3.lmax - scotty-agentd] Attempting to update scotty-agentd to tf-scotty-219775-2.x86_64
+1.1.5.6				(staging3-global)[s3ldglob-live-web01.ix3.lmax - scotty-agentd] Package tf-scotty-219775-2.x86_64 is already installed, nothing to do
+1.1.5.6				(staging3-global)[s3ldglob-live-web01.ix3.lmax - scotty-agentd] Starting service scotty-agentd
+1.1.5.2				(staging3-global)[s3ldglob-live-gmts01.ix3.lmax - scotty-agentd] Package tf-scotty-219775-2.x86_64 is already installed, nothing to do
+1.1.5.2				(staging3-global)[s3ldglob-live-gmts01.ix3.lmax - scotty-agentd] Starting service scotty-agentd
+1.1.5.7				(staging3-global)[s3ldglob-live-web02.ix3.lmax - scotty-agentd] Package tf-scotty-219775-2.x86_64 is already installed, nothing to do
+1.1.5.7				(staging3-global)[s3ldglob-live-web02.ix3.lmax - scotty-agentd] Starting service scotty-agentd
+1.1.5.5				(staging3-global)[s3ldglob-live-sys02.ix3.lmax - scotty-agentd] Package tf-scotty-219775-2.x86_64 is already installed, nothing to do
+1.1.5.5				(staging3-global)[s3ldglob-live-sys02.ix3.lmax - scotty-agentd] Starting service scotty-agentd
+1.1.5.1				(staging3-global)[s3ldglob-dr-sys01.ix3.lmax - scotty-agentd] Package tf-scotty-219775-2.x86_64 is already installed, nothing to do
+1.1.5.1				(staging3-global)[s3ldglob-dr-sys01.ix3.lmax - scotty-agentd] Starting service scotty-agentd
+1.1.5.3				(staging3-global)[s3ldglob-live-gmts02.ix3.lmax - scotty-agentd] Package tf-scotty-219775-2.x86_64 is already installed, nothing to do
+1.1.5.3				(staging3-global)[s3ldglob-live-gmts02.ix3.lmax - scotty-agentd] Starting service scotty-agentd
+1.1.5.6				(staging3-global)[s3ldglob-live-web01.ix3.lmax - scotty-agentd] Service start:
+output = Starting scotty-agentd: [  OK  ]
+error = 
+1.1.5.6				(staging3-global)[s3ldglob-live-web01.ix3.lmax - scotty-agentd] Started service scotty-agentd
+1.1.5.6				(staging3-global)[s3ldglob-live-web01.ix3.lmax - scotty-agentd] Updated scotty-agentd to tf-scotty-219775-2.x86_64
+1.1.5.4				(staging3-global)[s3ldglob-live-sys01.ix3.lmax - scotty-agentd] Attempting to update scotty-agentd to tf-scotty-219775-2.x86_64
+1.1.5.7				(staging3-global)[s3ldglob-live-web02.ix3.lmax - scotty-agentd] Service start:
+output = Starting scotty-agentd: [  OK  ]
+error = 
+1.1.5.7				(staging3-global)[s3ldglob-live-web02.ix3.lmax - scotty-agentd] Started service scotty-agentd
+1.1.5.7				(staging3-global)[s3ldglob-live-web02.ix3.lmax - scotty-agentd] Updated scotty-agentd to tf-scotty-219775-2.x86_64
+1.1.5.2				(staging3-global)[s3ldglob-live-gmts01.ix3.lmax - scotty-agentd] Service start:
+output = Starting scotty-agentd: [  OK  ]
+error = 
+1.1.5.2				(staging3-global)[s3ldglob-live-gmts01.ix3.lmax - scotty-agentd] Started service scotty-agentd
+1.1.5.2				(staging3-global)[s3ldglob-live-gmts01.ix3.lmax - scotty-agentd] Updated scotty-agentd to tf-scotty-219775-2.x86_64
+1.1.5.1				(staging3-global)[s3ldglob-dr-sys01.ix3.lmax - scotty-agentd] Service start:
+output = Starting scotty-agentd: [  OK  ]
+error = 
+1.1.5.1				(staging3-global)[s3ldglob-dr-sys01.ix3.lmax - scotty-agentd] Started service scotty-agentd
+1.1.5.1				(staging3-global)[s3ldglob-dr-sys01.ix3.lmax - scotty-agentd] Updated scotty-agentd to tf-scotty-219775-2.x86_64
+1.1.5.5				(staging3-global)[s3ldglob-live-sys02.ix3.lmax - scotty-agentd] Service start:
+output = Starting scotty-agentd: [  OK  ]
+error = 
+1.1.5.5				(staging3-global)[s3ldglob-live-sys02.ix3.lmax - scotty-agentd] Started service scotty-agentd
+1.1.5.5				(staging3-global)[s3ldglob-live-sys02.ix3.lmax - scotty-agentd] Updated scotty-agentd to tf-scotty-219775-2.x86_64
+1.1.5.3				(staging3-global)[s3ldglob-live-gmts02.ix3.lmax - scotty-agentd] Service start:
+output = Starting scotty-agentd: [  OK  ]
+error = 
+1.1.5.3				(staging3-global)[s3ldglob-live-gmts02.ix3.lmax - scotty-agentd] Started service scotty-agentd
+1.1.5.3				(staging3-global)[s3ldglob-live-gmts02.ix3.lmax - scotty-agentd] Updated scotty-agentd to tf-scotty-219775-2.x86_64
+1.1.5.4				(staging3-global)[s3ldglob-live-sys01.ix3.lmax - scotty-agentd] Package tf-scotty-219775-2.x86_64 is already installed, nothing to do
+1.1.5.4				(staging3-global)[s3ldglob-live-sys01.ix3.lmax - scotty-agentd] Starting service scotty-agentd
+1.1.5.4				(staging3-global)[s3ldglob-live-sys01.ix3.lmax - scotty-agentd] Service start:
+output = Starting scotty-agentd: [  OK  ]
+error = 
+1.1.5.4				(staging3-global)[s3ldglob-live-sys01.ix3.lmax - scotty-agentd] Started service scotty-agentd
+1.1.5.4				(staging3-global)[s3ldglob-live-sys01.ix3.lmax - scotty-agentd] Updated scotty-agentd to tf-scotty-219775-2.x86_64
+1.1.5.8				(staging3-global)[s3ldglob-live-deploy01.ix3.lmax - scotty-server] Attempting to update scotty-server to tf-scotty-server-219775-2.x86_64
+1.1.5.8				(staging3-global)[s3ldglob-live-deploy01.ix3.lmax - scotty-server] Package tf-scotty-server-219775-2.x86_64 is already installed, nothing to do
+1.1.5.8				(staging3-global)[s3ldglob-live-deploy01.ix3.lmax - scotty-server] Starting service scotty-server
+1.1.5.8				(staging3-global)[s3ldglob-live-deploy01.ix3.lmax - scotty-server] Service start:
+output = Starting scotty-server: [  OK  ]
+error = 
+1.1.5.8				(staging3-global)[s3ldglob-live-deploy01.ix3.lmax - scotty-server] Started service scotty-server
+1.1.5.8				(staging3-global)[s3ldglob-live-deploy01.ix3.lmax - scotty-server] Updated scotty-server to tf-scotty-server-219775-2.x86_64
+1.1.5			(staging3-global)Finished (ScottyInstance{name='ix3-stg3-glob', uri='https://s3ldglob-live-deploy01.ix3.lmax'}) update scotty to version 219775-2 in 0 min 01.6 sec
+1.1.5			Finished (staging3-global) (ScottyInstance{name='ix3-stg3-glob', uri='https://s3ldglob-live-deploy01.ix3.lmax'}) update scotty to version 219775-2 in 0 min 01.6 sec
+
+ -------------------------------------------- 
+
+
+ -------------------------------------------- 
+
+1.1.6			Running (staging3-professional,staging3-interbank,staging3-tokyo2,staging3-ny,staging3-global) WaitForEnvironmentToBePresentAndIdleStep
+1.1.6			Running (staging3-professional) Waiting for environment ix3-stg3-prof to be present and idle
+1.1.6			Running (staging3-ny) Waiting for environment ix3-stg3-ny to be present and idle
+1.1.6			Running (staging3-interbank) Waiting for environment ix3-stg3-inst to be present and idle
+1.1.6			Running (staging3-global) Waiting for environment ix3-stg3-glob to be present and idle
+1.1.6			(staging3-ny)Running Waiting for environment ix3-stg3-ny to be present and idle
+1.1.6			(staging3-professional)Running Waiting for environment ix3-stg3-prof to be present and idle
+1.1.6			Running (staging3-tokyo2) Waiting for environment ix3-stg3-typrof2 to be present and idle
+1.1.6			(staging3-professional)[1610912050704] Checking whether environment is present and idle
+1.1.6			(staging3-ny)[1610912050704] Checking whether environment is present and idle
+1.1.6			(staging3-global)Running Waiting for environment ix3-stg3-glob to be present and idle
+1.1.6			(staging3-global)[1610912050705] Checking whether environment is present and idle
+1.1.6			(staging3-interbank)Running Waiting for environment ix3-stg3-inst to be present and idle
+1.1.6			(staging3-interbank)[1610912050705] Checking whether environment is present and idle
+1.1.6			(staging3-tokyo2)Running Waiting for environment ix3-stg3-typrof2 to be present and idle
+1.1.6			(staging3-tokyo2)[1610912050707] Checking whether environment is present and idle
+1.1.6			(staging3-global)Finished Waiting for environment ix3-stg3-glob to be present and idle in 0 min 00.0 sec
+1.1.6			Finished (staging3-global) Waiting for environment ix3-stg3-glob to be present and idle in 0 min 00.0 sec
+2021-01-17 19:34:10,754 [ForkJoinPool-1-worker-3] WARN  com.lmax.scotty.api.ScottyApiClient - 404 when trying to GET /api/v1/environments/production on ix3-stg3-prof (https://s3ldprof-live-deploy01.ix3.lmax/scotty/api/v1/environments/production)
+2021-01-17 19:34:10,761 [ForkJoinPool-1-worker-5] WARN  com.lmax.scotty.api.ScottyApiClient - 404 when trying to GET /api/v1/environments/interbank on ix3-stg3-inst (https://s3ldinst-live-deploy01.ix3.lmax/scotty/api/v1/environments/interbank)
+2021-01-17 19:34:10,765 [ForkJoinPool-1-worker-7] WARN  com.lmax.scotty.api.ScottyApiClient - 404 when trying to GET /api/v1/environments/tokyo-professional on ix3-stg3-typrof2 (https://s3typrof-live-deploy21.ix3.lmax/scotty/api/v1/environments/tokyo-professional)
+1.1.6			(staging3-ny)Finished Waiting for environment ix3-stg3-ny to be present and idle in 0 min 00.0 sec
+1.1.6			Finished (staging3-ny) Waiting for environment ix3-stg3-ny to be present and idle in 0 min 00.0 sec
+2021-01-17 19:34:15,778 [ForkJoinPool-1-worker-5] WARN  com.lmax.scotty.api.ScottyApiClient - 404 when trying to GET /api/v1/environments/interbank on ix3-stg3-inst (https://s3ldinst-live-deploy01.ix3.lmax/scotty/api/v1/environments/interbank)
+2021-01-17 19:34:15,779 [ForkJoinPool-1-worker-3] WARN  com.lmax.scotty.api.ScottyApiClient - 404 when trying to GET /api/v1/environments/production on ix3-stg3-prof (https://s3ldprof-live-deploy01.ix3.lmax/scotty/api/v1/environments/production)
+2021-01-17 19:34:15,784 [ForkJoinPool-1-worker-7] WARN  com.lmax.scotty.api.ScottyApiClient - 404 when trying to GET /api/v1/environments/tokyo-professional on ix3-stg3-typrof2 (https://s3typrof-live-deploy21.ix3.lmax/scotty/api/v1/environments/tokyo-professional)
+2021-01-17 19:34:20,804 [ForkJoinPool-1-worker-5] WARN  com.lmax.scotty.api.ScottyApiClient - 404 when trying to GET /api/v1/environments/interbank on ix3-stg3-inst (https://s3ldinst-live-deploy01.ix3.lmax/scotty/api/v1/environments/interbank)
+2021-01-17 19:34:20,806 [ForkJoinPool-1-worker-3] WARN  com.lmax.scotty.api.ScottyApiClient - 404 when trying to GET /api/v1/environments/production on ix3-stg3-prof (https://s3ldprof-live-deploy01.ix3.lmax/scotty/api/v1/environments/production)
+2021-01-17 19:34:20,809 [ForkJoinPool-1-worker-7] WARN  com.lmax.scotty.api.ScottyApiClient - 404 when trying to GET /api/v1/environments/tokyo-professional on ix3-stg3-typrof2 (https://s3typrof-live-deploy21.ix3.lmax/scotty/api/v1/environments/tokyo-professional)
+2021-01-17 19:34:25,825 [ForkJoinPool-1-worker-3] WARN  com.lmax.scotty.api.ScottyApiClient - 404 when trying to GET /api/v1/environments/production on ix3-stg3-prof (https://s3ldprof-live-deploy01.ix3.lmax/scotty/api/v1/environments/production)
+2021-01-17 19:34:25,826 [ForkJoinPool-1-worker-7] WARN  com.lmax.scotty.api.ScottyApiClient - 404 when trying to GET /api/v1/environments/tokyo-professional on ix3-stg3-typrof2 (https://s3typrof-live-deploy21.ix3.lmax/scotty/api/v1/environments/tokyo-professional)
+2021-01-17 19:34:25,827 [ForkJoinPool-1-worker-5] WARN  com.lmax.scotty.api.ScottyApiClient - 404 when trying to GET /api/v1/environments/interbank on ix3-stg3-inst (https://s3ldinst-live-deploy01.ix3.lmax/scotty/api/v1/environments/interbank)
+2021-01-17 19:34:30,842 [ForkJoinPool-1-worker-5] WARN  com.lmax.scotty.api.ScottyApiClient - 404 when trying to GET /api/v1/environments/interbank on ix3-stg3-inst (https://s3ldinst-live-deploy01.ix3.lmax/scotty/api/v1/environments/interbank)
+2021-01-17 19:34:30,847 [ForkJoinPool-1-worker-7] WARN  com.lmax.scotty.api.ScottyApiClient - 404 when trying to GET /api/v1/environments/tokyo-professional on ix3-stg3-typrof2 (https://s3typrof-live-deploy21.ix3.lmax/scotty/api/v1/environments/tokyo-professional)
+2021-01-17 19:34:30,848 [ForkJoinPool-1-worker-3] WARN  com.lmax.scotty.api.ScottyApiClient - 404 when trying to GET /api/v1/environments/production on ix3-stg3-prof (https://s3ldprof-live-deploy01.ix3.lmax/scotty/api/v1/environments/production)
+2021-01-17 19:34:35,865 [ForkJoinPool-1-worker-5] WARN  com.lmax.scotty.api.ScottyApiClient - 404 when trying to GET /api/v1/environments/interbank on ix3-stg3-inst (https://s3ldinst-live-deploy01.ix3.lmax/scotty/api/v1/environments/interbank)
+2021-01-17 19:34:35,865 [ForkJoinPool-1-worker-7] WARN  com.lmax.scotty.api.ScottyApiClient - 404 when trying to GET /api/v1/environments/tokyo-professional on ix3-stg3-typrof2 (https://s3typrof-live-deploy21.ix3.lmax/scotty/api/v1/environments/tokyo-professional)
+2021-01-17 19:34:35,866 [ForkJoinPool-1-worker-3] WARN  com.lmax.scotty.api.ScottyApiClient - 404 when trying to GET /api/v1/environments/production on ix3-stg3-prof (https://s3ldprof-live-deploy01.ix3.lmax/scotty/api/v1/environments/production)
+2021-01-17 19:34:40,884 [ForkJoinPool-1-worker-5] WARN  com.lmax.scotty.api.ScottyApiClient - 404 when trying to GET /api/v1/environments/interbank on ix3-stg3-inst (https://s3ldinst-live-deploy01.ix3.lmax/scotty/api/v1/environments/interbank)
+2021-01-17 19:34:40,885 [ForkJoinPool-1-worker-3] WARN  com.lmax.scotty.api.ScottyApiClient - 404 when trying to GET /api/v1/environments/production on ix3-stg3-prof (https://s3ldprof-live-deploy01.ix3.lmax/scotty/api/v1/environments/production)
+2021-01-17 19:34:40,887 [ForkJoinPool-1-worker-7] WARN  com.lmax.scotty.api.ScottyApiClient - 404 when trying to GET /api/v1/environments/tokyo-professional on ix3-stg3-typrof2 (https://s3typrof-live-deploy21.ix3.lmax/scotty/api/v1/environments/tokyo-professional)
+2021-01-17 19:34:45,902 [ForkJoinPool-1-worker-7] WARN  com.lmax.scotty.api.ScottyApiClient - 404 when trying to GET /api/v1/environments/tokyo-professional on ix3-stg3-typrof2 (https://s3typrof-live-deploy21.ix3.lmax/scotty/api/v1/environments/tokyo-professional)
+2021-01-17 19:34:45,903 [ForkJoinPool-1-worker-3] WARN  com.lmax.scotty.api.ScottyApiClient - 404 when trying to GET /api/v1/environments/production on ix3-stg3-prof (https://s3ldprof-live-deploy01.ix3.lmax/scotty/api/v1/environments/production)
+2021-01-17 19:34:45,903 [ForkJoinPool-1-worker-5] WARN  com.lmax.scotty.api.ScottyApiClient - 404 when trying to GET /api/v1/environments/interbank on ix3-stg3-inst (https://s3ldinst-live-deploy01.ix3.lmax/scotty/api/v1/environments/interbank)
+2021-01-17 19:34:50,921 [ForkJoinPool-1-worker-5] WARN  com.lmax.scotty.api.ScottyApiClient - 404 when trying to GET /api/v1/environments/interbank on ix3-stg3-inst (https://s3ldinst-live-deploy01.ix3.lmax/scotty/api/v1/environments/interbank)
+2021-01-17 19:34:50,922 [ForkJoinPool-1-worker-3] WARN  com.lmax.scotty.api.ScottyApiClient - 404 when trying to GET /api/v1/environments/production on ix3-stg3-prof (https://s3ldprof-live-deploy01.ix3.lmax/scotty/api/v1/environments/production)
+2021-01-17 19:34:50,922 [ForkJoinPool-1-worker-7] WARN  com.lmax.scotty.api.ScottyApiClient - 404 when trying to GET /api/v1/environments/tokyo-professional on ix3-stg3-typrof2 (https://s3typrof-live-deploy21.ix3.lmax/scotty/api/v1/environments/tokyo-professional)
+2021-01-17 19:34:55,940 [ForkJoinPool-1-worker-5] WARN  com.lmax.scotty.api.ScottyApiClient - 404 when trying to GET /api/v1/environments/interbank on ix3-stg3-inst (https://s3ldinst-live-deploy01.ix3.lmax/scotty/api/v1/environments/interbank)
+2021-01-17 19:34:55,941 [ForkJoinPool-1-worker-3] WARN  com.lmax.scotty.api.ScottyApiClient - 404 when trying to GET /api/v1/environments/production on ix3-stg3-prof (https://s3ldprof-live-deploy01.ix3.lmax/scotty/api/v1/environments/production)
+2021-01-17 19:34:55,941 [ForkJoinPool-1-worker-7] WARN  com.lmax.scotty.api.ScottyApiClient - 404 when trying to GET /api/v1/environments/tokyo-professional on ix3-stg3-typrof2 (https://s3typrof-live-deploy21.ix3.lmax/scotty/api/v1/environments/tokyo-professional)
+2021-01-17 19:35:00,959 [ForkJoinPool-1-worker-7] WARN  com.lmax.scotty.api.ScottyApiClient - 404 when trying to GET /api/v1/environments/tokyo-professional on ix3-stg3-typrof2 (https://s3typrof-live-deploy21.ix3.lmax/scotty/api/v1/environments/tokyo-professional)
+2021-01-17 19:35:00,960 [ForkJoinPool-1-worker-3] WARN  com.lmax.scotty.api.ScottyApiClient - 404 when trying to GET /api/v1/environments/production on ix3-stg3-prof (https://s3ldprof-live-deploy01.ix3.lmax/scotty/api/v1/environments/production)
+2021-01-17 19:35:00,960 [ForkJoinPool-1-worker-5] WARN  com.lmax.scotty.api.ScottyApiClient - 404 when trying to GET /api/v1/environments/interbank on ix3-stg3-inst (https://s3ldinst-live-deploy01.ix3.lmax/scotty/api/v1/environments/interbank)
+2021-01-17 19:35:05,978 [ForkJoinPool-1-worker-3] WARN  com.lmax.scotty.api.ScottyApiClient - 404 when trying to GET /api/v1/environments/production on ix3-stg3-prof (https://s3ldprof-live-deploy01.ix3.lmax/scotty/api/v1/environments/production)
+2021-01-17 19:35:05,978 [ForkJoinPool-1-worker-7] WARN  com.lmax.scotty.api.ScottyApiClient - 404 when trying to GET /api/v1/environments/tokyo-professional on ix3-stg3-typrof2 (https://s3typrof-live-deploy21.ix3.lmax/scotty/api/v1/environments/tokyo-professional)
+2021-01-17 19:35:05,978 [ForkJoinPool-1-worker-5] WARN  com.lmax.scotty.api.ScottyApiClient - 404 when trying to GET /api/v1/environments/interbank on ix3-stg3-inst (https://s3ldinst-live-deploy01.ix3.lmax/scotty/api/v1/environments/interbank)
+2021-01-17 19:35:11,003 [ForkJoinPool-1-worker-3] WARN  com.lmax.scotty.api.ScottyApiClient - 404 when trying to GET /api/v1/environments/production on ix3-stg3-prof (https://s3ldprof-live-deploy01.ix3.lmax/scotty/api/v1/environments/production)
+2021-01-17 19:35:11,004 [ForkJoinPool-1-worker-5] WARN  com.lmax.scotty.api.ScottyApiClient - 404 when trying to GET /api/v1/environments/interbank on ix3-stg3-inst (https://s3ldinst-live-deploy01.ix3.lmax/scotty/api/v1/environments/interbank)
+2021-01-17 19:35:11,004 [ForkJoinPool-1-worker-7] WARN  com.lmax.scotty.api.ScottyApiClient - 404 when trying to GET /api/v1/environments/tokyo-professional on ix3-stg3-typrof2 (https://s3typrof-live-deploy21.ix3.lmax/scotty/api/v1/environments/tokyo-professional)
+2021-01-17 19:35:16,019 [ForkJoinPool-1-worker-5] WARN  com.lmax.scotty.api.ScottyApiClient - 404 when trying to GET /api/v1/environments/interbank on ix3-stg3-inst (https://s3ldinst-live-deploy01.ix3.lmax/scotty/api/v1/environments/interbank)
+2021-01-17 19:35:16,023 [ForkJoinPool-1-worker-7] WARN  com.lmax.scotty.api.ScottyApiClient - 404 when trying to GET /api/v1/environments/tokyo-professional on ix3-stg3-typrof2 (https://s3typrof-live-deploy21.ix3.lmax/scotty/api/v1/environments/tokyo-professional)
+2021-01-17 19:35:16,025 [ForkJoinPool-1-worker-3] WARN  com.lmax.scotty.api.ScottyApiClient - 404 when trying to GET /api/v1/environments/production on ix3-stg3-prof (https://s3ldprof-live-deploy01.ix3.lmax/scotty/api/v1/environments/production)
+2021-01-17 19:35:21,040 [ForkJoinPool-1-worker-5] WARN  com.lmax.scotty.api.ScottyApiClient - 404 when trying to GET /api/v1/environments/interbank on ix3-stg3-inst (https://s3ldinst-live-deploy01.ix3.lmax/scotty/api/v1/environments/interbank)
+2021-01-17 19:35:21,043 [ForkJoinPool-1-worker-3] WARN  com.lmax.scotty.api.ScottyApiClient - 404 when trying to GET /api/v1/environments/production on ix3-stg3-prof (https://s3ldprof-live-deploy01.ix3.lmax/scotty/api/v1/environments/production)
+2021-01-17 19:35:21,046 [ForkJoinPool-1-worker-7] WARN  com.lmax.scotty.api.ScottyApiClient - 404 when trying to GET /api/v1/environments/tokyo-professional on ix3-stg3-typrof2 (https://s3typrof-live-deploy21.ix3.lmax/scotty/api/v1/environments/tokyo-professional)
+2021-01-17 19:35:26,059 [ForkJoinPool-1-worker-5] WARN  com.lmax.scotty.api.ScottyApiClient - 404 when trying to GET /api/v1/environments/interbank on ix3-stg3-inst (https://s3ldinst-live-deploy01.ix3.lmax/scotty/api/v1/environments/interbank)
+2021-01-17 19:35:26,062 [ForkJoinPool-1-worker-3] WARN  com.lmax.scotty.api.ScottyApiClient - 404 when trying to GET /api/v1/environments/production on ix3-stg3-prof (https://s3ldprof-live-deploy01.ix3.lmax/scotty/api/v1/environments/production)
+2021-01-17 19:35:26,064 [ForkJoinPool-1-worker-7] WARN  com.lmax.scotty.api.ScottyApiClient - 404 when trying to GET /api/v1/environments/tokyo-professional on ix3-stg3-typrof2 (https://s3typrof-live-deploy21.ix3.lmax/scotty/api/v1/environments/tokyo-professional)
+2021-01-17 19:35:31,078 [ForkJoinPool-1-worker-5] WARN  com.lmax.scotty.api.ScottyApiClient - 404 when trying to GET /api/v1/environments/interbank on ix3-stg3-inst (https://s3ldinst-live-deploy01.ix3.lmax/scotty/api/v1/environments/interbank)
+2021-01-17 19:35:31,079 [ForkJoinPool-1-worker-3] WARN  com.lmax.scotty.api.ScottyApiClient - 404 when trying to GET /api/v1/environments/production on ix3-stg3-prof (https://s3ldprof-live-deploy01.ix3.lmax/scotty/api/v1/environments/production)
+2021-01-17 19:35:31,080 [ForkJoinPool-1-worker-7] WARN  com.lmax.scotty.api.ScottyApiClient - 404 when trying to GET /api/v1/environments/tokyo-professional on ix3-stg3-typrof2 (https://s3typrof-live-deploy21.ix3.lmax/scotty/api/v1/environments/tokyo-professional)
+2021-01-17 19:35:36,098 [ForkJoinPool-1-worker-3] WARN  com.lmax.scotty.api.ScottyApiClient - 404 when trying to GET /api/v1/environments/production on ix3-stg3-prof (https://s3ldprof-live-deploy01.ix3.lmax/scotty/api/v1/environments/production)
+2021-01-17 19:35:36,098 [ForkJoinPool-1-worker-7] WARN  com.lmax.scotty.api.ScottyApiClient - 404 when trying to GET /api/v1/environments/tokyo-professional on ix3-stg3-typrof2 (https://s3typrof-live-deploy21.ix3.lmax/scotty/api/v1/environments/tokyo-professional)
+2021-01-17 19:35:36,100 [ForkJoinPool-1-worker-5] WARN  com.lmax.scotty.api.ScottyApiClient - 404 when trying to GET /api/v1/environments/interbank on ix3-stg3-inst (https://s3ldinst-live-deploy01.ix3.lmax/scotty/api/v1/environments/interbank)
+2021-01-17 19:35:41,117 [ForkJoinPool-1-worker-5] WARN  com.lmax.scotty.api.ScottyApiClient - 404 when trying to GET /api/v1/environments/interbank on ix3-stg3-inst (https://s3ldinst-live-deploy01.ix3.lmax/scotty/api/v1/environments/interbank)
+2021-01-17 19:35:41,118 [ForkJoinPool-1-worker-3] WARN  com.lmax.scotty.api.ScottyApiClient - 404 when trying to GET /api/v1/environments/production on ix3-stg3-prof (https://s3ldprof-live-deploy01.ix3.lmax/scotty/api/v1/environments/production)
+2021-01-17 19:35:41,118 [ForkJoinPool-1-worker-7] WARN  com.lmax.scotty.api.ScottyApiClient - 404 when trying to GET /api/v1/environments/tokyo-professional on ix3-stg3-typrof2 (https://s3typrof-live-deploy21.ix3.lmax/scotty/api/v1/environments/tokyo-professional)
+2021-01-17 19:35:46,135 [ForkJoinPool-1-worker-5] WARN  com.lmax.scotty.api.ScottyApiClient - 404 when trying to GET /api/v1/environments/interbank on ix3-stg3-inst (https://s3ldinst-live-deploy01.ix3.lmax/scotty/api/v1/environments/interbank)
+2021-01-17 19:35:46,137 [ForkJoinPool-1-worker-7] WARN  com.lmax.scotty.api.ScottyApiClient - 404 when trying to GET /api/v1/environments/tokyo-professional on ix3-stg3-typrof2 (https://s3typrof-live-deploy21.ix3.lmax/scotty/api/v1/environments/tokyo-professional)
+2021-01-17 19:35:46,142 [ForkJoinPool-1-worker-3] WARN  com.lmax.scotty.api.ScottyApiClient - 404 when trying to GET /api/v1/environments/production on ix3-stg3-prof (https://s3ldprof-live-deploy01.ix3.lmax/scotty/api/v1/environments/production)
+2021-01-17 19:35:51,156 [ForkJoinPool-1-worker-3] WARN  com.lmax.scotty.api.ScottyApiClient - 404 when trying to GET /api/v1/environments/production on ix3-stg3-prof (https://s3ldprof-live-deploy01.ix3.lmax/scotty/api/v1/environments/production)
+2021-01-17 19:35:51,159 [ForkJoinPool-1-worker-5] WARN  com.lmax.scotty.api.ScottyApiClient - 404 when trying to GET /api/v1/environments/interbank on ix3-stg3-inst (https://s3ldinst-live-deploy01.ix3.lmax/scotty/api/v1/environments/interbank)
+2021-01-17 19:35:51,159 [ForkJoinPool-1-worker-7] WARN  com.lmax.scotty.api.ScottyApiClient - 404 when trying to GET /api/v1/environments/tokyo-professional on ix3-stg3-typrof2 (https://s3typrof-live-deploy21.ix3.lmax/scotty/api/v1/environments/tokyo-professional)
+2021-01-17 19:35:56,175 [ForkJoinPool-1-worker-7] WARN  com.lmax.scotty.api.ScottyApiClient - 404 when trying to GET /api/v1/environments/tokyo-professional on ix3-stg3-typrof2 (https://s3typrof-live-deploy21.ix3.lmax/scotty/api/v1/environments/tokyo-professional)
+2021-01-17 19:35:56,175 [ForkJoinPool-1-worker-3] WARN  com.lmax.scotty.api.ScottyApiClient - 404 when trying to GET /api/v1/environments/production on ix3-stg3-prof (https://s3ldprof-live-deploy01.ix3.lmax/scotty/api/v1/environments/production)
+2021-01-17 19:35:56,177 [ForkJoinPool-1-worker-5] WARN  com.lmax.scotty.api.ScottyApiClient - 404 when trying to GET /api/v1/environments/interbank on ix3-stg3-inst (https://s3ldinst-live-deploy01.ix3.lmax/scotty/api/v1/environments/interbank)
+2021-01-17 19:36:01,193 [ForkJoinPool-1-worker-5] WARN  com.lmax.scotty.api.ScottyApiClient - 404 when trying to GET /api/v1/environments/interbank on ix3-stg3-inst (https://s3ldinst-live-deploy01.ix3.lmax/scotty/api/v1/environments/interbank)
+2021-01-17 19:36:01,194 [ForkJoinPool-1-worker-3] WARN  com.lmax.scotty.api.ScottyApiClient - 404 when trying to GET /api/v1/environments/production on ix3-stg3-prof (https://s3ldprof-live-deploy01.ix3.lmax/scotty/api/v1/environments/production)
+2021-01-17 19:36:01,197 [ForkJoinPool-1-worker-7] WARN  com.lmax.scotty.api.ScottyApiClient - 404 when trying to GET /api/v1/environments/tokyo-professional on ix3-stg3-typrof2 (https://s3typrof-live-deploy21.ix3.lmax/scotty/api/v1/environments/tokyo-professional)
+2021-01-17 19:36:06,212 [ForkJoinPool-1-worker-3] WARN  com.lmax.scotty.api.ScottyApiClient - 404 when trying to GET /api/v1/environments/production on ix3-stg3-prof (https://s3ldprof-live-deploy01.ix3.lmax/scotty/api/v1/environments/production)
+2021-01-17 19:36:06,213 [ForkJoinPool-1-worker-5] WARN  com.lmax.scotty.api.ScottyApiClient - 404 when trying to GET /api/v1/environments/interbank on ix3-stg3-inst (https://s3ldinst-live-deploy01.ix3.lmax/scotty/api/v1/environments/interbank)
+2021-01-17 19:36:06,216 [ForkJoinPool-1-worker-7] WARN  com.lmax.scotty.api.ScottyApiClient - 404 when trying to GET /api/v1/environments/tokyo-professional on ix3-stg3-typrof2 (https://s3typrof-live-deploy21.ix3.lmax/scotty/api/v1/environments/tokyo-professional)
+2021-01-17 19:36:11,232 [ForkJoinPool-1-worker-3] WARN  com.lmax.scotty.api.ScottyApiClient - 404 when trying to GET /api/v1/environments/production on ix3-stg3-prof (https://s3ldprof-live-deploy01.ix3.lmax/scotty/api/v1/environments/production)
+2021-01-17 19:36:11,233 [ForkJoinPool-1-worker-7] WARN  com.lmax.scotty.api.ScottyApiClient - 404 when trying to GET /api/v1/environments/tokyo-professional on ix3-stg3-typrof2 (https://s3typrof-live-deploy21.ix3.lmax/scotty/api/v1/environments/tokyo-professional)
+2021-01-17 19:36:11,233 [ForkJoinPool-1-worker-5] WARN  com.lmax.scotty.api.ScottyApiClient - 404 when trying to GET /api/v1/environments/interbank on ix3-stg3-inst (https://s3ldinst-live-deploy01.ix3.lmax/scotty/api/v1/environments/interbank)
+2021-01-17 19:36:16,252 [ForkJoinPool-1-worker-5] WARN  com.lmax.scotty.api.ScottyApiClient - 404 when trying to GET /api/v1/environments/interbank on ix3-stg3-inst (https://s3ldinst-live-deploy01.ix3.lmax/scotty/api/v1/environments/interbank)
+2021-01-17 19:36:16,253 [ForkJoinPool-1-worker-3] WARN  com.lmax.scotty.api.ScottyApiClient - 404 when trying to GET /api/v1/environments/production on ix3-stg3-prof (https://s3ldprof-live-deploy01.ix3.lmax/scotty/api/v1/environments/production)
+2021-01-17 19:36:16,256 [ForkJoinPool-1-worker-7] WARN  com.lmax.scotty.api.ScottyApiClient - 404 when trying to GET /api/v1/environments/tokyo-professional on ix3-stg3-typrof2 (https://s3typrof-live-deploy21.ix3.lmax/scotty/api/v1/environments/tokyo-professional)
+2021-01-17 19:36:21,270 [ForkJoinPool-1-worker-3] WARN  com.lmax.scotty.api.ScottyApiClient - 404 when trying to GET /api/v1/environments/production on ix3-stg3-prof (https://s3ldprof-live-deploy01.ix3.lmax/scotty/api/v1/environments/production)
+2021-01-17 19:36:21,270 [ForkJoinPool-1-worker-7] WARN  com.lmax.scotty.api.ScottyApiClient - 404 when trying to GET /api/v1/environments/tokyo-professional on ix3-stg3-typrof2 (https://s3typrof-live-deploy21.ix3.lmax/scotty/api/v1/environments/tokyo-professional)
+2021-01-17 19:36:21,272 [ForkJoinPool-1-worker-5] WARN  com.lmax.scotty.api.ScottyApiClient - 404 when trying to GET /api/v1/environments/interbank on ix3-stg3-inst (https://s3ldinst-live-deploy01.ix3.lmax/scotty/api/v1/environments/interbank)
+2021-01-17 19:36:26,290 [ForkJoinPool-1-worker-5] WARN  com.lmax.scotty.api.ScottyApiClient - 404 when trying to GET /api/v1/environments/interbank on ix3-stg3-inst (https://s3ldinst-live-deploy01.ix3.lmax/scotty/api/v1/environments/interbank)
+2021-01-17 19:36:26,290 [ForkJoinPool-1-worker-7] WARN  com.lmax.scotty.api.ScottyApiClient - 404 when trying to GET /api/v1/environments/tokyo-professional on ix3-stg3-typrof2 (https://s3typrof-live-deploy21.ix3.lmax/scotty/api/v1/environments/tokyo-professional)
+2021-01-17 19:36:26,292 [ForkJoinPool-1-worker-3] WARN  com.lmax.scotty.api.ScottyApiClient - 404 when trying to GET /api/v1/environments/production on ix3-stg3-prof (https://s3ldprof-live-deploy01.ix3.lmax/scotty/api/v1/environments/production)
+2021-01-17 19:36:31,312 [ForkJoinPool-1-worker-7] WARN  com.lmax.scotty.api.ScottyApiClient - 404 when trying to GET /api/v1/environments/tokyo-professional on ix3-stg3-typrof2 (https://s3typrof-live-deploy21.ix3.lmax/scotty/api/v1/environments/tokyo-professional)
+2021-01-17 19:36:31,312 [ForkJoinPool-1-worker-5] WARN  com.lmax.scotty.api.ScottyApiClient - 404 when trying to GET /api/v1/environments/interbank on ix3-stg3-inst (https://s3ldinst-live-deploy01.ix3.lmax/scotty/api/v1/environments/interbank)
+2021-01-17 19:36:31,313 [ForkJoinPool-1-worker-3] WARN  com.lmax.scotty.api.ScottyApiClient - 404 when trying to GET /api/v1/environments/production on ix3-stg3-prof (https://s3ldprof-live-deploy01.ix3.lmax/scotty/api/v1/environments/production)
+2021-01-17 19:36:36,330 [ForkJoinPool-1-worker-5] WARN  com.lmax.scotty.api.ScottyApiClient - 404 when trying to GET /api/v1/environments/interbank on ix3-stg3-inst (https://s3ldinst-live-deploy01.ix3.lmax/scotty/api/v1/environments/interbank)
+2021-01-17 19:36:36,331 [ForkJoinPool-1-worker-3] WARN  com.lmax.scotty.api.ScottyApiClient - 404 when trying to GET /api/v1/environments/production on ix3-stg3-prof (https://s3ldprof-live-deploy01.ix3.lmax/scotty/api/v1/environments/production)
+2021-01-17 19:36:36,333 [ForkJoinPool-1-worker-7] WARN  com.lmax.scotty.api.ScottyApiClient - 404 when trying to GET /api/v1/environments/tokyo-professional on ix3-stg3-typrof2 (https://s3typrof-live-deploy21.ix3.lmax/scotty/api/v1/environments/tokyo-professional)
+2021-01-17 19:36:41,348 [ForkJoinPool-1-worker-3] WARN  com.lmax.scotty.api.ScottyApiClient - 404 when trying to GET /api/v1/environments/production on ix3-stg3-prof (https://s3ldprof-live-deploy01.ix3.lmax/scotty/api/v1/environments/production)
+2021-01-17 19:36:41,351 [ForkJoinPool-1-worker-7] WARN  com.lmax.scotty.api.ScottyApiClient - 404 when trying to GET /api/v1/environments/tokyo-professional on ix3-stg3-typrof2 (https://s3typrof-live-deploy21.ix3.lmax/scotty/api/v1/environments/tokyo-professional)
+2021-01-17 19:36:41,352 [ForkJoinPool-1-worker-5] WARN  com.lmax.scotty.api.ScottyApiClient - 404 when trying to GET /api/v1/environments/interbank on ix3-stg3-inst (https://s3ldinst-live-deploy01.ix3.lmax/scotty/api/v1/environments/interbank)
+2021-01-17 19:36:46,367 [ForkJoinPool-1-worker-7] WARN  com.lmax.scotty.api.ScottyApiClient - 404 when trying to GET /api/v1/environments/tokyo-professional on ix3-stg3-typrof2 (https://s3typrof-live-deploy21.ix3.lmax/scotty/api/v1/environments/tokyo-professional)
+2021-01-17 19:36:46,369 [ForkJoinPool-1-worker-5] WARN  com.lmax.scotty.api.ScottyApiClient - 404 when trying to GET /api/v1/environments/interbank on ix3-stg3-inst (https://s3ldinst-live-deploy01.ix3.lmax/scotty/api/v1/environments/interbank)
+2021-01-17 19:36:46,369 [ForkJoinPool-1-worker-3] WARN  com.lmax.scotty.api.ScottyApiClient - 404 when trying to GET /api/v1/environments/production on ix3-stg3-prof (https://s3ldprof-live-deploy01.ix3.lmax/scotty/api/v1/environments/production)
+2021-01-17 19:36:51,389 [ForkJoinPool-1-worker-5] WARN  com.lmax.scotty.api.ScottyApiClient - 404 when trying to GET /api/v1/environments/interbank on ix3-stg3-inst (https://s3ldinst-live-deploy01.ix3.lmax/scotty/api/v1/environments/interbank)
+2021-01-17 19:36:51,389 [ForkJoinPool-1-worker-3] WARN  com.lmax.scotty.api.ScottyApiClient - 404 when trying to GET /api/v1/environments/production on ix3-stg3-prof (https://s3ldprof-live-deploy01.ix3.lmax/scotty/api/v1/environments/production)
+2021-01-17 19:36:51,389 [ForkJoinPool-1-worker-7] WARN  com.lmax.scotty.api.ScottyApiClient - 404 when trying to GET /api/v1/environments/tokyo-professional on ix3-stg3-typrof2 (https://s3typrof-live-deploy21.ix3.lmax/scotty/api/v1/environments/tokyo-professional)
+2021-01-17 19:36:56,403 [ForkJoinPool-1-worker-7] WARN  com.lmax.scotty.api.ScottyApiClient - 404 when trying to GET /api/v1/environments/tokyo-professional on ix3-stg3-typrof2 (https://s3typrof-live-deploy21.ix3.lmax/scotty/api/v1/environments/tokyo-professional)
+2021-01-17 19:36:56,403 [ForkJoinPool-1-worker-5] WARN  com.lmax.scotty.api.ScottyApiClient - 404 when trying to GET /api/v1/environments/interbank on ix3-stg3-inst (https://s3ldinst-live-deploy01.ix3.lmax/scotty/api/v1/environments/interbank)
+2021-01-17 19:36:56,407 [ForkJoinPool-1-worker-3] WARN  com.lmax.scotty.api.ScottyApiClient - 404 when trying to GET /api/v1/environments/production on ix3-stg3-prof (https://s3ldprof-live-deploy01.ix3.lmax/scotty/api/v1/environments/production)
+2021-01-17 19:37:01,424 [ForkJoinPool-1-worker-5] WARN  com.lmax.scotty.api.ScottyApiClient - 404 when trying to GET /api/v1/environments/interbank on ix3-stg3-inst (https://s3ldinst-live-deploy01.ix3.lmax/scotty/api/v1/environments/interbank)
+2021-01-17 19:37:01,425 [ForkJoinPool-1-worker-7] WARN  com.lmax.scotty.api.ScottyApiClient - 404 when trying to GET /api/v1/environments/tokyo-professional on ix3-stg3-typrof2 (https://s3typrof-live-deploy21.ix3.lmax/scotty/api/v1/environments/tokyo-professional)
+2021-01-17 19:37:01,430 [ForkJoinPool-1-worker-3] WARN  com.lmax.scotty.api.ScottyApiClient - 404 when trying to GET /api/v1/environments/production on ix3-stg3-prof (https://s3ldprof-live-deploy01.ix3.lmax/scotty/api/v1/environments/production)
+2021-01-17 19:37:06,441 [ForkJoinPool-1-worker-5] WARN  com.lmax.scotty.api.ScottyApiClient - 404 when trying to GET /api/v1/environments/interbank on ix3-stg3-inst (https://s3ldinst-live-deploy01.ix3.lmax/scotty/api/v1/environments/interbank)
+2021-01-17 19:37:06,443 [ForkJoinPool-1-worker-3] WARN  com.lmax.scotty.api.ScottyApiClient - 404 when trying to GET /api/v1/environments/production on ix3-stg3-prof (https://s3ldprof-live-deploy01.ix3.lmax/scotty/api/v1/environments/production)
+2021-01-17 19:37:06,444 [ForkJoinPool-1-worker-7] WARN  com.lmax.scotty.api.ScottyApiClient - 404 when trying to GET /api/v1/environments/tokyo-professional on ix3-stg3-typrof2 (https://s3typrof-live-deploy21.ix3.lmax/scotty/api/v1/environments/tokyo-professional)
+2021-01-17 19:37:11,459 [ForkJoinPool-1-worker-3] WARN  com.lmax.scotty.api.ScottyApiClient - 404 when trying to GET /api/v1/environments/production on ix3-stg3-prof (https://s3ldprof-live-deploy01.ix3.lmax/scotty/api/v1/environments/production)
+2021-01-17 19:37:11,460 [ForkJoinPool-1-worker-7] WARN  com.lmax.scotty.api.ScottyApiClient - 404 when trying to GET /api/v1/environments/tokyo-professional on ix3-stg3-typrof2 (https://s3typrof-live-deploy21.ix3.lmax/scotty/api/v1/environments/tokyo-professional)
+2021-01-17 19:37:11,460 [ForkJoinPool-1-worker-5] WARN  com.lmax.scotty.api.ScottyApiClient - 404 when trying to GET /api/v1/environments/interbank on ix3-stg3-inst (https://s3ldinst-live-deploy01.ix3.lmax/scotty/api/v1/environments/interbank)
+2021-01-17 19:37:16,478 [ForkJoinPool-1-worker-5] WARN  com.lmax.scotty.api.ScottyApiClient - 404 when trying to GET /api/v1/environments/interbank on ix3-stg3-inst (https://s3ldinst-live-deploy01.ix3.lmax/scotty/api/v1/environments/interbank)
+2021-01-17 19:37:16,478 [ForkJoinPool-1-worker-7] WARN  com.lmax.scotty.api.ScottyApiClient - 404 when trying to GET /api/v1/environments/tokyo-professional on ix3-stg3-typrof2 (https://s3typrof-live-deploy21.ix3.lmax/scotty/api/v1/environments/tokyo-professional)
+2021-01-17 19:37:16,479 [ForkJoinPool-1-worker-3] WARN  com.lmax.scotty.api.ScottyApiClient - 404 when trying to GET /api/v1/environments/production on ix3-stg3-prof (https://s3ldprof-live-deploy01.ix3.lmax/scotty/api/v1/environments/production)
+2021-01-17 19:37:21,496 [ForkJoinPool-1-worker-5] WARN  com.lmax.scotty.api.ScottyApiClient - 404 when trying to GET /api/v1/environments/interbank on ix3-stg3-inst (https://s3ldinst-live-deploy01.ix3.lmax/scotty/api/v1/environments/interbank)
+2021-01-17 19:37:21,496 [ForkJoinPool-1-worker-7] WARN  com.lmax.scotty.api.ScottyApiClient - 404 when trying to GET /api/v1/environments/tokyo-professional on ix3-stg3-typrof2 (https://s3typrof-live-deploy21.ix3.lmax/scotty/api/v1/environments/tokyo-professional)
+2021-01-17 19:37:21,498 [ForkJoinPool-1-worker-3] WARN  com.lmax.scotty.api.ScottyApiClient - 404 when trying to GET /api/v1/environments/production on ix3-stg3-prof (https://s3ldprof-live-deploy01.ix3.lmax/scotty/api/v1/environments/production)
+2021-01-17 19:37:26,512 [ForkJoinPool-1-worker-5] WARN  com.lmax.scotty.api.ScottyApiClient - 404 when trying to GET /api/v1/environments/interbank on ix3-stg3-inst (https://s3ldinst-live-deploy01.ix3.lmax/scotty/api/v1/environments/interbank)
+2021-01-17 19:37:26,513 [ForkJoinPool-1-worker-7] WARN  com.lmax.scotty.api.ScottyApiClient - 404 when trying to GET /api/v1/environments/tokyo-professional on ix3-stg3-typrof2 (https://s3typrof-live-deploy21.ix3.lmax/scotty/api/v1/environments/tokyo-professional)
+2021-01-17 19:37:26,515 [ForkJoinPool-1-worker-3] WARN  com.lmax.scotty.api.ScottyApiClient - 404 when trying to GET /api/v1/environments/production on ix3-stg3-prof (https://s3ldprof-live-deploy01.ix3.lmax/scotty/api/v1/environments/production)
+2021-01-17 19:37:31,532 [ForkJoinPool-1-worker-3] WARN  com.lmax.scotty.api.ScottyApiClient - 404 when trying to GET /api/v1/environments/production on ix3-stg3-prof (https://s3ldprof-live-deploy01.ix3.lmax/scotty/api/v1/environments/production)
+2021-01-17 19:37:31,533 [ForkJoinPool-1-worker-5] WARN  com.lmax.scotty.api.ScottyApiClient - 404 when trying to GET /api/v1/environments/interbank on ix3-stg3-inst (https://s3ldinst-live-deploy01.ix3.lmax/scotty/api/v1/environments/interbank)
+2021-01-17 19:37:31,533 [ForkJoinPool-1-worker-7] WARN  com.lmax.scotty.api.ScottyApiClient - 404 when trying to GET /api/v1/environments/tokyo-professional on ix3-stg3-typrof2 (https://s3typrof-live-deploy21.ix3.lmax/scotty/api/v1/environments/tokyo-professional)
+2021-01-17 19:37:36,553 [ForkJoinPool-1-worker-3] WARN  com.lmax.scotty.api.ScottyApiClient - 404 when trying to GET /api/v1/environments/production on ix3-stg3-prof (https://s3ldprof-live-deploy01.ix3.lmax/scotty/api/v1/environments/production)
+2021-01-17 19:37:36,553 [ForkJoinPool-1-worker-5] WARN  com.lmax.scotty.api.ScottyApiClient - 404 when trying to GET /api/v1/environments/interbank on ix3-stg3-inst (https://s3ldinst-live-deploy01.ix3.lmax/scotty/api/v1/environments/interbank)
+2021-01-17 19:37:36,553 [ForkJoinPool-1-worker-7] WARN  com.lmax.scotty.api.ScottyApiClient - 404 when trying to GET /api/v1/environments/tokyo-professional on ix3-stg3-typrof2 (https://s3typrof-live-deploy21.ix3.lmax/scotty/api/v1/environments/tokyo-professional)
+2021-01-17 19:37:41,578 [ForkJoinPool-1-worker-7] WARN  com.lmax.scotty.api.ScottyApiClient - 404 when trying to GET /api/v1/environments/tokyo-professional on ix3-stg3-typrof2 (https://s3typrof-live-deploy21.ix3.lmax/scotty/api/v1/environments/tokyo-professional)
+2021-01-17 19:37:41,578 [ForkJoinPool-1-worker-3] WARN  com.lmax.scotty.api.ScottyApiClient - 404 when trying to GET /api/v1/environments/production on ix3-stg3-prof (https://s3ldprof-live-deploy01.ix3.lmax/scotty/api/v1/environments/production)
+2021-01-17 19:37:41,579 [ForkJoinPool-1-worker-5] WARN  com.lmax.scotty.api.ScottyApiClient - 404 when trying to GET /api/v1/environments/interbank on ix3-stg3-inst (https://s3ldinst-live-deploy01.ix3.lmax/scotty/api/v1/environments/interbank)
+2021-01-17 19:37:46,596 [ForkJoinPool-1-worker-3] WARN  com.lmax.scotty.api.ScottyApiClient - 404 when trying to GET /api/v1/environments/production on ix3-stg3-prof (https://s3ldprof-live-deploy01.ix3.lmax/scotty/api/v1/environments/production)
+2021-01-17 19:37:46,597 [ForkJoinPool-1-worker-7] WARN  com.lmax.scotty.api.ScottyApiClient - 404 when trying to GET /api/v1/environments/tokyo-professional on ix3-stg3-typrof2 (https://s3typrof-live-deploy21.ix3.lmax/scotty/api/v1/environments/tokyo-professional)
+2021-01-17 19:37:46,597 [ForkJoinPool-1-worker-5] WARN  com.lmax.scotty.api.ScottyApiClient - 404 when trying to GET /api/v1/environments/interbank on ix3-stg3-inst (https://s3ldinst-live-deploy01.ix3.lmax/scotty/api/v1/environments/interbank)
+2021-01-17 19:37:51,611 [ForkJoinPool-1-worker-3] WARN  com.lmax.scotty.api.ScottyApiClient - 404 when trying to GET /api/v1/environments/production on ix3-stg3-prof (https://s3ldprof-live-deploy01.ix3.lmax/scotty/api/v1/environments/production)
+2021-01-17 19:37:51,611 [ForkJoinPool-1-worker-5] WARN  com.lmax.scotty.api.ScottyApiClient - 404 when trying to GET /api/v1/environments/interbank on ix3-stg3-inst (https://s3ldinst-live-deploy01.ix3.lmax/scotty/api/v1/environments/interbank)
+2021-01-17 19:37:51,611 [ForkJoinPool-1-worker-7] WARN  com.lmax.scotty.api.ScottyApiClient - 404 when trying to GET /api/v1/environments/tokyo-professional on ix3-stg3-typrof2 (https://s3typrof-live-deploy21.ix3.lmax/scotty/api/v1/environments/tokyo-professional)
+2021-01-17 19:37:56,626 [ForkJoinPool-1-worker-7] WARN  com.lmax.scotty.api.ScottyApiClient - 404 when trying to GET /api/v1/environments/tokyo-professional on ix3-stg3-typrof2 (https://s3typrof-live-deploy21.ix3.lmax/scotty/api/v1/environments/tokyo-professional)
+2021-01-17 19:37:56,627 [ForkJoinPool-1-worker-5] WARN  com.lmax.scotty.api.ScottyApiClient - 404 when trying to GET /api/v1/environments/interbank on ix3-stg3-inst (https://s3ldinst-live-deploy01.ix3.lmax/scotty/api/v1/environments/interbank)
+2021-01-17 19:37:56,630 [ForkJoinPool-1-worker-3] WARN  com.lmax.scotty.api.ScottyApiClient - 404 when trying to GET /api/v1/environments/production on ix3-stg3-prof (https://s3ldprof-live-deploy01.ix3.lmax/scotty/api/v1/environments/production)
+2021-01-17 19:38:01,645 [ForkJoinPool-1-worker-3] WARN  com.lmax.scotty.api.ScottyApiClient - 404 when trying to GET /api/v1/environments/production on ix3-stg3-prof (https://s3ldprof-live-deploy01.ix3.lmax/scotty/api/v1/environments/production)
+2021-01-17 19:38:01,645 [ForkJoinPool-1-worker-5] WARN  com.lmax.scotty.api.ScottyApiClient - 404 when trying to GET /api/v1/environments/interbank on ix3-stg3-inst (https://s3ldinst-live-deploy01.ix3.lmax/scotty/api/v1/environments/interbank)
+2021-01-17 19:38:01,645 [ForkJoinPool-1-worker-7] WARN  com.lmax.scotty.api.ScottyApiClient - 404 when trying to GET /api/v1/environments/tokyo-professional on ix3-stg3-typrof2 (https://s3typrof-live-deploy21.ix3.lmax/scotty/api/v1/environments/tokyo-professional)
+2021-01-17 19:38:06,663 [ForkJoinPool-1-worker-3] WARN  com.lmax.scotty.api.ScottyApiClient - 404 when trying to GET /api/v1/environments/production on ix3-stg3-prof (https://s3ldprof-live-deploy01.ix3.lmax/scotty/api/v1/environments/production)
+2021-01-17 19:38:06,664 [ForkJoinPool-1-worker-5] WARN  com.lmax.scotty.api.ScottyApiClient - 404 when trying to GET /api/v1/environments/interbank on ix3-stg3-inst (https://s3ldinst-live-deploy01.ix3.lmax/scotty/api/v1/environments/interbank)
+2021-01-17 19:38:06,665 [ForkJoinPool-1-worker-7] WARN  com.lmax.scotty.api.ScottyApiClient - 404 when trying to GET /api/v1/environments/tokyo-professional on ix3-stg3-typrof2 (https://s3typrof-live-deploy21.ix3.lmax/scotty/api/v1/environments/tokyo-professional)
+2021-01-17 19:38:11,681 [ForkJoinPool-1-worker-5] WARN  com.lmax.scotty.api.ScottyApiClient - 404 when trying to GET /api/v1/environments/interbank on ix3-stg3-inst (https://s3ldinst-live-deploy01.ix3.lmax/scotty/api/v1/environments/interbank)
+2021-01-17 19:38:11,682 [ForkJoinPool-1-worker-3] WARN  com.lmax.scotty.api.ScottyApiClient - 404 when trying to GET /api/v1/environments/production on ix3-stg3-prof (https://s3ldprof-live-deploy01.ix3.lmax/scotty/api/v1/environments/production)
+2021-01-17 19:38:11,684 [ForkJoinPool-1-worker-7] WARN  com.lmax.scotty.api.ScottyApiClient - 404 when trying to GET /api/v1/environments/tokyo-professional on ix3-stg3-typrof2 (https://s3typrof-live-deploy21.ix3.lmax/scotty/api/v1/environments/tokyo-professional)
+2021-01-17 19:38:16,696 [ForkJoinPool-1-worker-3] WARN  com.lmax.scotty.api.ScottyApiClient - 404 when trying to GET /api/v1/environments/production on ix3-stg3-prof (https://s3ldprof-live-deploy01.ix3.lmax/scotty/api/v1/environments/production)
+2021-01-17 19:38:16,697 [ForkJoinPool-1-worker-5] WARN  com.lmax.scotty.api.ScottyApiClient - 404 when trying to GET /api/v1/environments/interbank on ix3-stg3-inst (https://s3ldinst-live-deploy01.ix3.lmax/scotty/api/v1/environments/interbank)
+2021-01-17 19:38:16,700 [ForkJoinPool-1-worker-7] WARN  com.lmax.scotty.api.ScottyApiClient - 404 when trying to GET /api/v1/environments/tokyo-professional on ix3-stg3-typrof2 (https://s3typrof-live-deploy21.ix3.lmax/scotty/api/v1/environments/tokyo-professional)
+2021-01-17 19:38:21,714 [ForkJoinPool-1-worker-3] WARN  com.lmax.scotty.api.ScottyApiClient - 404 when trying to GET /api/v1/environments/production on ix3-stg3-prof (https://s3ldprof-live-deploy01.ix3.lmax/scotty/api/v1/environments/production)
+2021-01-17 19:38:21,716 [ForkJoinPool-1-worker-5] WARN  com.lmax.scotty.api.ScottyApiClient - 404 when trying to GET /api/v1/environments/interbank on ix3-stg3-inst (https://s3ldinst-live-deploy01.ix3.lmax/scotty/api/v1/environments/interbank)
+2021-01-17 19:38:21,717 [ForkJoinPool-1-worker-7] WARN  com.lmax.scotty.api.ScottyApiClient - 404 when trying to GET /api/v1/environments/tokyo-professional on ix3-stg3-typrof2 (https://s3typrof-live-deploy21.ix3.lmax/scotty/api/v1/environments/tokyo-professional)
+2021-01-17 19:38:26,733 [ForkJoinPool-1-worker-5] WARN  com.lmax.scotty.api.ScottyApiClient - 404 when trying to GET /api/v1/environments/interbank on ix3-stg3-inst (https://s3ldinst-live-deploy01.ix3.lmax/scotty/api/v1/environments/interbank)
+2021-01-17 19:38:26,734 [ForkJoinPool-1-worker-7] WARN  com.lmax.scotty.api.ScottyApiClient - 404 when trying to GET /api/v1/environments/tokyo-professional on ix3-stg3-typrof2 (https://s3typrof-live-deploy21.ix3.lmax/scotty/api/v1/environments/tokyo-professional)
+2021-01-17 19:38:26,737 [ForkJoinPool-1-worker-3] WARN  com.lmax.scotty.api.ScottyApiClient - 404 when trying to GET /api/v1/environments/production on ix3-stg3-prof (https://s3ldprof-live-deploy01.ix3.lmax/scotty/api/v1/environments/production)
+2021-01-17 19:38:31,749 [ForkJoinPool-1-worker-5] WARN  com.lmax.scotty.api.ScottyApiClient - 404 when trying to GET /api/v1/environments/interbank on ix3-stg3-inst (https://s3ldinst-live-deploy01.ix3.lmax/scotty/api/v1/environments/interbank)
+2021-01-17 19:38:31,750 [ForkJoinPool-1-worker-7] WARN  com.lmax.scotty.api.ScottyApiClient - 404 when trying to GET /api/v1/environments/tokyo-professional on ix3-stg3-typrof2 (https://s3typrof-live-deploy21.ix3.lmax/scotty/api/v1/environments/tokyo-professional)
+2021-01-17 19:38:31,753 [ForkJoinPool-1-worker-3] WARN  com.lmax.scotty.api.ScottyApiClient - 404 when trying to GET /api/v1/environments/production on ix3-stg3-prof (https://s3ldprof-live-deploy01.ix3.lmax/scotty/api/v1/environments/production)
+2021-01-17 19:38:36,768 [ForkJoinPool-1-worker-7] WARN  com.lmax.scotty.api.ScottyApiClient - 404 when trying to GET /api/v1/environments/tokyo-professional on ix3-stg3-typrof2 (https://s3typrof-live-deploy21.ix3.lmax/scotty/api/v1/environments/tokyo-professional)
+2021-01-17 19:38:36,770 [ForkJoinPool-1-worker-5] WARN  com.lmax.scotty.api.ScottyApiClient - 404 when trying to GET /api/v1/environments/interbank on ix3-stg3-inst (https://s3ldinst-live-deploy01.ix3.lmax/scotty/api/v1/environments/interbank)
+2021-01-17 19:38:36,771 [ForkJoinPool-1-worker-3] WARN  com.lmax.scotty.api.ScottyApiClient - 404 when trying to GET /api/v1/environments/production on ix3-stg3-prof (https://s3ldprof-live-deploy01.ix3.lmax/scotty/api/v1/environments/production)
+2021-01-17 19:38:41,791 [ForkJoinPool-1-worker-7] WARN  com.lmax.scotty.api.ScottyApiClient - 404 when trying to GET /api/v1/environments/tokyo-professional on ix3-stg3-typrof2 (https://s3typrof-live-deploy21.ix3.lmax/scotty/api/v1/environments/tokyo-professional)
+2021-01-17 19:38:41,791 [ForkJoinPool-1-worker-3] WARN  com.lmax.scotty.api.ScottyApiClient - 404 when trying to GET /api/v1/environments/production on ix3-stg3-prof (https://s3ldprof-live-deploy01.ix3.lmax/scotty/api/v1/environments/production)
+2021-01-17 19:38:41,794 [ForkJoinPool-1-worker-5] WARN  com.lmax.scotty.api.ScottyApiClient - 404 when trying to GET /api/v1/environments/interbank on ix3-stg3-inst (https://s3ldinst-live-deploy01.ix3.lmax/scotty/api/v1/environments/interbank)
+2021-01-17 19:38:46,811 [ForkJoinPool-1-worker-7] WARN  com.lmax.scotty.api.ScottyApiClient - 404 when trying to GET /api/v1/environments/tokyo-professional on ix3-stg3-typrof2 (https://s3typrof-live-deploy21.ix3.lmax/scotty/api/v1/environments/tokyo-professional)
+2021-01-17 19:38:46,811 [ForkJoinPool-1-worker-5] WARN  com.lmax.scotty.api.ScottyApiClient - 404 when trying to GET /api/v1/environments/interbank on ix3-stg3-inst (https://s3ldinst-live-deploy01.ix3.lmax/scotty/api/v1/environments/interbank)
+2021-01-17 19:38:46,813 [ForkJoinPool-1-worker-3] WARN  com.lmax.scotty.api.ScottyApiClient - 404 when trying to GET /api/v1/environments/production on ix3-stg3-prof (https://s3ldprof-live-deploy01.ix3.lmax/scotty/api/v1/environments/production)
+2021-01-17 19:38:51,829 [ForkJoinPool-1-worker-5] WARN  com.lmax.scotty.api.ScottyApiClient - 404 when trying to GET /api/v1/environments/interbank on ix3-stg3-inst (https://s3ldinst-live-deploy01.ix3.lmax/scotty/api/v1/environments/interbank)
+2021-01-17 19:38:51,829 [ForkJoinPool-1-worker-3] WARN  com.lmax.scotty.api.ScottyApiClient - 404 when trying to GET /api/v1/environments/production on ix3-stg3-prof (https://s3ldprof-live-deploy01.ix3.lmax/scotty/api/v1/environments/production)
+2021-01-17 19:38:51,829 [ForkJoinPool-1-worker-7] WARN  com.lmax.scotty.api.ScottyApiClient - 404 when trying to GET /api/v1/environments/tokyo-professional on ix3-stg3-typrof2 (https://s3typrof-live-deploy21.ix3.lmax/scotty/api/v1/environments/tokyo-professional)
+2021-01-17 19:38:56,844 [ForkJoinPool-1-worker-7] WARN  com.lmax.scotty.api.ScottyApiClient - 404 when trying to GET /api/v1/environments/tokyo-professional on ix3-stg3-typrof2 (https://s3typrof-live-deploy21.ix3.lmax/scotty/api/v1/environments/tokyo-professional)
+2021-01-17 19:38:56,844 [ForkJoinPool-1-worker-5] WARN  com.lmax.scotty.api.ScottyApiClient - 404 when trying to GET /api/v1/environments/interbank on ix3-stg3-inst (https://s3ldinst-live-deploy01.ix3.lmax/scotty/api/v1/environments/interbank)
+2021-01-17 19:38:56,845 [ForkJoinPool-1-worker-3] WARN  com.lmax.scotty.api.ScottyApiClient - 404 when trying to GET /api/v1/environments/production on ix3-stg3-prof (https://s3ldprof-live-deploy01.ix3.lmax/scotty/api/v1/environments/production)
+2021-01-17 19:39:01,858 [ForkJoinPool-1-worker-5] WARN  com.lmax.scotty.api.ScottyApiClient - 404 when trying to GET /api/v1/environments/interbank on ix3-stg3-inst (https://s3ldinst-live-deploy01.ix3.lmax/scotty/api/v1/environments/interbank)
+2021-01-17 19:39:01,860 [ForkJoinPool-1-worker-7] WARN  com.lmax.scotty.api.ScottyApiClient - 404 when trying to GET /api/v1/environments/tokyo-professional on ix3-stg3-typrof2 (https://s3typrof-live-deploy21.ix3.lmax/scotty/api/v1/environments/tokyo-professional)
+2021-01-17 19:39:01,860 [ForkJoinPool-1-worker-3] WARN  com.lmax.scotty.api.ScottyApiClient - 404 when trying to GET /api/v1/environments/production on ix3-stg3-prof (https://s3ldprof-live-deploy01.ix3.lmax/scotty/api/v1/environments/production)
+2021-01-17 19:39:06,872 [ForkJoinPool-1-worker-5] WARN  com.lmax.scotty.api.ScottyApiClient - 404 when trying to GET /api/v1/environments/interbank on ix3-stg3-inst (https://s3ldinst-live-deploy01.ix3.lmax/scotty/api/v1/environments/interbank)
+2021-01-17 19:39:06,874 [ForkJoinPool-1-worker-3] WARN  com.lmax.scotty.api.ScottyApiClient - 404 when trying to GET /api/v1/environments/production on ix3-stg3-prof (https://s3ldprof-live-deploy01.ix3.lmax/scotty/api/v1/environments/production)
+2021-01-17 19:39:06,874 [ForkJoinPool-1-worker-7] WARN  com.lmax.scotty.api.ScottyApiClient - 404 when trying to GET /api/v1/environments/tokyo-professional on ix3-stg3-typrof2 (https://s3typrof-live-deploy21.ix3.lmax/scotty/api/v1/environments/tokyo-professional)
+2021-01-17 19:39:11,889 [ForkJoinPool-1-worker-3] WARN  com.lmax.scotty.api.ScottyApiClient - 404 when trying to GET /api/v1/environments/production on ix3-stg3-prof (https://s3ldprof-live-deploy01.ix3.lmax/scotty/api/v1/environments/production)
+2021-01-17 19:39:11,890 [ForkJoinPool-1-worker-5] WARN  com.lmax.scotty.api.ScottyApiClient - 404 when trying to GET /api/v1/environments/interbank on ix3-stg3-inst (https://s3ldinst-live-deploy01.ix3.lmax/scotty/api/v1/environments/interbank)
+2021-01-17 19:39:11,891 [ForkJoinPool-1-worker-7] WARN  com.lmax.scotty.api.ScottyApiClient - 404 when trying to GET /api/v1/environments/tokyo-professional on ix3-stg3-typrof2 (https://s3typrof-live-deploy21.ix3.lmax/scotty/api/v1/environments/tokyo-professional)
+1.1.6			(staging3-professional)[1610912351874] Environment is not present within elapsed time period [start: 1610912050704, end: 1610912351874]
+1.1.6			(staging3-interbank)[1610912351873] Environment is not present within elapsed time period [start: 1610912050705, end: 1610912351873]
+1.1.6			(staging3-tokyo2)[1610912351875] Environment is not present within elapsed time period [start: 1610912050707, end: 1610912351875]
+1	Failed Try Block, bailing
+
+
+
+************************
+Warning !
+The failure you are about to see is probably not the failure that you are looking for. Yes, staging failed * sadface *.
+What we will do now is print the state of the environment as it was at the time of failure, to aid debugging.
+Whatever you 're about to see *IS NOT* why staging failed (though there may be a high enough correlation).
+************************
+
+ ==== The following services are still unhealthy in environment ny-professional : 
+s3nyprof-beta-mfix01.ix3.lmax={scotty-agent=[no release installed]}
+s3nyprof-beta-mdbs02.ix3.lmax={scotty-agent=[no release installed]}
+s3nyprof-beta-cexc03.ix3.lmax={scotty-agent=[no release installed]}
+s3nyprof-beta-bogw01.ix3.lmax={scotty-agent=[no release installed]}
+s3nyprof-beta-binb01.ix3.lmax={scotty-agent=[no release installed]}
+s3nyprof-beta-mfix02.ix3.lmax={scotty-agent=[no release installed]}
+s3nyprof-beta-cexc02.ix3.lmax={scotty-agent=[no release installed]}
+s3nyprof-beta-mmmd01.ix3.lmax={scotty-agent=[no release installed]}
+s3nyprof-beta-mmds02.ix3.lmax={scotty-agent=[no release installed]}
+s3nyprof-beta-mdbs03.ix3.lmax={scotty-agent=[no release installed]}
+s3nyprof-dr-cexc02.ix3.lmax={scotty-agent=[no release installed]}
+s3nyprof-beta-mogw01.ix3.lmax={scotty-agent=[no release installed]}
+s3nyprof-beta-binb02.ix3.lmax={scotty-agent=[no release installed]}
+s3nyprof-beta-gmts01.ix3.lmax={scotty-agent=[no release installed]}
+s3nyprof-beta-cexc01.ix3.lmax={scotty-agent=[no release installed]}
+s3nyprof-beta-ginb01.ix3.lmax={scotty-agent=[no release installed]}
+s3nyprof-beta-gtmt01.ix3.lmax={scotty-agent=[no release installed]}
+s3nyprof-beta-mmmd02.ix3.lmax={scotty-agent=[no release installed]}
+s3nyprof-beta-mmds01.ix3.lmax={scotty-agent=[no release installed]}
+s3nyprof-beta-gtmt02.ix3.lmax={scotty-agent=[no release installed]}
+s3nyprof-beta-gmts02.ix3.lmax={scotty-agent=[no release installed]}
+s3nyprof-beta-mdbs01.ix3.lmax={scotty-agent=[no release installed]}
+s3nyprof-beta-stub01.ix3.lmax={scotty-agent=[no release installed]}
+
+ ==== The following services are still unhealthy in environment globaladmin : 
+s3ldglob-live-sys01.ix3.lmax={scotty-agent=[no release installed]}
+s3ldglob-live-web02.ix3.lmax={scotty-agent=[no release installed]}
+s3ldglob-live-gmts01.ix3.lmax={scotty-agent=[no release installed]}
+s3ldglob-live-sys02.ix3.lmax={scotty-agent=[no release installed]}
+s3ldglob-live-gmts02.ix3.lmax={scotty-agent=[no release installed]}
+s3ldglob-live-web01.ix3.lmax={scotty-agent=[no release installed]}
+s3ldglob-dr-sys01.ix3.lmax={scotty-agent=[no release installed]}
+
+
+
+************************
+ And now ladies and gents, the real reason why staging failed at 1.1.6: 
+************************
+Exception in thread "main" java.lang.RuntimeException: java.lang.RuntimeException: Period of 300000 expired. Environment is not present [start: 1610912050704, end: 1610912351874] (by the way this was in staging3-professional)
+	at com.lmax.deployment.orchestration.stage.Stage.execute(Stage.java:92)
+	at com.lmax.deployment.orchestration.Orchestration.lambda$execute$0(Orchestration.java:33)
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75)
+	at com.lmax.deployment.orchestration.Orchestration.execute(Orchestration.java:30)
+	at com.lmax.deployment.StagingRelease.lambda$run$2(StagingRelease.java:226)
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75)
+	at com.lmax.deployment.StagingRelease.run(StagingRelease.java:220)
+	at com.lmax.deployment.StagingRelease.main(StagingRelease.java:131)
+Caused by: java.lang.RuntimeException: Period of 300000 expired. Environment is not present [start: 1610912050704, end: 1610912351874] (by the way this was in staging3-professional)
+	at com.lmax.deployment.orchestration.stage.step.NamedExchangeStep.innerExecute(NamedExchangeStep.java:26)
+	at com.lmax.deployment.orchestration.stage.step.Step.execute(Step.java:30)
+	at com.lmax.deployment.orchestration.stage.step.ParallelStep.lambda$innerExecute$0(ParallelStep.java:46)
+	at java.base/java.util.concurrent.ForkJoinTask$AdaptedCallable.exec(ForkJoinTask.java:1448)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:290)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1020)
+	at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1656)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1594)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:177)
+Caused by: java.lang.IllegalStateException: Period of 300000 expired. Environment is not present [start: 1610912050704, end: 1610912351874]
+	at com.lmax.deployment.orchestration.stage.step.WaitForEnvironmentToBePresentAndIdleStep.innerExecute(WaitForEnvironmentToBePresentAndIdleStep.java:73)
+	at com.lmax.deployment.orchestration.stage.step.Step.execute(Step.java:30)
+	at com.lmax.deployment.orchestration.stage.step.NamedExchangeStep.innerExecute(NamedExchangeStep.java:22)
+	... 8 more
+Build step 'Execute shell' marked build as failure
+New run name is '#2630 - r219775 '
+An attempt to send an e-mail to empty list of recipients, ignored.
+Notifying endpoint with url 'http://lddev-build-web01.ix3.lmax:14080/notify/jenkins'
+Finished: FAILURE
